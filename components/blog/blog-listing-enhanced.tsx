@@ -374,7 +374,7 @@ function ArticleCard({ post, index }: { post: BlogPost; index: number }) {
                             ) : (
                                 <div className="flex items-center gap-1.5 text-xs text-neutral-500">
                                     <User className="h-3.5 w-3.5" />
-                                    <span>Global WCI</span>
+                                    <span>WCI Team</span>
                                 </div>
                             )}
 

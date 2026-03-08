@@ -12,8 +12,9 @@ import {
 } from "@/components/blog";
 import {
     blogPosts,
-    getPostBySlug,
+    getPostWithRelations,
     getPostsByCategory,
+    blogCategories,
     type BlogPostWithRelations,
 } from "@/data/blog";
 
@@ -29,7 +30,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-    const post = getPostBySlug(slug);
+    const post = getPostWithRelations(slug);
 
     if (!post) {
         return {
@@ -45,7 +46,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             ...post.tags.map((tag) => tag.name.toLowerCase()),
             "blog",
             "insights",
-            "global digitalbit",
+            "women connect international",
         ],
         openGraph: {
             title: post.title,
@@ -69,7 +70,7 @@ export default async function BlogDetailPage({ params }: Props) {
     const { locale, slug } = await params;
     setRequestLocale(locale);
 
-    const post = getPostBySlug(slug);
+    const post = getPostWithRelations(slug);
 
     if (!post) {
         notFound();

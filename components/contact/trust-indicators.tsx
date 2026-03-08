@@ -6,47 +6,47 @@ import { Shield, Lock, Headphones, Award, Quote, Star, CheckCircle } from "lucid
 const testimonials = [
     {
         quote:
-            "Global WCI's expertise in blockchain solutions transformed our credential verification process. Their response time and technical depth are exceptional.",
-        author: "Dr. Amina Ibrahim",
-        role: "Chief Technology Officer",
-        company: "West African Development Bank",
+            "The healing circles gave me a space to breathe and process what I had been carrying alone for years. WCI truly understands the diaspora experience.",
+        author: "Amina K.",
+        role: "Program Participant",
+        company: "Doha, Qatar",
         rating: 5,
-        avatar: "AI",
+        avatar: "AK",
     },
     {
         quote:
-            "From the first contact to implementation, their team demonstrated exceptional professionalism and delivered beyond our expectations.",
-        author: "Mohammed Al-Rashid",
-        role: "Director of Digital Transformation",
-        company: "Qatar Finance Authority",
+            "The digital skills training completely shifted my perspective. I went from feeling lost to launching my own online business. WCI gave me confidence.",
+        author: "Grace O.",
+        role: "Entrepreneur",
+        company: "London, UK",
         rating: 5,
-        avatar: "MA",
+        avatar: "GO",
     },
 ];
 
 const certifications = [
     {
         icon: Shield,
-        title: "ISO 27001",
-        subtitle: "Information Security",
+        title: "Registered NGO",
+        subtitle: "C.R. No: 237930",
     },
     {
         icon: Lock,
-        title: "GDPR",
-        subtitle: "Data Protection",
+        title: "Data Privacy",
+        subtitle: "Ethical AI Practices",
     },
     {
         icon: Award,
-        title: "SOC 2 Type II",
-        subtitle: "Security Controls",
+        title: "Evidence-Based",
+        subtitle: "Program Design",
     },
 ];
 
 const commitments = [
-    { label: "Same-day response for urgent inquiries", icon: CheckCircle },
-    { label: "Dedicated account manager assigned", icon: CheckCircle },
-    { label: "NDA available upon request", icon: CheckCircle },
-    { label: "Free initial consultation", icon: CheckCircle },
+    { label: "Prompt response to all inquiries", icon: CheckCircle },
+    { label: "Free program consultations available", icon: CheckCircle },
+    { label: "Transparent impact reporting", icon: CheckCircle },
+    { label: "Community-led governance", icon: CheckCircle },
 ];
 
 export function TrustIndicators() {
