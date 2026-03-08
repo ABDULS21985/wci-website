@@ -487,7 +487,7 @@ export function CustomCursor({ ringClassName, dotClassName }: CustomCursorProps)
           // Use mix-blend-difference for default/link states so it's visible on any background
           (cursorState === "default" || cursorState === "link" || cursorState === "active") && "mix-blend-difference border-white",
           // For button state, use brand color
-          cursorState === "button" && "border-[#1E4DB7] bg-[#1E4DB7]/20",
+          cursorState === "button" && "border-[#0D7377] bg-[#0D7377]/20",
           // For image state, use solid white bg
           cursorState === "image" && "border-transparent bg-white shadow-lg",
           ringClassName
@@ -517,7 +517,7 @@ export function CustomCursor({ ringClassName, dotClassName }: CustomCursorProps)
           // Use mix-blend-difference for visibility on any background
           (cursorState === "default" || cursorState === "link" || cursorState === "active") && "mix-blend-difference bg-white",
           // For button state, use brand color
-          cursorState === "button" && "bg-[#1E4DB7]",
+          cursorState === "button" && "bg-[#0D7377]",
           dotClassName
         )}
         style={getDotStyles()}

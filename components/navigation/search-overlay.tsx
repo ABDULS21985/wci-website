@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import { Command } from "cmdk";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, X, FileText, Package, Briefcase, BookOpen, ArrowRight, Clock, TrendingUp } from "lucide-react";
+import { Search, X, FileText, Heart, Sparkles, BookOpen, ArrowRight, Clock, TrendingUp } from "lucide-react";
 import { useRouter } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
@@ -16,50 +16,42 @@ interface SearchResult {
     title: string;
     description: string;
     href: string;
-    type: "service" | "product" | "page" | "blog";
+    type: "program" | "page" | "blog";
     breadcrumb?: string;
 }
 
 // ============================================
-// DATA - Would normally come from API/search index
+// DATA
 // ============================================
 
 const allResults: SearchResult[] = [
-    // Services
-    { id: "s1", title: "Cybersecurity Services", description: "Protect your digital assets with enterprise security", href: "/services/cybersecurity", type: "service", breadcrumb: "Services" },
-    { id: "s2", title: "Cloud & Infrastructure", description: "Scalable cloud solutions for modern businesses", href: "/services/cloud-infrastructure", type: "service", breadcrumb: "Services" },
-    { id: "s3", title: "Data & AI", description: "Harness the power of data analytics and AI", href: "/services/data-ai", type: "service", breadcrumb: "Services" },
-    { id: "s4", title: "Digital Strategy", description: "Transform your business with digital innovation", href: "/services/digital-strategy", type: "service", breadcrumb: "Services" },
-    // Products
-    { id: "p1", title: "TrustMeHub", description: "Trust & compliance management platform", href: "/products/trustmehub", type: "product", breadcrumb: "Products" },
-    { id: "p2", title: "BoaCRM", description: "Customer relations management suite", href: "/products/boacrm", type: "product", breadcrumb: "Products" },
-    { id: "p3", title: "DigiTrack", description: "Asset tracking & logistics platform", href: "/products/digitrack", type: "product", breadcrumb: "Products" },
+    // Programs
+    { id: "pr1", title: "Psychosocial Resilience", description: "Healing circles and wellness workshops for diaspora women", href: "/programs/psychosocial-resilience", type: "program", breadcrumb: "Programs" },
+    { id: "pr2", title: "Economic Empowerment", description: "Digital skills and enterprise development training", href: "/programs/economic-empowerment", type: "program", breadcrumb: "Programs" },
+    { id: "pr3", title: "Leadership & Mentoring", description: "Leadership development and mentoring for women", href: "/programs/leadership-mentoring", type: "program", breadcrumb: "Programs" },
+    { id: "pr4", title: "Humanitarian Impact", description: "Transparent diaspora giving and community impact", href: "/programs/humanitarian-impact", type: "program", breadcrumb: "Programs" },
     // Pages
-    { id: "pg1", title: "About Us", description: "Learn about Global Digitalbit", href: "/about", type: "page", breadcrumb: "Company" },
-    { id: "pg2", title: "Contact", description: "Get in touch with our team", href: "/contact", type: "page", breadcrumb: "Company" },
-    { id: "pg3", title: "Careers", description: "Join our growing team", href: "/careers", type: "page", breadcrumb: "Company" },
-    { id: "pg4", title: "Case Studies", description: "See our work and client success stories", href: "/case-studies", type: "page", breadcrumb: "Company" },
-    { id: "pg5", title: "Industries", description: "Industries we serve and specialize in", href: "/industries", type: "page", breadcrumb: "Company" },
-    // Case Studies
-    { id: "cs1", title: "CBDC Implementation", description: "Central Bank Digital Currency for 50M citizens", href: "/case-studies/central-bank-digital-currency-implementation", type: "page", breadcrumb: "Case Studies" },
-    { id: "cs2", title: "Cybersecurity Transformation", description: "Enterprise security for 80M subscribers", href: "/case-studies/enterprise-cybersecurity-transformation", type: "page", breadcrumb: "Case Studies" },
-    { id: "cs3", title: "AI Healthcare Analytics", description: "Reducing hospital readmissions by 35%", href: "/case-studies/ai-powered-healthcare-analytics", type: "page", breadcrumb: "Case Studies" },
+    { id: "pg1", title: "About Us", description: "Learn about Women Connect International's mission", href: "/about", type: "page", breadcrumb: "WCI" },
+    { id: "pg2", title: "Contact", description: "Get in touch with our team", href: "/contact", type: "page", breadcrumb: "WCI" },
+    { id: "pg3", title: "Get Involved", description: "Donate, volunteer, or partner with WCI", href: "/get-involved", type: "page", breadcrumb: "WCI" },
+    { id: "pg4", title: "Platform", description: "Our technology platform for transparent impact", href: "/platform", type: "page", breadcrumb: "WCI" },
     // Blog/Insights
-    { id: "b1", title: "Digital Transformation Trends 2024", description: "Key trends shaping enterprise technology", href: "/blogs/digital-transformation-trends", type: "blog", breadcrumb: "Insights" },
-    { id: "b2", title: "Cybersecurity Best Practices", description: "Essential security measures for businesses", href: "/blogs/cybersecurity-best-practices", type: "blog", breadcrumb: "Insights" },
+    { id: "b1", title: "Breaking the Silence: Healing Circles", description: "How healing circles transform diaspora women's lives", href: "/blogs/healing-circles-transform-lives", type: "blog", breadcrumb: "Blog" },
+    { id: "b2", title: "From Survival to Enterprise", description: "Digital skills for diaspora women entrepreneurs", href: "/blogs/digital-skills-diaspora-women", type: "blog", breadcrumb: "Blog" },
+    { id: "b3", title: "Transparent Impact", description: "How technology bridges diaspora giving", href: "/blogs/transparent-impact-technology", type: "blog", breadcrumb: "Blog" },
 ];
 
 const trendingTopics = [
-    "Cybersecurity",
-    "CBDC",
-    "AI Analytics",
-    "Digital Transformation",
+    "Resilience",
+    "Empowerment",
+    "Mentoring",
+    "Diaspora Women",
 ];
 
 const quickLinks = [
-    { title: "Services", href: "/services" },
-    { title: "Products", href: "/products" },
-    { title: "Case Studies", href: "/case-studies" },
+    { title: "Programs", href: "/programs" },
+    { title: "Get Involved", href: "/get-involved" },
+    { title: "Blog", href: "/blogs" },
     { title: "Contact", href: "/contact" },
 ];
 
@@ -140,8 +132,7 @@ export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
 
     const getTypeIcon = (type: string) => {
         switch (type) {
-            case "service": return <Briefcase className="w-4 h-4" />;
-            case "product": return <Package className="w-4 h-4" />;
+            case "program": return <Heart className="w-4 h-4" />;
             case "page": return <FileText className="w-4 h-4" />;
             case "blog": return <BookOpen className="w-4 h-4" />;
             default: return <FileText className="w-4 h-4" />;
@@ -150,10 +141,9 @@ export function SearchOverlay({ isOpen, onClose }: SearchOverlayProps) {
 
     const getTypeLabel = (type: string) => {
         switch (type) {
-            case "service": return "Services";
-            case "product": return "Products";
+            case "program": return "Programs";
             case "page": return "Pages";
-            case "blog": return "Insights";
+            case "blog": return "Blog";
             default: return type;
         }
     };

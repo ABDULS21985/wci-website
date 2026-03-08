@@ -42,14 +42,14 @@ export function ReadingProgress({
         style={{
           scaleX,
           height: `${height}px`,
-          background: color || "linear-gradient(90deg, #1E4DB7 0%, #F59A23 100%)",
+          background: color || "linear-gradient(90deg, #0D7377 0%, #F59A23 100%)",
         }}
       >
         {/* Glow effect */}
         <div
           className="absolute inset-0 blur-sm opacity-50"
           style={{
-            background: color || "linear-gradient(90deg, #1E4DB7 0%, #F59A23 100%)",
+            background: color || "linear-gradient(90deg, #0D7377 0%, #F59A23 100%)",
           }}
         />
       </motion.div>
@@ -99,7 +99,7 @@ export function ReadingProgressMinimal() {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#1E4DB7] to-[#F59A23] origin-left z-50"
+      className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#0D7377] to-[#F59A23] origin-left z-50"
       style={{ scaleX }}
     />
   );

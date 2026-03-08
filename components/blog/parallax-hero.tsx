@@ -114,7 +114,7 @@ export function ParallaxHero({ post, locale = "en" }: ParallaxHeroProps) {
                     />
                     {/* Multi-layer Gradient Overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-black/20" />
-                    <div className="absolute inset-0 bg-gradient-to-r from-[#1E4DB7]/40 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#0D7377]/40 via-transparent to-transparent" />
                     {/* Vignette Effect */}
                     <div
                         className="absolute inset-0"

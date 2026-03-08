@@ -20,12 +20,12 @@ const testimonialKeys = [
 
 // Key metrics for each testimonial (to display the bold stat)
 const testimonialMetrics: Record<string, string> = {
-    testimonial1: "40% efficiency increase",
-    testimonial2: "99.9% uptime achieved",
-    testimonial3: "3x faster decisions",
-    testimonial4: "Zero security incidents",
-    testimonial5: "95% team certified",
-    testimonial6: "100% compliance rate",
+    testimonial1: "Life-changing support",
+    testimonial2: "New skills, new income",
+    testimonial3: "Found my mentor",
+    testimonial4: "Transparent giving",
+    testimonial5: "Emotional breakthrough",
+    testimonial6: "Business launched",
 };
 
 // Star ratings for each testimonial
@@ -104,7 +104,7 @@ function AnimatedStars({
                     <Star
                         className={`w-5 h-5 ${
                             index < rating
-                                ? "fill-[#FFE63B] text-[#FFE63B]"
+                                ? "fill-[#E8A317] text-[#E8A317]"
                                 : "fill-transparent text-white/30"
                         }`}
                     />
@@ -157,7 +157,7 @@ function FloatingElements() {
             {/* Top right decorative circle */}
             <div
                 className="absolute top-20 right-[10%] w-64 h-64 rounded-full opacity-[0.03] blur-3xl"
-                style={{ background: "linear-gradient(135deg, #FFE63B 0%, #FFD700 100%)" }}
+                style={{ background: "linear-gradient(135deg, #E8A317 0%, #FFD700 100%)" }}
                 aria-hidden="true"
             />
             {/* Bottom left decorative circle */}
@@ -168,11 +168,11 @@ function FloatingElements() {
             />
             {/* Small accent dots */}
             <div
-                className="absolute top-1/4 left-[15%] w-2 h-2 rounded-full bg-[#FFE63B] opacity-20"
+                className="absolute top-1/4 left-[15%] w-2 h-2 rounded-full bg-[#E8A317] opacity-20"
                 aria-hidden="true"
             />
             <div
-                className="absolute bottom-1/3 right-[20%] w-1.5 h-1.5 rounded-full bg-[#FFE63B] opacity-15"
+                className="absolute bottom-1/3 right-[20%] w-1.5 h-1.5 rounded-full bg-[#E8A317] opacity-15"
                 aria-hidden="true"
             />
         </>
@@ -348,7 +348,7 @@ export function TestimonialsSection() {
                 >
                     <span
                         className="inline-block text-xs md:text-sm font-semibold tracking-[0.2em] uppercase mb-4"
-                        style={{ color: "#FFE63B" }}
+                        style={{ color: "#E8A317" }}
                     >
                         {t("label") || "Testimonials"}
                     </span>
@@ -418,7 +418,7 @@ export function TestimonialsSection() {
                                             className="inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold"
                                             style={{
                                                 background: "rgba(255, 230, 59, 0.15)",
-                                                color: "#FFE63B",
+                                                color: "#E8A317",
                                                 border: "1px solid rgba(255, 230, 59, 0.3)",
                                             }}
                                         >
@@ -437,7 +437,7 @@ export function TestimonialsSection() {
                                         <div
                                             className="w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center"
                                             style={{
-                                                background: "linear-gradient(135deg, #FFE63B 0%, #FFD700 100%)",
+                                                background: "linear-gradient(135deg, #E8A317 0%, #FFD700 100%)",
                                             }}
                                         >
                                             <span className="text-lg md:text-xl font-bold text-[#0F172A]">
@@ -466,7 +466,7 @@ export function TestimonialsSection() {
                             {/* Previous Button */}
                             <button
                                 onClick={goToPrevious}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFE63B] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -492,11 +492,11 @@ export function TestimonialsSection() {
                                         role="tab"
                                         aria-selected={index === currentIndex}
                                         aria-label={`Go to testimonial ${index + 1}`}
-                                        className="relative h-2 md:h-2.5 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFE63B] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                        className="relative h-2 md:h-2.5 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
                                         style={{
                                             width: index === currentIndex ? "2rem" : "0.5rem",
                                             background: index === currentIndex
-                                                ? "#FFE63B"
+                                                ? "#E8A317"
                                                 : "rgba(255, 255, 255, 0.2)",
                                         }}
                                     />
@@ -506,7 +506,7 @@ export function TestimonialsSection() {
                             {/* Next Button */}
                             <button
                                 onClick={goToNext}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#FFE63B] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -532,7 +532,7 @@ export function TestimonialsSection() {
                                 >
                                     <motion.div
                                         className="h-full"
-                                        style={{ background: "#FFE63B" }}
+                                        style={{ background: "#E8A317" }}
                                         initial={{ width: "0%" }}
                                         animate={{ width: "100%" }}
                                         transition={{

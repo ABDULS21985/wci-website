@@ -390,7 +390,7 @@ export function BlogGrid({
                             const postCount = posts.filter(
                                 (p) => p.category?.slug === category.slug
                             ).length;
-                            const categoryColor = category.color || "#1E4DB7";
+                            const categoryColor = category.color || "#0D7377";
                             const isActive = selectedCategory === category.slug;
 
                             return (

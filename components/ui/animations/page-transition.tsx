@@ -10,7 +10,7 @@ const EXIT_DURATION = 0.2; // 200ms for exit animations
 const ENTER_DURATION = 0.35; // 350ms for enter animations
 
 // Loading indicator color
-const LOADING_BAR_COLOR = "#1E4DB7";
+const LOADING_BAR_COLOR = "#0D7377";
 
 // ============================================
 // Page Transition Variants

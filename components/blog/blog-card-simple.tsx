@@ -70,7 +70,7 @@ export function BlogCardSimple({ post, variant = "default" }: BlogCardSimpleProp
                     <span className="text-xs font-semibold text-[#F59A23] uppercase tracking-wide">
                         {post.category?.name}
                     </span>
-                    <h3 className="text-sm font-bold text-neutral-900 mt-1 line-clamp-2 group-hover:text-[#1E4DB7] transition-colors">
+                    <h3 className="text-sm font-bold text-neutral-900 mt-1 line-clamp-2 group-hover:text-[#0D7377] transition-colors">
                         {post.title}
                     </h3>
                     <div className="flex items-center gap-3 mt-2 text-xs text-neutral-500">
@@ -102,10 +102,10 @@ export function BlogCardSimple({ post, variant = "default" }: BlogCardSimpleProp
 
                 {/* Content */}
                 <div className="flex-1 p-5 flex flex-col justify-center">
-                    <span className="text-xs font-semibold text-[#1E4DB7] uppercase tracking-wide">
+                    <span className="text-xs font-semibold text-[#0D7377] uppercase tracking-wide">
                         {post.category?.name}
                     </span>
-                    <h3 className="text-lg font-bold text-neutral-900 mt-2 line-clamp-2 group-hover:text-[#1E4DB7] transition-colors">
+                    <h3 className="text-lg font-bold text-neutral-900 mt-2 line-clamp-2 group-hover:text-[#0D7377] transition-colors">
                         {post.title}
                     </h3>
                     <p className="text-sm text-neutral-600 mt-2 line-clamp-2">
@@ -140,14 +140,14 @@ export function BlogCardSimple({ post, variant = "default" }: BlogCardSimpleProp
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute top-4 left-4 px-3 py-1 bg-[#1E4DB7] text-white text-xs font-semibold uppercase rounded-full">
+                <div className="absolute top-4 left-4 px-3 py-1 bg-[#0D7377] text-white text-xs font-semibold uppercase rounded-full">
                     {post.category?.name}
                 </div>
             </div>
 
             {/* Content */}
             <div className="flex flex-col flex-1 p-5">
-                <h3 className="text-lg font-bold text-neutral-900 line-clamp-2 group-hover:text-[#1E4DB7] transition-colors">
+                <h3 className="text-lg font-bold text-neutral-900 line-clamp-2 group-hover:text-[#0D7377] transition-colors">
                     {post.title}
                 </h3>
                 <p className="text-sm text-neutral-600 mt-2 line-clamp-2 flex-1">
@@ -170,7 +170,7 @@ export function BlogCardSimple({ post, variant = "default" }: BlogCardSimpleProp
                 </div>
 
                 {/* Read More */}
-                <div className="flex items-center gap-2 mt-4 text-sm font-semibold text-[#1E4DB7] group-hover:text-[#F59A23] transition-colors">
+                <div className="flex items-center gap-2 mt-4 text-sm font-semibold text-[#0D7377] group-hover:text-[#F59A23] transition-colors">
                     Read More
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>

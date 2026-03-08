@@ -1,23 +1,11 @@
 // Organization Schema
 export { OrganizationSchema } from "./organization-schema";
 
-// Product Schemas
-export {
-  ProductSchema,
-  DigiGateSchema,
-  DigiTrustSchema,
-  DigiTrackSchema,
-  TrustMeHubSchema,
-  BoaCRMSchema,
-} from "./product-schema";
-
 // FAQ Schema
 export {
   FAQSchema,
   HomeFAQSchema,
-  ProductFAQSchema,
   defaultFAQs,
-  productFAQs,
 } from "./faq-schema";
 export type { FAQItem } from "./faq-schema";
 
@@ -28,22 +16,9 @@ export {
   HomeBreadcrumb,
   AboutBreadcrumb,
   ContactBreadcrumb,
-  ProductsBreadcrumb,
-  ProductDetailBreadcrumb,
-  ServicesBreadcrumb,
-  ServiceDetailBreadcrumb,
-  TrainingBreadcrumb,
+  ProgramsBreadcrumb,
+  PlatformBreadcrumb,
+  GetInvolvedBreadcrumb,
   BlogBreadcrumb,
 } from "./breadcrumb-schema";
 export type { BreadcrumbItem } from "./breadcrumb-schema";
-
-// Service Schemas
-export {
-  ServiceSchema,
-  ServiceCategorySchema,
-  CybersecurityServiceSchema,
-  AIDataServiceSchema,
-  BlockchainServiceSchema,
-  ITGovernanceServiceSchema,
-  AllServicesSchema,
-} from "./service-schema";

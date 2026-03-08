@@ -117,7 +117,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                             id={id}
                             className="text-xl md:text-2xl font-bold text-neutral-900 mt-12 mb-4 scroll-mt-28 group"
                         >
-                            <span className="bg-gradient-to-r from-[#1E4DB7] to-[#143A8F] bg-clip-text text-transparent">
+                            <span className="bg-gradient-to-r from-[#0D7377] to-[#095456] bg-clip-text text-transparent">
                                 {text}
                             </span>
                         </h3>
@@ -160,7 +160,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                     if (match) {
                         return (
                             <li key={key} className="flex items-start gap-4 my-3 ml-1">
-                                <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#1E4DB7] to-[#F59A23] mt-2.5 flex-shrink-0" />
+                                <span className="w-2 h-2 rounded-full bg-gradient-to-r from-[#0D7377] to-[#F59A23] mt-2.5 flex-shrink-0" />
                                 <span className="text-neutral-700 leading-relaxed">
                                     <strong className="text-neutral-900 font-semibold">
                                         {match[1]}
@@ -174,7 +174,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                 if (line.startsWith("- ")) {
                     return (
                         <li key={key} className="flex items-start gap-4 my-3 ml-1">
-                            <span className="w-2 h-2 rounded-full bg-[#1E4DB7] mt-2.5 flex-shrink-0" />
+                            <span className="w-2 h-2 rounded-full bg-[#0D7377] mt-2.5 flex-shrink-0" />
                             <span className="text-neutral-700 leading-relaxed">
                                 {processInlineMarkdown(line.slice(2))}
                             </span>
@@ -187,7 +187,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                 if (numberedMatch) {
                     return (
                         <li key={key} className="flex items-start gap-4 my-4 ml-1">
-                            <span className="w-7 h-7 rounded-full bg-gradient-to-br from-[#1E4DB7] to-[#143A8F] text-white text-sm flex items-center justify-center flex-shrink-0 font-bold shadow-md">
+                            <span className="w-7 h-7 rounded-full bg-gradient-to-br from-[#0D7377] to-[#095456] text-white text-sm flex items-center justify-center flex-shrink-0 font-bold shadow-md">
                                 {numberedMatch[1]}
                             </span>
                             <span className="text-neutral-700 leading-relaxed pt-0.5">
@@ -204,7 +204,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                 if (simpleNumberedMatch) {
                     return (
                         <li key={key} className="flex items-start gap-4 my-4 ml-1">
-                            <span className="w-7 h-7 rounded-full bg-gradient-to-br from-[#1E4DB7] to-[#143A8F] text-white text-sm flex items-center justify-center flex-shrink-0 font-bold shadow-md">
+                            <span className="w-7 h-7 rounded-full bg-gradient-to-br from-[#0D7377] to-[#095456] text-white text-sm flex items-center justify-center flex-shrink-0 font-bold shadow-md">
                                 {simpleNumberedMatch[1]}
                             </span>
                             <span className="text-neutral-700 leading-relaxed pt-0.5">
@@ -238,7 +238,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
                         return (
                             <p
                                 key={key}
-                                className="text-neutral-700 leading-[1.8] my-6 text-lg first-letter:text-5xl first-letter:font-bold first-letter:text-[#1E4DB7] first-letter:float-left first-letter:mr-3 first-letter:mt-1"
+                                className="text-neutral-700 leading-[1.8] my-6 text-lg first-letter:text-5xl first-letter:font-bold first-letter:text-[#0D7377] first-letter:float-left first-letter:mr-3 first-letter:mt-1"
                             >
                                 {processInlineMarkdown(line)}
                             </p>
@@ -265,7 +265,7 @@ function EnhancedMarkdownContent({ content }: { content: string }) {
         // Handle inline code
         text = text.replace(
             /`([^`]+)`/g,
-            '<code class="bg-[#1E4DB7]/10 text-[#1E4DB7] px-2 py-0.5 rounded-md text-sm font-mono font-medium">$1</code>'
+            '<code class="bg-[#0D7377]/10 text-[#0D7377] px-2 py-0.5 rounded-md text-sm font-mono font-medium">$1</code>'
         );
         // Handle bold
         text = text.replace(
@@ -314,8 +314,8 @@ function StickyTOCSidebar({
                         className="w-full flex items-center justify-between p-5 bg-gradient-to-r from-neutral-50 to-white hover:from-neutral-100 hover:to-neutral-50 transition-colors"
                     >
                         <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-lg bg-[#1E4DB7]/10 flex items-center justify-center">
-                                <BookOpen className="h-4 w-4 text-[#1E4DB7]" />
+                            <div className="w-8 h-8 rounded-lg bg-[#0D7377]/10 flex items-center justify-center">
+                                <BookOpen className="h-4 w-4 text-[#0D7377]" />
                             </div>
                             <span className="text-sm font-bold text-neutral-800">
                                 Table of Contents
@@ -343,7 +343,7 @@ function StickyTOCSidebar({
                                     <div className="mb-4">
                                         <div className="h-1 bg-neutral-100 rounded-full overflow-hidden">
                                             <motion.div
-                                                className="h-full bg-gradient-to-r from-[#1E4DB7] to-[#F59A23]"
+                                                className="h-full bg-gradient-to-r from-[#0D7377] to-[#F59A23]"
                                                 style={{
                                                     width: `${((headings.findIndex((h) => h.id === activeId) + 1) / headings.length) * 100}%`,
                                                 }}
@@ -370,7 +370,7 @@ function StickyTOCSidebar({
                                                     className={cn(
                                                         "w-full text-left text-sm py-2 px-4 transition-all duration-200 -ml-[2px] border-l-2",
                                                         activeId === heading.id
-                                                            ? "text-[#1E4DB7] font-medium border-[#1E4DB7] bg-[#1E4DB7]/5"
+                                                            ? "text-[#0D7377] font-medium border-[#0D7377] bg-[#0D7377]/5"
                                                             : "text-neutral-600 hover:text-neutral-900 border-transparent hover:border-neutral-300"
                                                     )}
                                                     style={{
@@ -406,7 +406,7 @@ function StickyTOCSidebar({
                             (tag) => (
                                 <span
                                     key={tag}
-                                    className="px-3 py-1 bg-[#1E4DB7]/5 text-[#1E4DB7] text-xs font-medium rounded-full hover:bg-[#1E4DB7]/10 transition-colors cursor-pointer"
+                                    className="px-3 py-1 bg-[#0D7377]/5 text-[#0D7377] text-xs font-medium rounded-full hover:bg-[#0D7377]/10 transition-colors cursor-pointer"
                                 >
                                     #{tag}
                                 </span>
@@ -431,7 +431,7 @@ function AuthorBioSection({ author }: { author: BlogPostWithRelations["author"] 
             transition={{ duration: 0.6 }}
             className="mt-16 pt-12 border-t border-neutral-200"
         >
-            <div className="bg-gradient-to-br from-[#1E4DB7]/5 via-white to-[#F59A23]/5 rounded-3xl p-8 md:p-10 border border-neutral-100 shadow-lg">
+            <div className="bg-gradient-to-br from-[#0D7377]/5 via-white to-[#F59A23]/5 rounded-3xl p-8 md:p-10 border border-neutral-100 shadow-lg">
                 <div className="flex flex-col md:flex-row gap-8">
                     {/* Author Avatar */}
                     <div className="flex-shrink-0">
@@ -446,7 +446,7 @@ function AuthorBioSection({ author }: { author: BlogPostWithRelations["author"] 
                         <h3 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-1">
                             {author.name}
                         </h3>
-                        <p className="text-[#1E4DB7] font-semibold mb-4">{author.role}</p>
+                        <p className="text-[#0D7377] font-semibold mb-4">{author.role}</p>
                         {author.bio && (
                             <p className="text-neutral-600 leading-relaxed mb-6">
                                 {author.bio}
@@ -486,7 +486,7 @@ function AuthorBioSection({ author }: { author: BlogPostWithRelations["author"] 
 
                             <Link
                                 href={`/blogs?author=${author.slug}`}
-                                className="ml-auto inline-flex items-center gap-2 px-5 py-2.5 bg-[#1E4DB7] hover:bg-[#143A8F] text-white font-semibold rounded-xl transition-all duration-300 group"
+                                className="ml-auto inline-flex items-center gap-2 px-5 py-2.5 bg-[#0D7377] hover:bg-[#095456] text-white font-semibold rounded-xl transition-all duration-300 group"
                             >
                                 More by {author.name.split(" ")[0]}
                                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -516,11 +516,11 @@ function RelatedArticlesSection({
                     viewport={{ once: true }}
                     className="flex items-center justify-center gap-3 mb-4"
                 >
-                    <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-[#1E4DB7]" />
+                    <div className="w-12 h-0.5 bg-gradient-to-r from-transparent to-[#0D7377]" />
                     <span className="text-sm font-bold tracking-wider text-neutral-500 uppercase">
                         Continue Reading
                     </span>
-                    <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-[#1E4DB7]" />
+                    <div className="w-12 h-0.5 bg-gradient-to-l from-transparent to-[#0D7377]" />
                 </motion.div>
                 <motion.h2
                     initial={{ opacity: 0, y: 20 }}
@@ -530,7 +530,7 @@ function RelatedArticlesSection({
                     className="text-3xl md:text-4xl font-bold text-neutral-900"
                 >
                     Related{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E4DB7] to-[#F59A23]">
+                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D7377] to-[#F59A23]">
                         Articles
                     </span>
                 </motion.h2>
@@ -563,7 +563,7 @@ function RelatedArticlesSection({
                                         className="px-3 py-1 text-white text-xs font-semibold uppercase rounded-full"
                                         style={{
                                             backgroundColor:
-                                                post.category?.accentColor || "#1E4DB7",
+                                                post.category?.accentColor || "#0D7377",
                                         }}
                                     >
                                         {post.category?.name}
@@ -573,7 +573,7 @@ function RelatedArticlesSection({
 
                             {/* Content */}
                             <div className="p-6">
-                                <h3 className="text-lg font-bold text-neutral-900 line-clamp-2 group-hover:text-[#1E4DB7] transition-colors mb-3">
+                                <h3 className="text-lg font-bold text-neutral-900 line-clamp-2 group-hover:text-[#0D7377] transition-colors mb-3">
                                     {post.title}
                                 </h3>
                                 <p className="text-neutral-600 text-sm line-clamp-2 mb-4">
@@ -583,7 +583,7 @@ function RelatedArticlesSection({
                                     <span className="text-xs text-neutral-500">
                                         {post.readingTime} min read
                                     </span>
-                                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#1E4DB7] group-hover:text-[#F59A23] transition-colors">
+                                    <span className="inline-flex items-center gap-1 text-sm font-semibold text-[#0D7377] group-hover:text-[#F59A23] transition-colors">
                                         Read More
                                         <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                                     </span>
@@ -591,7 +591,7 @@ function RelatedArticlesSection({
                             </div>
 
                             {/* Hover accent line */}
-                            <div className="h-1 bg-gradient-to-r from-[#1E4DB7] to-[#F59A23] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                            <div className="h-1 bg-gradient-to-r from-[#0D7377] to-[#F59A23] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                         </Link>
                     </motion.article>
                 ))}
@@ -715,7 +715,7 @@ export function BlogArticleClient({
                                 {post.tags.map((tag) => (
                                     <span
                                         key={tag.id}
-                                        className="px-4 py-1.5 bg-[#1E4DB7]/10 text-[#1E4DB7] text-sm font-medium rounded-full hover:bg-[#1E4DB7]/20 transition-colors cursor-pointer"
+                                        className="px-4 py-1.5 bg-[#0D7377]/10 text-[#0D7377] text-sm font-medium rounded-full hover:bg-[#0D7377]/20 transition-colors cursor-pointer"
                                     >
                                         #{tag.name}
                                     </span>

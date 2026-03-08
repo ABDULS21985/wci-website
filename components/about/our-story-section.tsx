@@ -69,7 +69,7 @@ export function OurStorySection() {
 
             {/* Dot pattern */}
             <div className="absolute inset-0 opacity-[0.03]" style={{
-                backgroundImage: `radial-gradient(circle, #1E4DB7 1px, transparent 1px)`,
+                backgroundImage: `radial-gradient(circle, #0D7377 1px, transparent 1px)`,
                 backgroundSize: "24px 24px",
             }} />
 
@@ -170,7 +170,7 @@ export function OurStorySection() {
                                 <div className="absolute inset-0 bg-gradient-to-br from-accent-orange/20 via-transparent to-primary/20 z-10 mix-blend-overlay" />
                                 <Image
                                     src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2670&auto=format&fit=crop"
-                                    alt="Global Digitalbit team at work"
+                                    alt="Women Connect International team at work"
                                     fill
                                     className="object-cover scale-110"
                                 />

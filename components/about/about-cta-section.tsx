@@ -70,7 +70,7 @@ export function AboutCtaSection() {
                             <div
                                 className="absolute inset-0 opacity-[0.02] pointer-events-none"
                                 style={{
-                                    backgroundImage: `radial-gradient(circle, #1E4DB7 1px, transparent 1px)`,
+                                    backgroundImage: `radial-gradient(circle, #0D7377 1px, transparent 1px)`,
                                     backgroundSize: "24px 24px",
                                 }}
                             />
@@ -108,7 +108,7 @@ export function AboutCtaSection() {
 
                                     {/* Secondary CTA */}
                                     <Link
-                                        href="/services"
+                                        href="/programs"
                                         className="inline-flex items-center gap-3 px-8 md:px-12 py-4 md:py-5 border-2 border-primary/20 hover:border-primary hover:bg-primary hover:text-white rounded-full text-primary font-bold text-lg transition-all duration-300 hover:scale-105"
                                     >
                                         <Phone className="w-5 h-5" />

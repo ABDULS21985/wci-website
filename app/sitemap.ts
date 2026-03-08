@@ -1,8 +1,6 @@
 import { MetadataRoute } from "next";
-import { products } from "@/data/products";
-import { serviceCategories } from "@/data/services";
 
-const BASE_URL = "https://globaldigibit.com";
+const BASE_URL = "https://womenconnectintl.org";
 
 // Supported locales for internationalization
 const locales = ["en", "ar"] as const;
@@ -44,33 +42,19 @@ const staticPages: Array<{
 }> = [
   { path: "", changeFrequency: "daily", priority: 1.0 },
   { path: "/about", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/contact", changeFrequency: "monthly", priority: 0.8 },
-  { path: "/products", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/services", changeFrequency: "weekly", priority: 0.9 },
-  { path: "/training", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/programs", changeFrequency: "weekly", priority: 0.9 },
+  { path: "/platform", changeFrequency: "monthly", priority: 0.8 },
+  { path: "/get-involved", changeFrequency: "monthly", priority: 0.8 },
   { path: "/blogs", changeFrequency: "daily", priority: 0.7 },
-  { path: "/products-services", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.7 },
 ];
 
-// TrustMeHub specific pages
-const trustMeHubPages: Array<{
-  path: string;
-  changeFrequency: ChangeFrequency;
-  priority: number;
-}> = [
-  { path: "/products/trustmehub", changeFrequency: "weekly", priority: 0.85 },
-  { path: "/products/trustmehub/pricing", changeFrequency: "monthly", priority: 0.7 },
-  { path: "/products/trustmehub/docs", changeFrequency: "weekly", priority: 0.6 },
-  { path: "/products/trustmehub/use-cases", changeFrequency: "monthly", priority: 0.7 },
-];
-
-// BoaCRM specific pages
-const boaCRMPages: Array<{
-  path: string;
-  changeFrequency: ChangeFrequency;
-  priority: number;
-}> = [
-  { path: "/products/boacrm", changeFrequency: "weekly", priority: 0.85 },
+// Program detail pages
+const programPages = [
+  "psychosocial-resilience",
+  "economic-empowerment",
+  "leadership-mentoring",
+  "humanitarian-impact",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -88,66 +72,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
-  // Add product pages dynamically
-  products.forEach((product) => {
-    // Skip trustmehub and boacrm as they have dedicated pages already
-    if (product.id === "trustmehub" || product.id === "boacrm") {
-      return;
-    }
-
-    const path = `/products/${product.id}`;
-    sitemapEntries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: currentDate,
-      changeFrequency: "weekly",
-      priority: 0.85,
-      alternates: generateAlternates(path),
-    });
-  });
-
-  // Add TrustMeHub pages
-  trustMeHubPages.forEach(({ path, changeFrequency, priority }) => {
-    sitemapEntries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: currentDate,
-      changeFrequency,
-      priority,
-      alternates: generateAlternates(path),
-    });
-  });
-
-  // Add BoaCRM pages
-  boaCRMPages.forEach(({ path, changeFrequency, priority }) => {
-    sitemapEntries.push({
-      url: `${BASE_URL}${path}`,
-      lastModified: currentDate,
-      changeFrequency,
-      priority,
-      alternates: generateAlternates(path),
-    });
-  });
-
-  // Add service category pages dynamically
-  serviceCategories.forEach((category) => {
-    const path = `/services/${category.id}`;
+  // Add program detail pages
+  programPages.forEach((slug) => {
+    const path = `/programs/${slug}`;
     sitemapEntries.push({
       url: `${BASE_URL}${path}`,
       lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
       alternates: generateAlternates(path),
-    });
-
-    // Add individual service pages if they exist
-    category.services.forEach((service) => {
-      const servicePath = `/services/${category.id}/${service.id}`;
-      sitemapEntries.push({
-        url: `${BASE_URL}${servicePath}`,
-        lastModified: currentDate,
-        changeFrequency: "monthly",
-        priority: 0.7,
-        alternates: generateAlternates(servicePath),
-      });
     });
   });
 

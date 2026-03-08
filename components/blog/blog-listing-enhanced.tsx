@@ -36,13 +36,13 @@ interface BlogListingEnhancedProps {
 const POSTS_PER_PAGE = 9;
 
 const CATEGORY_COLORS: Record<string, string> = {
-    all: "#1E4DB7",
-    technology: "#1E4DB7",
+    all: "#0D7377",
+    technology: "#0D7377",
     "ai-data": "#7C3AED",
     cybersecurity: "#DC2626",
     "digital-transformation": "#F59A23",
     "industry-insights": "#059669",
-    "case-studies": "#E86A1D",
+    "case-studies": "#C2185B",
 };
 
 // =============================================================================
@@ -116,7 +116,7 @@ function formatViews(views: number): string {
 }
 
 function getCategoryColor(slug: string): string {
-    return CATEGORY_COLORS[slug] || "#1E4DB7";
+    return CATEGORY_COLORS[slug] || "#0D7377";
 }
 
 // Get initials from name
@@ -191,7 +191,7 @@ function FeaturedHeroCard({ post }: { post: BlogPost }) {
                                 initial={{ opacity: 0, x: -20 }}
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ delay: 0.3 }}
-                                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F59A23] to-[#E86A1D] text-white text-sm font-bold uppercase tracking-wider rounded-full shadow-lg"
+                                className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-[#F59A23] to-[#C2185B] text-white text-sm font-bold uppercase tracking-wider rounded-full shadow-lg"
                             >
                                 <TrendingUp className="h-4 w-4" />
                                 Featured
@@ -282,7 +282,7 @@ function FeaturedHeroCard({ post }: { post: BlogPost }) {
                     </div>
 
                     {/* Bottom Accent Line */}
-                    <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#1E4DB7] via-[#F59A23] to-[#E86A1D] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
+                    <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#0D7377] via-[#F59A23] to-[#C2185B] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </div>
             </Link>
         </motion.div>
@@ -350,7 +350,7 @@ function ArticleCard({ post, index }: { post: BlogPost; index: number }) {
                     {/* Content Section */}
                     <div className="relative p-5 md:p-6">
                         {/* Title */}
-                        <h3 className="text-lg font-bold text-neutral-900 mb-3 line-clamp-2 group-hover:text-[#1E4DB7] transition-colors duration-300 leading-tight">
+                        <h3 className="text-lg font-bold text-neutral-900 mb-3 line-clamp-2 group-hover:text-[#0D7377] transition-colors duration-300 leading-tight">
                             {post.title}
                         </h3>
 
@@ -374,7 +374,7 @@ function ArticleCard({ post, index }: { post: BlogPost; index: number }) {
                             ) : (
                                 <div className="flex items-center gap-1.5 text-xs text-neutral-500">
                                     <User className="h-3.5 w-3.5" />
-                                    <span>Global Digibit</span>
+                                    <span>Global WCI</span>
                                 </div>
                             )}
 
@@ -526,7 +526,7 @@ function SearchBar({
         >
             <div
                 className={`absolute left-4 top-1/2 -translate-y-1/2 transition-colors duration-200 ${
-                    isFocused ? "text-[#1E4DB7]" : "text-neutral-400"
+                    isFocused ? "text-[#0D7377]" : "text-neutral-400"
                 }`}
             >
                 <Search className="h-5 w-5" />
@@ -538,9 +538,9 @@ function SearchBar({
                 onChange={(e) => onSearchChange(e.target.value)}
                 onFocus={() => setIsFocused(true)}
                 onBlur={() => setIsFocused(false)}
-                className={`w-full pl-12 pr-10 py-3.5 bg-white rounded-xl border text-sm placeholder:text-neutral-400 text-neutral-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#1E4DB7]/20 focus:border-[#1E4DB7] ${
+                className={`w-full pl-12 pr-10 py-3.5 bg-white rounded-xl border text-sm placeholder:text-neutral-400 text-neutral-900 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#0D7377]/20 focus:border-[#0D7377] ${
                     isFocused
-                        ? "border-[#1E4DB7] shadow-lg shadow-[#1E4DB7]/5"
+                        ? "border-[#0D7377] shadow-lg shadow-[#0D7377]/5"
                         : "border-neutral-200 hover:border-neutral-300"
                 }`}
             />
@@ -583,7 +583,7 @@ function LoadMoreButton({
             <motion.button
                 onClick={onClick}
                 disabled={isLoading}
-                className="group flex items-center gap-3 px-8 py-4 bg-white rounded-xl border border-neutral-200 text-neutral-700 font-semibold text-sm hover:border-[#1E4DB7] hover:text-[#1E4DB7] hover:shadow-lg hover:shadow-[#1E4DB7]/10 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                className="group flex items-center gap-3 px-8 py-4 bg-white rounded-xl border border-neutral-200 text-neutral-700 font-semibold text-sm hover:border-[#0D7377] hover:text-[#0D7377] hover:shadow-lg hover:shadow-[#0D7377]/10 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
             >
@@ -595,7 +595,7 @@ function LoadMoreButton({
                 ) : (
                     <>
                         <span>Load More Articles</span>
-                        <span className="px-2 py-1 bg-neutral-100 group-hover:bg-[#1E4DB7]/10 rounded-lg text-xs font-semibold transition-colors">
+                        <span className="px-2 py-1 bg-neutral-100 group-hover:bg-[#0D7377]/10 rounded-lg text-xs font-semibold transition-colors">
                             {remaining} remaining
                         </span>
                     </>
@@ -632,7 +632,7 @@ function ScrollToTopButton() {
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.8, y: 20 }}
                     onClick={scrollToTop}
-                    className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-[#1E4DB7] text-white rounded-full shadow-lg shadow-[#1E4DB7]/30 flex items-center justify-center hover:bg-[#143A8F] transition-colors"
+                    className="fixed bottom-8 right-8 z-50 w-12 h-12 bg-[#0D7377] text-white rounded-full shadow-lg shadow-[#0D7377]/30 flex items-center justify-center hover:bg-[#095456] transition-colors"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
                 >
@@ -778,7 +778,7 @@ export function BlogListingEnhanced({
                         </span>
                         <button
                             onClick={handleClearFilters}
-                            className="flex items-center gap-1.5 text-sm text-[#1E4DB7] hover:text-[#143A8F] font-medium transition-colors"
+                            className="flex items-center gap-1.5 text-sm text-[#0D7377] hover:text-[#095456] font-medium transition-colors"
                         >
                             <X className="h-4 w-4" />
                             Clear filters
@@ -840,7 +840,7 @@ export function BlogListingEnhanced({
                     {isFiltered && (
                         <motion.button
                             onClick={handleClearFilters}
-                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#1E4DB7] text-white rounded-xl font-medium hover:bg-[#143A8F] transition-colors shadow-md shadow-[#1E4DB7]/20"
+                            className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D7377] text-white rounded-xl font-medium hover:bg-[#095456] transition-colors shadow-md shadow-[#0D7377]/20"
                             whileHover={{ scale: 1.02 }}
                             whileTap={{ scale: 0.98 }}
                         >

@@ -121,9 +121,9 @@ function InputWrapper({
 const subjectOptions = [
     { value: "", label: "Select a topic..." },
     { value: "partnership", label: "Partnership Inquiry" },
-    { value: "demo", label: "Product Demo Request" },
-    { value: "support", label: "Technical Support" },
-    { value: "consulting", label: "Consulting Services" },
+    { value: "programs", label: "Program Information" },
+    { value: "volunteering", label: "Volunteering / Mentoring" },
+    { value: "donation", label: "Donation / Sponsorship" },
     { value: "careers", label: "Career Opportunities" },
     { value: "other", label: "Other" },
 ];
@@ -267,7 +267,7 @@ export function ContactForm() {
 
         try {
             const apiUrl =
-                process.env.NEXT_PUBLIC_API_URL || "https://api.globaldigibit.com/api/v1";
+                process.env.NEXT_PUBLIC_API_URL || "https://api.womenconnectintl.org/api/v1";
             const response = await fetch(`${apiUrl}/contact`, {
                 method: "POST",
                 headers: {

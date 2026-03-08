@@ -23,41 +23,39 @@ export function generateStaticParams() {
 // =============================================================================
 
 export const metadata: Metadata = {
-    title: "Blog & Insights | Global Digibit Limited",
+    title: "Stories & Insights | Women Connect International",
     description:
-        "Explore thought leadership, industry insights, and expert analysis on digital transformation, cybersecurity, AI, blockchain, and enterprise technology from Global Digibit Limited.",
+        "Stories of resilience, empowerment, and impact from Women Connect International. Read about diaspora women's journeys, program updates, and community transformation.",
     keywords: [
-        "technology blog",
-        "digital transformation insights",
-        "cybersecurity articles",
-        "AI thought leadership",
-        "blockchain analysis",
-        "enterprise technology",
-        "IT consulting insights",
-        "CBDC",
-        "data analytics",
+        "diaspora women stories",
+        "empowerment blog",
+        "resilience articles",
+        "women leadership",
+        "humanitarian impact",
+        "community stories",
+        "mentoring insights",
     ],
     openGraph: {
-        title: "Blog & Insights | Global Digibit Limited",
+        title: "Stories & Insights | Women Connect International",
         description:
-            "Explore thought leadership, industry insights, and expert analysis on digital transformation, cybersecurity, AI, blockchain, and enterprise technology.",
-        url: "https://globaldigibit.com/blogs",
-        siteName: "Global Digibit Limited",
+            "Stories of resilience, empowerment, and impact from Women Connect International. Voices of diaspora women transforming communities.",
+        url: "https://womenconnectintl.org/blogs",
+        siteName: "Women Connect International",
         type: "website",
         images: [
             {
-                url: "https://globaldigibit.com/og-blog.jpg",
+                url: "https://womenconnectintl.org/og-blog.jpg",
                 width: 1200,
                 height: 630,
-                alt: "Global Digibit Blog & Insights",
+                alt: "Women Connect International Stories & Insights",
             },
         ],
     },
     twitter: {
         card: "summary_large_image",
-        title: "Blog & Insights | Global Digibit Limited",
+        title: "Stories & Insights | Women Connect International",
         description:
-            "Explore thought leadership and expert analysis on digital transformation, cybersecurity, AI, and blockchain.",
+            "Stories of resilience, empowerment, and impact from Women Connect International.",
     },
 };
 
@@ -75,16 +73,16 @@ type Props = {
 
 function getCategoryColor(slug: string): string {
     const colors: Record<string, string> = {
-        technology: "#1E4DB7",
-        "ai-data": "#7C3AED",
-        cybersecurity: "#DC2626",
-        blockchain: "#059669",
-        "digital-transformation": "#F59A23",
-        governance: "#0891B2",
-        "industry-insights": "#9333EA",
-        "case-studies": "#E86A1D",
+        resilience: "#C2185B",
+        empowerment: "#0D7377",
+        leadership: "#E8A317",
+        impact: "#095456",
+        stories: "#7C3AED",
+        news: "#F59A23",
+        programs: "#059669",
+        community: "#0891B2",
     };
-    return colors[slug] || "#1E4DB7";
+    return colors[slug] || "#0D7377";
 }
 
 // Transform data format to match component types
@@ -185,24 +183,24 @@ export default async function BlogsPage({ params }: Props) {
                         {/* Section Header */}
                         <div className="max-w-4xl mx-auto text-center mb-12">
                             <div className="flex items-center justify-center gap-3 mb-6">
-                                <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#1E4DB7] to-transparent"></div>
-                                <div className="flex items-center gap-2 px-4 py-2 bg-[#1E4DB7]/5 rounded-full">
-                                    <Newspaper className="h-4 w-4 text-[#1E4DB7]" />
-                                    <span className="text-xs font-bold tracking-wider text-[#1E4DB7] uppercase">
+                                <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#0D7377] to-transparent"></div>
+                                <div className="flex items-center gap-2 px-4 py-2 bg-[#0D7377]/5 rounded-full">
+                                    <Newspaper className="h-4 w-4 text-[#0D7377]" />
+                                    <span className="text-xs font-bold tracking-wider text-[#0D7377] uppercase">
                                         Expert Insights
                                     </span>
                                 </div>
-                                <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#1E4DB7] to-transparent"></div>
+                                <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#0D7377] to-transparent"></div>
                             </div>
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral-900 mb-4">
                                 Explore Our{" "}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1E4DB7] to-[#143A8F]">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0D7377] to-[#095456]">
                                     Latest Articles
                                 </span>
                             </h2>
                             <p className="text-lg text-neutral-600 leading-relaxed max-w-2xl mx-auto">
-                                Discover cutting-edge perspectives on technology trends, industry insights,
-                                and digital transformation strategies from our team of experts.
+                                Discover inspiring stories, practical insights, and resources
+                                on resilience, empowerment, and community impact for diaspora women.
                             </p>
                         </div>
 
@@ -218,7 +216,7 @@ export default async function BlogsPage({ params }: Props) {
                 </section>
 
                 {/* Newsletter Section */}
-                <section className="py-20 md:py-28 bg-gradient-to-br from-[#1E4DB7] via-[#143A8F] to-[#1E4DB7] relative overflow-hidden">
+                <section className="py-20 md:py-28 bg-gradient-to-br from-[#0D7377] via-[#095456] to-[#0D7377] relative overflow-hidden">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 overflow-hidden">
                         <div
@@ -244,7 +242,7 @@ export default async function BlogsPage({ params }: Props) {
                             {/* Title */}
                             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 animate-fade-in-up" style={{ animationDelay: "100ms" }}>
                                 Stay Ahead with{" "}
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#E86A1D]">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#C2185B]">
                                     Expert Insights
                                 </span>
                             </h2>
@@ -258,7 +256,7 @@ export default async function BlogsPage({ params }: Props) {
                             {/* Newsletter Form */}
                             <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto animate-fade-in-up" style={{ animationDelay: "300ms" }}>
                                 <div className="flex-1 relative group">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#E86A1D]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                    <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#C2185B]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                     <input
                                         type="email"
                                         placeholder="Enter your email address"
@@ -268,7 +266,7 @@ export default async function BlogsPage({ params }: Props) {
                                 </div>
                                 <button
                                     type="submit"
-                                    className="px-8 py-4 bg-gradient-to-r from-[#F59A23] to-[#E86A1D] hover:from-[#E86A1D] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25 flex items-center justify-center gap-2"
+                                    className="px-8 py-4 bg-gradient-to-r from-[#F59A23] to-[#C2185B] hover:from-[#C2185B] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25 flex items-center justify-center gap-2"
                                 >
                                     Subscribe
                                     <Send className="h-5 w-5" />
@@ -288,16 +286,16 @@ export default async function BlogsPage({ params }: Props) {
 
                 {/* CTA Section */}
                 <CTASection
-                    title="Ready to Transform"
-                    accentTitle="Your Business?"
-                    description="Schedule a consultation with our experts to discuss how our products and services can accelerate your digital transformation journey."
+                    title="Ready to Make"
+                    accentTitle="An Impact?"
+                    description="Join our community of diaspora women building resilience, gaining skills, and creating positive change. Get involved with WCI today."
                     primaryCTA={{
-                        label: "Schedule Consultation",
-                        href: "/contact",
+                        label: "Get Involved",
+                        href: "/get-involved",
                     }}
                     secondaryCTA={{
-                        label: "View Our Services",
-                        href: "/services",
+                        label: "Explore Programs",
+                        href: "/programs",
                     }}
                 />
             </div>

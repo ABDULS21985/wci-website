@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
 
   return {
     rules: [

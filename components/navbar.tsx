@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import { Menu, X, Search, ChevronRight } from "lucide-react";
-import { useState, useEffect, useCallback, useRef } from "react";
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/shared/components";
 import { cn } from "@/components/ui/shared/components";
 import { Link, usePathname } from "@/i18n/routing";
 import { LanguageSwitcher } from "./language-switcher";
-import { MegaMenu, MegaMenuTrigger } from "./navigation/mega-menu";
 import { SearchOverlay, useSearchShortcut } from "./navigation/search-overlay";
 import { useScrollDirection } from "@/hooks/use-scroll-direction";
 
@@ -17,35 +16,31 @@ import { useScrollDirection } from "@/hooks/use-scroll-direction";
 // TYPES
 // ============================================
 
-type MegaMenuType = "services" | "products" | null;
-
 interface NavItem {
     name: string;
     href: string;
-    hasMegaMenu?: boolean;
-    megaMenuType?: "services" | "products";
 }
 
 // ============================================
-// DATA - 6 top-level items
+// DATA - WCI Navigation Items
 // ============================================
 
 const navItems: NavItem[] = [
-    { name: "services", href: "/services", hasMegaMenu: true, megaMenuType: "services" },
-    { name: "products", href: "/products", hasMegaMenu: true, megaMenuType: "products" },
-    { name: "insights", href: "/blogs" },
     { name: "about", href: "/about" },
-    { name: "careers", href: "/careers" },
+    { name: "programs", href: "/programs" },
+    { name: "platform", href: "/platform" },
+    { name: "getInvolved", href: "/get-involved" },
+    { name: "insights", href: "/blogs" },
     { name: "contact", href: "/contact" },
 ] as const;
 
-// Mobile menu items with additional links
+// Mobile menu items
 const mobileNavItems: NavItem[] = [
-    { name: "services", href: "/services" },
-    { name: "products", href: "/products" },
-    { name: "insights", href: "/blogs" },
     { name: "about", href: "/about" },
-    { name: "careers", href: "/careers" },
+    { name: "programs", href: "/programs" },
+    { name: "platform", href: "/platform" },
+    { name: "getInvolved", href: "/get-involved" },
+    { name: "insights", href: "/blogs" },
     { name: "contact", href: "/contact" },
 ];
 
@@ -128,9 +123,7 @@ function NavLink({
 export function Navbar() {
     const pathname = usePathname();
     const [isMobileOpen, setIsMobileOpen] = useState(false);
-    const [activeMegaMenu, setActiveMegaMenu] = useState<MegaMenuType>(null);
     const [isSearchOpen, setIsSearchOpen] = useState(false);
-    const megaMenuTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const t = useTranslations("navigation");
     const tCommon = useTranslations("common");
     const tLanguage = useTranslations();
@@ -148,16 +141,11 @@ export function Navbar() {
     // Search shortcut (Cmd+K / Ctrl+K)
     useSearchShortcut(() => setIsSearchOpen(true));
 
-    // Pages with light/white hero backgrounds that need dark navbar text
-    const lightHeroPages = ["/websummit-qatar-2026"];
-    const hasLightHero = lightHeroPages.some(page => pathname.startsWith(page));
+    // Determine if header should be transparent (at top, not scrolled)
+    const isTransparent = !isScrolled;
 
-    // Determine if header should be transparent (at top, not scrolled, no mega menu)
-    // For pages with light hero backgrounds, we never use transparent mode
-    const isTransparent = !isScrolled && !activeMegaMenu && !hasLightHero;
-
-    // Determine if header should be hidden (scrolling down past threshold, no mega menu open)
-    const shouldHide = isHidden && !activeMegaMenu && !isMobileOpen;
+    // Determine if header should be hidden (scrolling down past threshold)
+    const shouldHide = isHidden && !isMobileOpen;
 
     // Lock body scroll when mobile menu is open
     useEffect(() => {
@@ -170,46 +158,6 @@ export function Navbar() {
             document.body.style.overflow = "";
         };
     }, [isMobileOpen]);
-
-    // Close mega menu when clicking outside
-    useEffect(() => {
-        const handleClickOutside = (e: MouseEvent) => {
-            const target = e.target as Element;
-            if (!target.closest('[data-mega-menu]') && !target.closest('[data-mega-trigger]')) {
-                setActiveMegaMenu(null);
-            }
-        };
-        document.addEventListener("click", handleClickOutside);
-        return () => document.removeEventListener("click", handleClickOutside);
-    }, []);
-
-    // Mega menu handlers with delay
-    const handleMegaMenuEnter = useCallback((type: MegaMenuType) => {
-        if (megaMenuTimeoutRef.current) {
-            clearTimeout(megaMenuTimeoutRef.current);
-            megaMenuTimeoutRef.current = null;
-        }
-        setActiveMegaMenu(type);
-    }, []);
-
-    const handleMegaMenuLeave = useCallback(() => {
-        megaMenuTimeoutRef.current = setTimeout(() => {
-            setActiveMegaMenu(null);
-        }, 400);
-    }, []);
-
-    const closeMegaMenu = useCallback(() => {
-        setActiveMegaMenu(null);
-    }, []);
-
-    // Cleanup timeout on unmount
-    useEffect(() => {
-        return () => {
-            if (megaMenuTimeoutRef.current) {
-                clearTimeout(megaMenuTimeoutRef.current);
-            }
-        };
-    }, []);
 
     const isPathActive = (href: string) => {
         if (href === "/") return pathname === "/";
@@ -224,14 +172,12 @@ export function Navbar() {
                     // State 1: Transparent (at top, no scroll)
                     isTransparent && "bg-transparent border-b border-transparent",
                     // State 2: Scrolled - frosted glass effect
-                    isScrolled && !activeMegaMenu && "bg-white/80 backdrop-blur-xl saturate-150 shadow-sm border-b border-neutral-200/50",
-                    // State 3: Mega menu open - solid background
-                    activeMegaMenu && "bg-white border-b border-neutral-200/50"
+                    isScrolled && "bg-white/80 backdrop-blur-xl saturate-150 shadow-sm border-b border-neutral-200/50"
                 )}
                 initial={false}
                 animate={{
                     y: shouldHide ? "-100%" : "0%",
-                    borderColor: isScrolled || activeMegaMenu ? "rgba(229, 229, 229, 0.5)" : "transparent",
+                    borderColor: isScrolled ? "rgba(229, 229, 229, 0.5)" : "transparent",
                 }}
                 transition={{
                     y: { duration: 0.3, ease: [0.22, 1, 0.36, 1] },
@@ -256,8 +202,8 @@ export function Navbar() {
                                 className="motion-reduce:transform-none"
                             >
                                 <Image
-                                    src="/logo/digibit.png"
-                                    alt="Global Digitalbit"
+                                    src="/logo/wci-logo.jpeg"
+                                    alt="Women Connect International"
                                     width={120}
                                     height={40}
                                     className={cn(
@@ -272,39 +218,16 @@ export function Navbar() {
                         {/* Desktop Navigation */}
                         <div className="hidden lg:flex flex-1 justify-center">
                             <nav className="flex items-center gap-8" role="navigation" aria-label="Main navigation">
-                                {navItems.map((item) => {
-                                    if (item.hasMegaMenu && item.megaMenuType) {
-                                        return (
-                                            <div
-                                                key={item.href}
-                                                data-mega-trigger
-                                                className="relative pb-4 -mb-4"
-                                                onMouseEnter={() => handleMegaMenuEnter(item.megaMenuType!)}
-                                                onMouseLeave={handleMegaMenuLeave}
-                                            >
-                                                <MegaMenuTrigger
-                                                    label={t(item.name)}
-                                                    isActive={isPathActive(item.href)}
-                                                    isOpen={activeMegaMenu === item.megaMenuType}
-                                                    isTransparent={isTransparent}
-                                                    onClick={() => setActiveMegaMenu(
-                                                        activeMegaMenu === item.megaMenuType ? null : item.megaMenuType!
-                                                    )}
-                                                />
-                                            </div>
-                                        );
-                                    }
-                                    return (
-                                        <NavLink
-                                            key={item.href}
-                                            href={item.href}
-                                            isActive={isPathActive(item.href)}
-                                            isTransparent={isTransparent}
-                                        >
-                                            {t(item.name)}
-                                        </NavLink>
-                                    );
-                                })}
+                                {navItems.map((item) => (
+                                    <NavLink
+                                        key={item.href}
+                                        href={item.href}
+                                        isActive={isPathActive(item.href)}
+                                        isTransparent={isTransparent}
+                                    >
+                                        {t(item.name)}
+                                    </NavLink>
+                                ))}
                             </nav>
                         </div>
 
@@ -380,28 +303,6 @@ export function Navbar() {
                     </motion.div>
                 </div>
 
-                {/* Mega Menus */}
-                <div
-                    data-mega-menu
-                    onMouseEnter={() => {
-                        if (megaMenuTimeoutRef.current) {
-                            clearTimeout(megaMenuTimeoutRef.current);
-                            megaMenuTimeoutRef.current = null;
-                        }
-                    }}
-                    onMouseLeave={handleMegaMenuLeave}
-                >
-                    <MegaMenu
-                        isOpen={activeMegaMenu === "services"}
-                        onClose={closeMegaMenu}
-                        menuType="services"
-                    />
-                    <MegaMenu
-                        isOpen={activeMegaMenu === "products"}
-                        onClose={closeMegaMenu}
-                        menuType="products"
-                    />
-                </div>
             </motion.header>
 
             {/* Full-Screen Mobile Menu */}
@@ -431,8 +332,8 @@ export function Navbar() {
                                     className="min-h-[44px] flex items-center"
                                 >
                                     <Image
-                                        src="/logo/digibit.png"
-                                        alt="Global Digitalbit"
+                                        src="/logo/wci-logo.jpeg"
+                                        alt="Women Connect International"
                                         width={120}
                                         height={40}
                                         className="h-8 w-auto object-contain"

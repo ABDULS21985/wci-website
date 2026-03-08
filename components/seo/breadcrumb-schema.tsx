@@ -10,7 +10,7 @@ interface BreadcrumbSchemaProps {
 }
 
 export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
 
   const breadcrumbData = {
     "@context": "https://schema.org",
@@ -36,7 +36,7 @@ export function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
 
 // Helper function to generate breadcrumb items
 export function generateBreadcrumbs(path: string): BreadcrumbItem[] {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
   const segments = path.split("/").filter(Boolean);
   const breadcrumbs: BreadcrumbItem[] = [
     { name: "Home", url: baseUrl },
@@ -61,24 +61,15 @@ function formatBreadcrumbName(segment: string): string {
   const nameMap: Record<string, string> = {
     about: "About Us",
     contact: "Contact",
-    products: "Products",
-    services: "Services",
-    training: "Training",
+    programs: "Programs",
+    platform: "Platform",
+    "get-involved": "Get Involved",
     blogs: "Blog",
     blog: "Blog",
-    digigate: "DigiGate",
-    digitrust: "DigiTrust",
-    digitrack: "DigiTrack",
-    trustmehub: "TrustMeHub",
-    boacrm: "BoaCRM",
-    cybersecurity: "Cybersecurity",
-    "ai-data": "AI & Data",
-    blockchain: "Blockchain",
-    "it-governance": "IT Governance",
-    "products-services": "Products & Services",
-    pricing: "Pricing",
-    docs: "Documentation",
-    "use-cases": "Use Cases",
+    "psychosocial-resilience": "Psychosocial Resilience",
+    "economic-empowerment": "Economic Empowerment",
+    "leadership-mentoring": "Leadership & Mentoring",
+    "humanitarian-impact": "Humanitarian Impact",
   };
 
   return (
@@ -94,7 +85,7 @@ function formatBreadcrumbName(segment: string): string {
 export function HomeBreadcrumb() {
   return (
     <BreadcrumbSchema
-      items={[{ name: "Home", url: "https://globaldigibit.com" }]}
+      items={[{ name: "Home", url: "https://womenconnectintl.org" }]}
     />
   );
 }
@@ -103,8 +94,8 @@ export function AboutBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "About Us", url: "https://globaldigibit.com/about" },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "About Us", url: "https://womenconnectintl.org/about" },
       ]}
     />
   );
@@ -114,83 +105,41 @@ export function ContactBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Contact", url: "https://globaldigibit.com/contact" },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "Contact", url: "https://womenconnectintl.org/contact" },
       ]}
     />
   );
 }
 
-export function ProductsBreadcrumb() {
+export function ProgramsBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Products", url: "https://globaldigibit.com/products" },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "Programs", url: "https://womenconnectintl.org/programs" },
       ]}
     />
   );
 }
 
-export function ProductDetailBreadcrumb({
-  productId,
-  productName,
-}: {
-  productId: string;
-  productName: string;
-}) {
+export function PlatformBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Products", url: "https://globaldigibit.com/products" },
-        {
-          name: productName,
-          url: `https://globaldigibit.com/products/${productId}`,
-        },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "Platform", url: "https://womenconnectintl.org/platform" },
       ]}
     />
   );
 }
 
-export function ServicesBreadcrumb() {
+export function GetInvolvedBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Services", url: "https://globaldigibit.com/services" },
-      ]}
-    />
-  );
-}
-
-export function ServiceDetailBreadcrumb({
-  serviceId,
-  serviceName,
-}: {
-  serviceId: string;
-  serviceName: string;
-}) {
-  return (
-    <BreadcrumbSchema
-      items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Services", url: "https://globaldigibit.com/services" },
-        {
-          name: serviceName,
-          url: `https://globaldigibit.com/services/${serviceId}`,
-        },
-      ]}
-    />
-  );
-}
-
-export function TrainingBreadcrumb() {
-  return (
-    <BreadcrumbSchema
-      items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Training", url: "https://globaldigibit.com/training" },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "Get Involved", url: "https://womenconnectintl.org/get-involved" },
       ]}
     />
   );
@@ -200,8 +149,8 @@ export function BlogBreadcrumb() {
   return (
     <BreadcrumbSchema
       items={[
-        { name: "Home", url: "https://globaldigibit.com" },
-        { name: "Blog", url: "https://globaldigibit.com/blogs" },
+        { name: "Home", url: "https://womenconnectintl.org" },
+        { name: "Blog", url: "https://womenconnectintl.org/blogs" },
       ]}
     />
   );

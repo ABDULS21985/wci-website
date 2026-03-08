@@ -16,12 +16,12 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-    title: "About Us | Global Digitalbit Limited",
-    description: "Learn about Global Digitalbit Limited - a pioneering IT company dedicated to improving lives through technology. Discover our mission, vision, and commitment to excellence in data analytics, AI, cybersecurity, and CBDC solutions.",
+    title: "About Us | Women Connect International",
+    description: "Women Connect International is a diaspora-led empowerment initiative strengthening the emotional resilience, economic empowerment, and leadership capacity of African women abroad. Based in Doha, Qatar.",
     openGraph: {
-        title: "About Global Digitalbit Limited",
-        description: "Pioneering IT company serving local and international clients with excellence and innovation in technology solutions.",
-        url: "https://globaldigibit.com/about",
+        title: "About Women Connect International",
+        description: "Empowering African diaspora women through resilience, economic agency, and leadership. Founded by Fatima Abubakar and Rakiya Shuaibu Mohammed.",
+        url: "https://womenconnectintl.org/about",
     },
 };
 

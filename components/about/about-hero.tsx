@@ -230,8 +230,8 @@ export function AboutHero() {
                         }}
                     >
                         <ParallaxImage
-                            src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2669&auto=format&fit=crop"
-                            alt="Modern office interior"
+                            src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2670&auto=format&fit=crop"
+                            alt="Empowered woman leader"
                             className="absolute top-0 right-0 w-[80%] h-[70%] rounded-bl-3xl overflow-hidden"
                             parallaxSpeed={0.3}
                             scrollYProgress={scrollYProgress}
@@ -250,8 +250,8 @@ export function AboutHero() {
                         }}
                     >
                         <ParallaxImage
-                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop"
-                            alt="Team collaboration"
+                            src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=2670&auto=format&fit=crop"
+                            alt="Women community gathering"
                             className="absolute bottom-[10%] left-[5%] w-[55%] h-[50%] rounded-2xl overflow-hidden shadow-2xl shadow-primary/30"
                             parallaxSpeed={0.5}
                             scrollYProgress={scrollYProgress}
@@ -268,8 +268,8 @@ export function AboutHero() {
                         }}
                     >
                         <ParallaxImage
-                            src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2670&auto=format&fit=crop"
-                            alt="Technology workspace"
+                            src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop"
+                            alt="Women in training workshop"
                             className="absolute top-[25%] right-[10%] w-[40%] h-[35%] rounded-2xl overflow-hidden shadow-2xl shadow-accent-orange/20"
                             parallaxSpeed={0.7}
                             scrollYProgress={scrollYProgress}
@@ -286,8 +286,8 @@ export function AboutHero() {
             {/* Mobile background image */}
             <div className="absolute inset-0 lg:hidden">
                 <Image
-                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2670&auto=format&fit=crop"
-                    alt="Team collaboration at Global Digitalbit"
+                    src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=2670&auto=format&fit=crop"
+                    alt="Women Connect International community"
                     fill
                     className="object-cover"
                     priority
@@ -359,10 +359,10 @@ export function AboutHero() {
                             </svg>
                         </a>
                         <a
-                            href="/services"
+                            href="/programs"
                             className="group inline-flex items-center gap-3 px-8 py-4 border border-white/30 text-white font-semibold rounded-xl transition-all duration-300 hover:border-white/80 hover:bg-white/5"
                         >
-                            <span>{t("hero.cta.secondary") || "Our Services"}</span>
+                            <span>{t("hero.cta.secondary") || "Our Programs"}</span>
                             <svg
                                 className="w-5 h-5 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0"
                                 fill="none"

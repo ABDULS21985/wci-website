@@ -1,29 +1,29 @@
 {
   "metadata": {
-    "title": "Global Digitalbit Limited - IT Consultancy, AI, Cybersecurity & CBDC Solutions",
-    "titleTemplate": "{title} | Global Digitalbit Limited",
-    "description": "Global Digitalbit Limited is a pioneering IT company dedicated to improving lives through technology. Specializing in consultancy, implementation, and training in data analytics, artificial intelligence, cybersecurity, and central bank digital currency (CBDC).",
-    "keywords": "IT consultancy, data analytics, artificial intelligence, AI solutions, cybersecurity, CBDC, blockchain, digital transformation"
+    "title": "Women Connect International Training - Empowering Diaspora Women Through Resilience, Leadership & Impact",
+    "titleTemplate": "{title} | Women Connect International Training",
+    "description": "Women Connect International Training (WCI) strengthens emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora. Based in Doha, Qatar.",
+    "keywords": "women empowerment, diaspora women, African women, resilience, leadership, mentoring, psychosocial support, economic empowerment, digital literacy, humanitarian impact, NGO Qatar"
   },
   "navigation": {
     "home": "Home",
     "about": "About",
-    "services": "Services",
-    "products": "Products",
+    "services": "Programs",
+    "products": "Platform",
     "insights": "Insights",
-    "caseStudies": "Case Studies",
-    "industries": "Industries",
+    "caseStudies": "Impact Stories",
+    "industries": "Focus Areas",
     "training": "Training",
-    "blogs": "Blogs",
-    "careers": "Careers",
+    "blogs": "Blog",
+    "careers": "Get Involved",
     "contact": "Contact",
-    "webSummit": "Web Summit Qatar",
+    "webSummit": "Events",
     "toggleMenu": "Toggle Menu",
-    "getStarted": "Get Started"
+    "getStarted": "Join Us"
   },
   "common": {
     "learnMore": "Learn More",
-    "getStarted": "Get Started",
+    "getStarted": "Join Us",
     "submit": "Submit",
     "loading": "Loading...",
     "readMore": "Read More",
@@ -63,236 +63,236 @@
   "hero": {
     "slides": {
       "slide1": {
-        "tagline": "SUCCESS THROUGH INNOVATION",
-        "title": "Transforming Ideas into",
-        "highlight": "Digital Reality",
-        "description": "Global Digitalbit Limited is a pioneering IT company dedicated to improving lives through the power of technology. Specializing in consultancy, implementation, and training.",
-        "primaryCTA": "Our Services",
+        "tagline": "RESILIENCE THROUGH CONNECTION",
+        "title": "Empowering Diaspora Women to Build",
+        "highlight": "Emotional Resilience",
+        "description": "Women Connect International Training strengthens the emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora through evidence-based programs and community support.",
+        "primaryCTA": "Our Programs",
         "secondaryCTA": "Contact Us"
       },
       "slide2": {
-        "tagline": "EXPERTISE IN TECHNOLOGY",
-        "title": "Empowering Businesses with",
-        "highlight": "AI & Cybersecurity",
-        "description": "We deliver cutting-edge solutions in artificial intelligence, cybersecurity, and CBDC implementation for local and international clients with excellence.",
-        "primaryCTA": "Our Products",
+        "tagline": "LEADERSHIP WITHOUT BORDERS",
+        "title": "Developing the Next Generation of",
+        "highlight": "Women Leaders",
+        "description": "Through mentorship, governance literacy, and cross-border exchange, we equip diaspora women with the tools and confidence to lead transformative change in their communities and beyond.",
+        "primaryCTA": "Explore Platform",
         "secondaryCTA": "Learn More"
       },
       "slide3": {
-        "tagline": "INNOVATION & EXCELLENCE",
-        "title": "Building the Future with",
-        "highlight": "Data Analytics",
-        "description": "Specializing in data analytics, blockchain technology, and digital transformation to serve both local and international markets with innovation.",
-        "primaryCTA": "Get Started",
-        "secondaryCTA": "View Case Studies"
+        "tagline": "IMPACT WITH ACCOUNTABILITY",
+        "title": "Transparent Humanitarian Action for",
+        "highlight": "Lasting Change",
+        "description": "Our pooled-contribution model and real-time transparency dashboard ensure every donation creates measurable impact for vulnerable communities across Africa.",
+        "primaryCTA": "Join Us",
+        "secondaryCTA": "View Impact Stories"
       }
     },
     "previousSlide": "Previous slide",
     "nextSlide": "Next slide",
     "goToSlide": "Go to slide {number}",
-    "carouselLabel": "Hero slideshow showcasing Global Digitalbit services",
+    "carouselLabel": "Hero slideshow showcasing WCI programs and impact",
     "scroll": "Scroll",
     "stats": {
-      "projectsDelivered": "Projects Delivered",
-      "globalClients": "Global Clients",
-      "yearsExperience": "Years Experience",
-      "clientSatisfaction": "Client Satisfaction"
+      "projectsDelivered": "Women Empowered",
+      "globalClients": "Countries Reached",
+      "yearsExperience": "Years of Impact",
+      "clientSatisfaction": "Program Satisfaction"
     }
   },
   "about": {
     "title": "About Us",
-    "subtitle": "Pioneering Technology Solutions",
-    "description": "Global Digitalbit Limited is a pioneering IT company dedicated to improving lives through technology.",
+    "subtitle": "Empowering Diaspora Women",
+    "description": "Women Connect International Training is an NGO dedicated to strengthening emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora.",
     "hero": {
-      "kicker": "Enterprise Technology Partners",
+      "kicker": "Women Empowerment & Resilience",
       "heading": {
-        "line1": "Pioneering Technology",
-        "line2": "Transforming Lives"
+        "line1": "Connecting Diaspora Women,",
+        "line2": "Transforming Communities"
       },
-      "subtitle": "Global Digitalbit Limited is a pioneering IT company dedicated to improving lives through the power of technology. We specialize in data analytics, AI, cybersecurity, and digital currency solutions serving 50+ countries.",
+      "subtitle": "Women Connect International Training (WCI) is an NGO based in Doha, Qatar, dedicated to empowering African women in the diaspora through psychosocial resilience, digital and economic empowerment, mentoring, and transparent humanitarian impact.",
       "scroll": "Scroll to explore",
       "cta": {
-        "primary": "Get in Touch",
-        "secondary": "Our Services"
+        "primary": "Get Involved",
+        "secondary": "Our Programs"
       },
       "stats": {
-        "years": "Years of Excellence",
-        "countries": "Countries Served",
-        "projects": "Projects Delivered"
+        "years": "Years of Impact",
+        "countries": "Countries Reached",
+        "projects": "Lives Touched"
       }
     },
     "metrics": {
-      "projects": "Projects Delivered",
-      "projectsDesc": "Across every major industry",
-      "countries": "Countries Served",
-      "countriesDesc": "From Lagos to Doha and beyond",
-      "satisfaction": "Client Satisfaction",
-      "satisfactionDesc": "Measured. Verified. Maintained.",
-      "years": "Years Experience",
-      "yearsDesc": "Of digital excellence",
-      "experts": "Certified Experts",
-      "expertsDesc": "Certified professionals"
+      "projects": "Women Supported",
+      "projectsDesc": "Across diaspora communities",
+      "countries": "Countries Reached",
+      "countriesDesc": "From Doha to communities across Africa",
+      "satisfaction": "Program Satisfaction",
+      "satisfactionDesc": "Measured through participant feedback",
+      "years": "Years of Experience",
+      "yearsDesc": "In counselling and systems strategy",
+      "experts": "Trained Facilitators",
+      "expertsDesc": "Certified professionals and mentors"
     },
     "story": {
       "overline": "Our Story",
       "heading": {
-        "line1": "A Decade of",
-        "line2": "Digital Excellence"
+        "line1": "Born from Purpose,",
+        "line2": "Built for Impact"
       },
       "description": {
-        "para1": "<company>Global Digitalbit Limited</company> was born from a bold vision: to bridge the gap between emerging technologies and the businesses that need them most. What started as a small team of passionate technologists has grown into a globally recognized IT services company.",
-        "para2": "Our journey has been defined by relentless innovation, unwavering commitment to our clients, and a deep belief that technology can transform lives. Today, we serve clients across <highlight>50+ countries</highlight>, delivering world-class solutions in <highlight>data analytics</highlight>, <highlight>artificial intelligence</highlight>, <highlight>cybersecurity</highlight>, and <highlight>central bank digital currency</highlight>."
+        "para1": "<company>Women Connect International Training</company> was founded by two women who understood firsthand the challenges diaspora women face: emotional isolation, economic barriers, and limited access to leadership opportunities. What began as a shared vision between a counselling psychologist and a systems strategist has grown into a movement for change.",
+        "para2": "Our founders, <highlight>Fatima Abubakar</highlight> (counselling psychologist with 9+ years of experience) and <highlight>Rakiya Shuaibu Mohammed</highlight> (expert in systems strategy, digital transformation, and governance), created WCI to bridge the gap between <highlight>emotional wellbeing</highlight>, <highlight>economic empowerment</highlight>, <highlight>leadership development</highlight>, and <highlight>transparent humanitarian action</highlight> for African women in the diaspora."
       },
       "milestones": {
         "foundation": {
           "title": "Foundation",
-          "description": "Global Digitalbit Limited was founded with a vision to transform businesses through technology."
+          "description": "WCI was founded in Doha, Qatar with a vision to empower African diaspora women through holistic support programs."
         },
         "expansion": {
-          "title": "Regional Expansion",
-          "description": "Expanded operations across West Africa, building a strong network of clients and partnerships."
+          "title": "Program Launch",
+          "description": "Launched our four core program pillars: Psychosocial Resilience, Digital & Economic Empowerment, Mentoring & Leadership, and Humanitarian Impact."
         },
         "global": {
-          "title": "Global Reach",
-          "description": "Established international presence serving clients across 50+ countries with cutting-edge solutions."
+          "title": "Community Growth",
+          "description": "Expanded our reach across multiple diaspora communities, building a connected network of women supporting women."
         },
         "innovation": {
-          "title": "Innovation Leader",
-          "description": "Recognized as a leader in AI, cybersecurity, and CBDC implementation across the globe."
+          "title": "AI Platform Launch",
+          "description": "Introduced our AI-powered platform with emotional support, learning management, mentor matching, and transparency dashboard modules."
         }
       },
       "badge": {
-        "title": "Established 2014",
-        "subtitle": "A decade of digital excellence"
+        "title": "C.R. No: 237930",
+        "subtitle": "Registered NGO in Doha, Qatar"
       }
     },
     "missionVision": {
       "overline": "Purpose & Direction",
       "heading": "Driven by Purpose",
-      "subheading": "Our mission and vision guide every decision we make, ensuring we deliver meaningful impact for our clients and communities."
+      "subheading": "Our mission and vision guide every program we design, every partnership we form, and every life we touch."
     },
     "mission": {
       "title": "Our Mission",
-      "heading": "Empowering Through Technology",
-      "description": "To deliver world-class IT consultancy, implementation, and training services that empower businesses and individuals. We are committed to leveraging our expertise in data analytics, artificial intelligence, cybersecurity, and central bank digital currency to drive growth and create lasting value for our clients across the globe."
+      "heading": "Strengthening Resilience, Empowering Futures",
+      "description": "To strengthen the emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora through evidence-based psychosocial support, digital and economic skills training, mentorship programs, and transparent humanitarian initiatives that create lasting impact in vulnerable communities across Africa."
     },
     "vision": {
       "title": "Our Vision",
-      "heading": "Leading the Digital Future",
-      "description": "To be a leading global IT services company that empowers businesses and individuals through transformative technology solutions, driving economic growth and creating a more connected future. We envision a world where every organization has access to the technology tools they need to thrive in the digital age."
+      "heading": "A Globally Connected Ecosystem",
+      "description": "To build a globally connected ecosystem where diaspora women are empowered as resilient leaders, economic actors, and accountable partners in transforming vulnerable communities across Africa. We envision a world where every African woman in the diaspora has access to the emotional support, economic tools, and leadership pathways she needs to thrive and create lasting change."
     },
     "values": {
       "title": "Our Values",
       "heading": "What We Believe",
-      "description": "Our values are more than words. They are the principles that guide every decision we make and every solution we deliver.",
+      "description": "Our values are the foundation of everything we do. They shape our programs, guide our partnerships, and define how we serve our community.",
       "overline": "Our Core Values",
-      "subheading": "Our values are the foundation of everything we do. They shape our culture, guide our decisions, and drive our commitment to excellence.",
+      "subheading": "These five core values are embedded in every program, platform, and partnership we build. They reflect who we are and what we stand for.",
       "declarations": {
-        "build": "We Build What We Recommend",
-        "complexity": "Complexity Is Our Comfort Zone",
-        "security": "Security Is Non-Negotiable"
+        "build": "We Lead with Empathy",
+        "complexity": "Transparency Is Our Standard",
+        "security": "Every Woman's Voice Matters"
       },
       "innovation": {
-        "title": "Innovation",
-        "desc": "We constantly explore new technologies and ideas to deliver cutting-edge solutions that keep our clients ahead of the curve."
+        "title": "Dignity",
+        "desc": "We honour the inherent worth and lived experience of every woman we serve, creating safe spaces where vulnerability is met with respect and compassion."
       },
       "reliability": {
-        "title": "Reliability",
-        "desc": "Our clients trust us to deliver secure and dependable solutions that ensure business continuity and long-term success."
+        "title": "Accountability",
+        "desc": "We hold ourselves to the highest standards of transparency in governance, finances, and impact measurement, ensuring trust with our community and partners."
       },
       "integrity": {
-        "title": "Integrity",
-        "desc": "We are committed to conducting our business with the highest level of ethics, transparency, and honesty in every engagement."
+        "title": "Equity",
+        "desc": "We are committed to dismantling barriers and creating fair access to opportunities, resources, and support for all diaspora women regardless of background."
       },
       "teamwork": {
-        "title": "Teamwork",
-        "desc": "Collaboration is at the heart of everything we do. Working together leads to the best results for our clients and partners."
+        "title": "Innovation",
+        "desc": "We embrace technology and creative approaches to deliver scalable, accessible programs that meet women where they are, leveraging AI and digital tools for greater impact."
       },
       "excellence": {
-        "title": "Excellence",
-        "desc": "We pursue excellence in every project, delivering solutions that exceed expectations and set new industry standards."
+        "title": "Collaboration",
+        "desc": "We believe lasting change happens through partnership. We work alongside communities, organisations, and individuals to co-create solutions that serve diaspora women."
       },
       "growth": {
-        "title": "Growth",
-        "desc": "We invest in our people and our clients, fostering continuous learning and development to drive sustainable growth."
+        "title": "Resilience",
+        "desc": "We model and cultivate the resilience we seek to build in others, adapting to challenges and growing stronger together through every experience."
       }
     },
     "team": {
-      "overline": "Our Leadership",
+      "overline": "Our Founders",
       "heading": "Meet the Visionaries",
-      "subheading": "Our leadership team brings decades of combined experience in technology, business strategy, and innovation to deliver exceptional results.",
+      "subheading": "WCI was co-founded by two women united by a shared commitment to empowering African women in the diaspora through holistic, evidence-based programs.",
       "viewProfile": "View Profile",
       "members": {
         "ceo": {
-          "name": "Hajiya Rakiya Mohammed",
-          "role": "Chief Executive Officer",
-          "bio": "Visionary leader with over 35 years of experience in IT consulting, driving strategic growth and digital transformation across emerging markets.",
-          "extendedBio": "Hajiya Rakiya has been instrumental in establishing Global Digitalbit as a trusted technology partner across Africa and the Middle East. Her strategic vision has led the company through significant growth phases, building partnerships with government agencies, financial institutions, and Fortune 500 companies."
+          "name": "Rakiya Shuaibu Mohammed",
+          "role": "Co-Founder & Strategic Director",
+          "bio": "Expert in systems strategy, digital transformation, and governance with deep experience building scalable programs across Africa and the Middle East.",
+          "extendedBio": "Rakiya brings extensive expertise in systems strategy, digital innovation, and organisational governance. Her strategic vision drives WCI's platform development, partnership strategy, and operational excellence, ensuring every program is designed for scalability and measurable impact across diaspora communities."
         },
         "cto": {
-          "name": "Micha Abdul",
-          "role": "Chief Technology Officer",
-          "bio": "Expert in artificial intelligence and cybersecurity, leading our technical innovation and ensuring world-class solutions for global clients.",
-          "extendedBio": "With deep expertise in AI, ML, and enterprise security architectures, Micha oversees all technical strategy and innovation at Global Digitalbit. He has led the development of our flagship products and established industry-leading security practices."
+          "name": "Fatima Abubakar",
+          "role": "Co-Founder & Psychosocial Director",
+          "bio": "Counselling psychologist with over 9 years of experience, specialising in emotional resilience and wellbeing programs for women and communities.",
+          "extendedBio": "Fatima is a licensed counselling psychologist with over 9 years of clinical and community experience. She leads WCI's psychosocial resilience programming, designing evidence-based healing circles, emotional intelligence workshops, and peer support frameworks that form the foundation of WCI's trauma-informed approach."
         },
         "headAnalytics": {
-          "name": "Sarah Ibrahim",
-          "role": "Head of Data Analytics",
-          "bio": "Pioneering data-driven decision making, specializing in business intelligence and predictive analytics for enterprise clients.",
-          "extendedBio": "Sarah leads our data analytics practice, helping organizations transform raw data into actionable insights. She has delivered analytics solutions for central banks, telecommunications providers, and major retailers across the region."
+          "name": "Program Team",
+          "role": "Facilitators & Mentors",
+          "bio": "Our growing network of trained facilitators, mentors, and subject matter experts delivers programs across all four pillars.",
+          "extendedBio": "WCI's program team includes certified counsellors, digital skills trainers, governance experts, and community leaders who bring diverse expertise and lived experience to every workshop, mentoring session, and community initiative we deliver."
         },
         "headCybersecurity": {
-          "name": "David Okonkwo",
-          "role": "Head of Cybersecurity",
-          "bio": "Certified cybersecurity professional ensuring robust security frameworks and compliance standards across all client engagements.",
-          "extendedBio": "David brings extensive experience in threat intelligence, incident response, and compliance frameworks. He ensures all our solutions meet the highest security standards including ISO 27001, NIST, and regional regulations like QCB and NIA."
+          "name": "Advisory Board",
+          "role": "Strategic Advisors",
+          "bio": "Our advisory board provides guidance on program design, governance, partnerships, and impact measurement.",
+          "extendedBio": "WCI's advisory board comprises leaders in psychology, international development, technology, and governance who ensure our programs meet the highest standards of evidence-based practice and community accountability."
         }
       }
     },
     "timeline": {
       "overline": "Our Journey",
       "heading": {
-        "part1": "A Decade of",
-        "part2": "Digital Excellence"
+        "part1": "A Growing Movement",
+        "part2": "for Diaspora Women"
       },
-      "subheading": "From humble beginnings to global recognition, our journey has been defined by innovation and commitment to excellence.",
+      "subheading": "From a shared vision in Doha to a growing ecosystem of empowered women across the globe, our journey is defined by purpose and impact.",
       "milestones": {
         "foundation": {
-          "title": "Company Founded",
-          "description": "Global Digitalbit Limited was established in Abuja, Nigeria with a vision to bridge the gap between emerging technologies and the businesses that need them most."
+          "title": "WCI Founded",
+          "description": "Women Connect International Training was established in Doha, Qatar (C.R. No: 237930) by co-founders Fatima Abubakar and Rakiya Shuaibu Mohammed."
         },
         "expansion": {
-          "title": "Regional Expansion",
-          "description": "Expanded operations across West Africa, building a strong network of clients and strategic partnerships with government agencies and enterprises."
+          "title": "Core Programs Launched",
+          "description": "Rolled out our four program pillars: Psychosocial Resilience, Digital & Economic Empowerment, Mentoring & Leadership, and Transparent Humanitarian Impact."
         },
         "global": {
-          "title": "Middle East Entry",
-          "description": "Opened our Qatar office in Doha, establishing a strong presence in the GCC region and serving clients across 50+ countries worldwide."
+          "title": "Community Expansion",
+          "description": "Grew our network across multiple diaspora communities, establishing healing circles, mentoring cohorts, and digital literacy workshops."
         },
         "innovation": {
-          "title": "Product Innovation",
-          "description": "Launched our flagship products - DigiGate, DigiTrust, and DigiTrack - delivering enterprise-grade solutions to clients globally."
+          "title": "AI Platform Development",
+          "description": "Began development of our AI-powered platform featuring emotional support, learning management, mentor matching, and humanitarian transparency modules."
         },
         "future": {
-          "title": "Future Forward",
-          "description": "Continuing to push boundaries in AI, blockchain, and digital transformation, shaping the future of technology across emerging markets."
+          "title": "Scaling for Impact",
+          "description": "Expanding partnerships, growing our ambassador program, and building cross-border exchange networks to reach more diaspora women across the globe."
         }
       }
     },
     "stats": {
-      "projects": "Projects Delivered",
-      "countries": "Countries Served",
-      "years": "Years Experience",
-      "satisfaction": "Client Satisfaction"
+      "projects": "Women Empowered",
+      "countries": "Countries Reached",
+      "years": "Years of Experience",
+      "satisfaction": "Program Satisfaction"
     },
     "globalPresence": {
-      "overline": "Global Presence",
+      "overline": "Our Reach",
       "heading": {
         "part1": "Where We",
-        "part2": "Operate"
+        "part2": "Serve"
       },
-      "subheading": "Strategically located to serve clients across Africa, the Middle East, and beyond with local expertise and global standards.",
-      "countriesServed": "50+ Countries Served",
+      "subheading": "Based in Doha, Qatar with a growing network of diaspora women and community partners across Africa, the Middle East, and beyond.",
+      "countriesServed": "Growing Diaspora Network",
       "labels": {
         "address": "Address",
         "phone": "Phone",
@@ -301,172 +301,172 @@
       },
       "offices": {
         "abuja": {
-          "city": "Abuja",
-          "country": "Nigeria",
-          "type": "Headquarters",
-          "address": "15 D Yalinga Crescent Off Adedokumbo Ademola Crescent, Wuse 2, Abuja, Nigeria"
-        },
-        "doha": {
           "city": "Doha",
           "country": "Qatar",
-          "type": "Regional Office",
-          "address": "Level 14, Commercial Bank Plaza, West Bay, Doha"
+          "type": "Headquarters",
+          "address": "Doha, Qatar"
+        },
+        "doha": {
+          "city": "Diaspora Network",
+          "country": "Pan-African",
+          "type": "Community Reach",
+          "address": "Across African diaspora communities worldwide"
         }
       }
     },
     "cta": {
       "heading": {
-        "part1": "Ready to Transform Your",
-        "part2": "Business?"
+        "part1": "Ready to Join Our",
+        "part2": "Community?"
       },
-      "description": "Partner with Global Digitalbit and unlock the power of technology for your organization. Let's build something extraordinary together.",
-      "primaryButton": "Get in Touch",
-      "secondaryButton": "Explore Services"
+      "description": "Whether you want to participate in our programs, become a mentor, volunteer your skills, or support our humanitarian projects, there is a place for you at WCI.",
+      "primaryButton": "Get Involved",
+      "secondaryButton": "Explore Programs"
     },
     "whyChooseUs": {
-      "title": "Why Choose Us",
+      "title": "Why WCI",
       "subtitle": "What Sets Us Apart",
       "reason1": {
-        "title": "Expert Team",
-        "description": "Our team consists of industry-certified professionals with decades of combined experience."
+        "title": "Holistic Approach",
+        "description": "We address emotional, economic, and leadership needs together because true empowerment requires support across all dimensions of a woman's life."
       },
       "reason2": {
-        "title": "Proven Track Record",
-        "description": "We have successfully delivered projects for government agencies, financial institutions, and enterprises."
+        "title": "Lived Experience",
+        "description": "Our founders and facilitators understand the diaspora experience firsthand, bringing empathy and cultural competence to every program."
       },
       "reason3": {
-        "title": "Global Presence",
-        "description": "With offices in Nigeria and Qatar, we serve clients across Africa, the Middle East, and beyond."
+        "title": "Radical Transparency",
+        "description": "Our humanitarian transparency dashboard ensures every contribution is tracked, every project is visible, and every impact is measured."
       },
       "reason4": {
-        "title": "End-to-End Solutions",
-        "description": "From strategy to implementation to training, we provide comprehensive technology services."
+        "title": "AI-Powered Platform",
+        "description": "Our intelligent platform provides personalised emotional support, skills training, mentor matching, and impact tracking at scale."
       }
     }
   },
   "services": {
     "label": "What We Do",
-    "title": "Our Services",
-    "subtitle": "Comprehensive Technology Solutions",
-    "description": "We offer a wide range of technology services to help your business thrive in the digital age.",
+    "title": "Our Programs",
+    "subtitle": "Four Pillars of Empowerment",
+    "description": "Our four core program pillars work together to provide holistic support for African women in the diaspora, addressing emotional resilience, economic empowerment, leadership development, and humanitarian impact.",
     "learnMore": "Learn More",
-    "viewAll": "View All Services",
+    "viewAll": "View All Programs",
     "items": {
       "businessProcessManagement": {
-        "name": "Business Process Management",
-        "description": "Streamline and optimize your business operations with our expert process management consulting and implementation services."
+        "name": "Psychosocial Resilience",
+        "description": "Healing circles, emotional intelligence training, burnout prevention workshops, peer support forums, and professional referral pathways to strengthen emotional wellbeing and community resilience."
       },
       "cyberSecurity": {
-        "name": "Cybersecurity Solutions",
-        "description": "Protect your digital assets with our comprehensive cybersecurity services, including risk assessment, threat detection, and compliance."
+        "name": "Digital & Economic Empowerment",
+        "description": "Digital literacy training, AI tools for productivity, entrepreneurship bootcamps, financial literacy workshops, and remote work readiness programs to build economic independence."
       },
       "blockchain": {
-        "name": "Blockchain & DLT",
-        "description": "Leverage blockchain technology for secure, transparent, and immutable solutions tailored to your business needs."
+        "name": "Mentoring & Leadership",
+        "description": "AI-powered mentor matching, governance literacy training, advocacy skills development, ambassador programs, and cross-border exchange opportunities to develop the next generation of women leaders."
       },
       "itConsultation": {
-        "name": "IT Consultation",
-        "description": "Strategic technology advisory services to help you make informed decisions and drive digital transformation."
+        "name": "Transparent Humanitarian Impact",
+        "description": "Pooled community contributions, participatory project selection, real-time transparency dashboards, and rigorous impact measurement to ensure accountable, effective humanitarian action."
       }
     },
     "categories": {
       "cybersecurity": {
-        "name": "Cybersecurity and Risk Management Advisory",
-        "shortName": "Cybersecurity",
-        "description": "Building resilient defenses for critical infrastructure with alignment to QCB, NIA, and ISO standards."
+        "name": "Psychosocial Resilience & Wellbeing",
+        "shortName": "Resilience",
+        "description": "Evidence-based emotional support programs including healing circles, emotional intelligence training, burnout prevention, and peer support communities."
       },
       "aiData": {
-        "name": "Artificial Intelligence and Data Strategy",
-        "shortName": "AI & Data",
-        "description": "Leveraging data assets for predictive analytics, operational efficiency, and strategic decision-making."
+        "name": "Digital & Economic Empowerment",
+        "shortName": "Empowerment",
+        "description": "Building digital skills, financial literacy, entrepreneurship capacity, and remote work readiness for economic independence."
       },
       "blockchain": {
-        "name": "Blockchain and Distributed Ledger Technology",
-        "shortName": "Blockchain",
-        "description": "Implementing secure, transparent, and immutable solutions for the modern digital economy."
+        "name": "Mentoring & Leadership Development",
+        "shortName": "Leadership",
+        "description": "Connecting women with mentors, building governance literacy, and developing advocacy and leadership skills across borders."
       },
       "itGovernance": {
-        "name": "IT Governance, Risk & Compliance",
-        "shortName": "IT Governance",
-        "description": "Ensuring technology initiatives support business strategy and meet all regulatory requirements."
+        "name": "Transparent Humanitarian Impact",
+        "shortName": "Impact",
+        "description": "Ensuring every contribution creates measurable change through transparent project selection, tracking, and impact reporting."
       }
     },
     "cta": {
-      "title": "Ready to Transform Your Business?",
-      "description": "Contact us today to discuss how our services can help you achieve your goals.",
-      "button": "Get in Touch"
+      "title": "Ready to Start Your Empowerment Journey?",
+      "description": "Join our community of diaspora women building resilience, developing skills, and creating lasting impact together.",
+      "button": "Get Involved"
     }
   },
   "products": {
-    "label": "Our Products",
-    "title": "Enterprise-Grade Solutions",
-    "subtitle": "Discover our suite of innovative products designed to solve complex business challenges.",
-    "description": "Discover our suite of innovative products designed to solve complex business challenges.",
-    "viewProduct": "View Product",
-    "requestDemo": "Request Demo",
+    "label": "Our Platform",
+    "title": "AI-Powered Empowerment Platform",
+    "subtitle": "Four intelligent modules designed to support your journey from resilience to leadership to impact.",
+    "description": "Our AI-powered platform provides personalised support across four integrated modules, meeting women where they are and empowering them to grow.",
+    "viewProduct": "Explore Module",
+    "requestDemo": "Request Access",
     "learnMore": "Learn More",
-    "exploreAll": "Explore All Products",
+    "exploreAll": "Explore Full Platform",
     "features": "Features",
     "useCases": "Use Cases",
-    "valuePropositions": "Value Propositions",
+    "valuePropositions": "Key Benefits",
     "items": {
       "trustMe": {
-        "name": "DigiTrust",
-        "badge": "Trust & Security",
-        "tagline": "Immutable Trust for a Digital World",
-        "description": "DigiTrust, powered by the TrustMe platform, is a blockchain-based solution for issuing, verifying, and managing tamper-proof digital credentials."
+        "name": "Emotional Support Companion",
+        "badge": "Wellbeing",
+        "tagline": "Your Safe Space for Guided Self-Reflection",
+        "description": "A non-diagnostic AI companion that provides guided emotional check-ins, mood tracking, resilience exercises, and personalised wellbeing resources. It helps women process their experiences in a safe, confidential environment and connects them with professional support when needed."
       },
       "digiGate": {
-        "name": "DigiGate",
-        "badge": "API Management",
-        "tagline": "The Command Center for Your Digital Ecosystem",
-        "description": "DigiGate is a comprehensive API gateway and lifecycle management solution that acts as the centralized control layer for an organization's entire digital infrastructure."
+        "name": "Learning Management Hub",
+        "badge": "Skills & Growth",
+        "tagline": "Structured Pathways to Resilience and Economic Power",
+        "description": "A comprehensive learning platform offering structured curricula in psychosocial resilience, digital literacy, entrepreneurship, financial management, and leadership. Features self-paced courses, interactive workshops, progress tracking, and certification pathways."
       },
       "digiTrack": {
-        "name": "DigiTrack",
-        "badge": "Tracking & Analytics",
-        "tagline": "Complete Visibility Across Your Digital Operations",
-        "description": "DigiTrack provides real-time tracking and traceability for physical assets, digital transactions, and service delivery workflows."
+        "name": "AI Mentor Matching Engine",
+        "badge": "Mentorship",
+        "tagline": "Connecting You with the Right Mentor at the Right Time",
+        "description": "An intelligent matching system that pairs women with mentors based on skills, goals, availability, language, and cultural background. Facilitates structured mentoring relationships with goal-setting, progress tracking, and feedback loops."
       },
       "trustMeHub": {
-        "name": "TrustMeHub",
-        "badge": "Digital Trust",
-        "tagline": "Building Trust. Empowering Growth.",
-        "description": "TrustMeHub is a global digital trust infrastructure for instant, blockchain-anchored credential verification."
+        "name": "Humanitarian Transparency Dashboard",
+        "badge": "Impact & Trust",
+        "tagline": "See Where Every Contribution Goes. Track Every Impact.",
+        "description": "A real-time dashboard that tracks pooled community contributions, project selection processes, fund allocation, implementation progress, and measurable outcomes. Ensures radical transparency and accountability in all humanitarian initiatives."
       },
       "boaCRM": {
-        "name": "BoaCRM",
-        "badge": "CRM Platform",
-        "tagline": "The Operating System for Customer Relationships",
-        "description": "BoaCRM is a comprehensive enterprise-grade CRM platform purpose-built for African financial institutions."
+        "name": "Community Hub",
+        "badge": "Connection",
+        "tagline": "Your Gateway to the WCI Ecosystem",
+        "description": "A centralised community platform connecting all WCI members, facilitating peer support, event coordination, resource sharing, and cross-border networking among diaspora women worldwide."
       }
     }
   },
   "training": {
     "title": "Training Programs",
-    "subtitle": "Build Your Team's Capabilities",
-    "description": "We offer comprehensive training programs to help your team master the latest technologies and best practices.",
+    "subtitle": "Build Your Skills and Confidence",
+    "description": "WCI offers structured training programs designed to build emotional resilience, digital skills, economic independence, and leadership capacity for diaspora women.",
     "programs": "Programs",
     "duration": "Duration",
     "level": "Level",
     "format": "Format",
     "enrollNow": "Enroll Now",
     "levels": {
-      "beginner": "Beginner",
-      "intermediate": "Intermediate",
-      "advanced": "Advanced",
-      "executive": "Executive"
+      "beginner": "Foundation",
+      "intermediate": "Growth",
+      "advanced": "Leadership",
+      "executive": "Facilitator"
     },
     "formats": {
-      "onsite": "On-site",
+      "onsite": "In-Person",
       "online": "Online",
       "hybrid": "Hybrid"
     }
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Insights & Updates",
-    "description": "Stay informed with the latest news, insights, and thought leadership from our experts.",
+    "subtitle": "Stories, Insights & Resources",
+    "description": "Explore stories of resilience, insights on women's empowerment, and resources for diaspora women navigating life abroad.",
     "readArticle": "Read Article",
     "publishedOn": "Published on",
     "author": "Author",
@@ -478,8 +478,8 @@
   },
   "contact": {
     "title": "Contact Us",
-    "subtitle": "Get in Touch",
-    "description": "Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+    "subtitle": "Let's Connect",
+    "description": "Have questions about our programs? Want to get involved? We would love to hear from you. Reach out and we will respond as soon as possible.",
     "form": {
       "name": "Full Name",
       "namePlaceholder": "Enter your full name",
@@ -487,104 +487,104 @@
       "emailPlaceholder": "Enter your email address",
       "phone": "Phone Number",
       "phonePlaceholder": "Enter your phone number",
-      "company": "Company Name",
-      "companyPlaceholder": "Enter your company name",
+      "company": "Organisation (Optional)",
+      "companyPlaceholder": "Enter your organisation name",
       "subject": "Subject",
       "subjectPlaceholder": "What is this regarding?",
       "message": "Message",
-      "messagePlaceholder": "Tell us how we can help you...",
+      "messagePlaceholder": "Tell us how you would like to connect or get involved...",
       "submit": "Send Message",
       "submitting": "Sending...",
-      "successMessage": "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+      "successMessage": "Thank you! Your message has been sent successfully. We will get back to you soon.",
       "errorMessage": "Oops! Something went wrong. Please try again later."
     },
     "info": {
       "title": "Contact Information",
       "email": "Email",
       "phone": "Phone",
-      "address": "Address",
-      "workingHours": "Working Hours",
-      "workingHoursValue": "Monday - Friday: 9:00 AM - 6:00 PM"
+      "address": "Location",
+      "workingHours": "Office Hours",
+      "workingHoursValue": "Sunday - Thursday: 9:00 AM - 5:00 PM (Qatar Time)"
     },
     "locations": {
-      "title": "Our Locations",
+      "title": "Our Location",
       "headquarters": "Headquarters",
       "nigeria": {
-        "name": "Nigeria",
-        "city": "Abuja",
-        "address": "15 D Yalinga Crescent Off Adedokumbo Ademola Crescent, Wuse 2, Abuja, Nigeria",
-        "phone": "+234 (0) 816 177 8448"
+        "name": "Qatar",
+        "city": "Doha",
+        "address": "Doha, Qatar",
+        "phone": "+974 XXXX XXXX"
       },
       "qatar": {
         "name": "Qatar",
         "city": "Doha",
-        "address": "Level 14, Commercial Bank Plaza, West Bay, Doha",
-        "phone": "+974 3147 5305"
+        "address": "Doha, Qatar",
+        "phone": "+974 XXXX XXXX"
       }
     }
   },
   "footer": {
     "preFooter": {
-      "headline": "Ready to transform your enterprise?",
-      "subtext": "Partner with us to unlock the full potential of your digital journey. Our experts are ready to help you innovate, scale, and succeed.",
-      "primaryCta": "Get a Consultation",
-      "secondaryCta": "View Our Work"
+      "headline": "Ready to join our community of empowered women?",
+      "subtext": "Whether you want to build resilience, develop new skills, find a mentor, or contribute to humanitarian projects, WCI is here for you. Take the first step today.",
+      "primaryCta": "Get Involved",
+      "secondaryCta": "Explore Programs"
     },
     "headquarters": "Headquarters",
-    "description": "Pioneering IT company dedicated to improving lives through technology. Specializing in data analytics, AI, cybersecurity, and CBDC solutions.",
+    "description": "Women Connect International Training (WCI) strengthens emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora. Based in Doha, Qatar. C.R. No: 237930.",
     "services": {
-      "title": "Services",
-      "cybersecurity": "Cybersecurity",
-      "aiData": "AI & Data Analytics",
-      "blockchain": "Blockchain & DLT",
-      "itGovernance": "IT Governance",
-      "consulting": "IT Consulting",
-      "training": "Training Programs"
+      "title": "Programs",
+      "cybersecurity": "Psychosocial Resilience",
+      "aiData": "Digital & Economic Empowerment",
+      "blockchain": "Mentoring & Leadership",
+      "itGovernance": "Humanitarian Impact",
+      "consulting": "Healing Circles",
+      "training": "Skills Training"
     },
     "products": {
-      "title": "Products",
-      "digigate": "DigiGate",
-      "digitrust": "DigiTrust",
-      "digitrack": "DigiTrack",
-      "trustmehub": "TrustMeHub",
-      "boacrm": "BoaCRM"
+      "title": "Platform",
+      "digigate": "Learning Hub",
+      "digitrust": "Emotional Support",
+      "digitrack": "Mentor Matching",
+      "trustmehub": "Transparency Dashboard",
+      "boacrm": "Community Hub"
     },
     "company": {
-      "title": "Company",
+      "title": "Organisation",
       "about": "About Us",
-      "caseStudies": "Case Studies",
-      "industries": "Industries",
-      "insights": "Insights",
-      "careers": "Careers"
+      "caseStudies": "Impact Stories",
+      "industries": "Focus Areas",
+      "insights": "Blog",
+      "careers": "Get Involved"
     },
     "contact": {
-      "title": "Contact",
+      "title": "Connect",
       "getInTouch": "Get in Touch",
-      "scheduleCall": "Schedule a Call",
+      "scheduleCall": "Book a Conversation",
       "support": "Support"
     },
     "locations": {
-      "title": "Our Locations",
+      "title": "Our Location",
       "subtitle": "Where to find us"
     },
     "quickLinks": {
       "title": "Quick Links"
     },
     "socialLinks": {
-      "title": "Get in Touch",
+      "title": "Follow Us",
       "subtitle": "Social Links",
-      "description": "Connect with us on social media for updates and insights."
+      "description": "Connect with us on social media for updates, stories, and community events."
     },
     "newsletter": {
-      "title": "Newsletter",
-      "description": "Subscribe for updates",
+      "title": "Stay Connected",
+      "description": "Subscribe for updates and resources",
       "placeholder": "Enter your email",
       "subscribe": "Subscribe",
       "subscribing": "Subscribing...",
-      "success": "Thank you for subscribing!",
+      "success": "Thank you for subscribing! Welcome to the WCI community.",
       "error": "Failed to subscribe. Please try again."
     },
-    "copyright": "Global Digitalbit Limited. All rights reserved.",
+    "copyright": "Women Connect International Training. All rights reserved.",
     "privacyPolicy": "Privacy Policy",
     "termsOfService": "Terms of Service",
     "backToTop": "Back to top"
@@ -631,15 +631,15 @@
   },
   "notFound": {
     "title": "Page Not Found",
-    "subtitle": "Oops! Lost in the Digital Space",
-    "description": "Looks like you've ventured into uncharted territory. The page you're looking for doesn't exist or has been moved.",
+    "subtitle": "Oops! This Page Has Moved",
+    "description": "The page you are looking for does not exist or has been moved. Let us help you find what you need.",
     "searchSuggestion": "Try searching for what you need",
     "goHome": "Back to Home",
     "contactUs": "Contact Us",
     "exploreSuggestion": "Or explore these popular pages:",
     "pages": {
-      "services": "Services",
-      "products": "Products",
+      "services": "Programs",
+      "products": "Platform",
       "about": "About",
       "blog": "Blog",
       "contact": "Contact"
@@ -648,53 +648,53 @@
   "error": {
     "title": "Something Went Wrong",
     "subtitle": "We hit a snag",
-    "description": "We apologize for the inconvenience. An unexpected error has occurred. Please try again or contact support if the problem persists.",
+    "description": "We apologise for the inconvenience. An unexpected error has occurred. Please try again or contact us if the problem persists.",
     "showDetails": "Technical details",
     "tryAgain": "Try Again",
     "goHome": "Go Home",
-    "contactSupport": "Contact Support",
+    "contactSupport": "Contact Us",
     "errorId": "Error ID"
   },
   "faqs": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions about our services and solutions",
+    "subtitle": "Find answers to common questions about WCI, our programs, and how to get involved",
     "searchPlaceholder": "Search questions...",
     "noResults": "No questions found matching your search",
     "clearSearch": "Clear search",
     "stillHaveQuestions": "Still have questions?",
-    "supportMessage": "Our team is here to help you 24/7",
+    "supportMessage": "Our team is here to help",
     "contactUs": "Contact Us",
     "categories": {
-      "services": "Services",
+      "services": "Programs",
       "gettingStarted": "Getting Started",
-      "international": "International",
-      "training": "Training",
-      "aboutUs": "About Us"
+      "international": "Diaspora Community",
+      "training": "Training & Platform",
+      "aboutUs": "About WCI"
     },
     "questions": {
       "services1": {
-        "question": "What services does Global Digitalbit offer?",
-        "answer": "We specialize in IT consultancy, implementation, and training in key areas such as data analytics, artificial intelligence, cybersecurity, and central bank digital currency (CBDC). We also offer business process management, blockchain services, and comprehensive IT solutions tailored to your needs."
+        "question": "What programs does Women Connect International Training offer?",
+        "answer": "WCI offers four core program pillars: (1) Psychosocial Resilience - including healing circles, emotional intelligence training, and burnout prevention; (2) Digital & Economic Empowerment - including digital literacy, AI tools training, entrepreneurship, and financial literacy; (3) Mentoring & Leadership - including AI-powered mentor matching, governance literacy, and advocacy skills; and (4) Transparent Humanitarian Impact - including pooled community contributions with full transparency and impact measurement."
       },
       "services2": {
-        "question": "How can your solutions help my business grow?",
-        "answer": "Our solutions are designed to streamline operations, enhance security, and leverage cutting-edge technologies like AI and blockchain. We help businesses optimize their processes, make data-driven decisions, and stay ahead of the competition through digital transformation."
+        "question": "Who is eligible to participate in WCI programs?",
+        "answer": "WCI programs are designed primarily for African women living in the diaspora. Whether you are a recent migrant, a long-term resident abroad, a student, or a professional, our programs are tailored to support your unique journey. We welcome women of all backgrounds, ages, and experience levels who identify with the African diaspora experience."
       },
       "training": {
-        "question": "Do you provide training for our team?",
-        "answer": "Yes! We offer comprehensive training programs for individuals and organizations to enhance their IT capabilities. Our training covers various topics including data analytics, cybersecurity, blockchain technology, and more, ensuring your team stays up-to-date with the latest technologies."
+        "question": "How does the AI-powered platform work?",
+        "answer": "Our platform features four integrated modules: (1) The Emotional Support Companion provides non-diagnostic guided check-ins and wellbeing resources; (2) The Learning Management Hub offers structured courses in resilience and economic skills; (3) The AI Mentor Matching Engine connects you with mentors based on your goals, skills, and preferences; and (4) The Humanitarian Transparency Dashboard lets you track project progress and impact in real time. All modules work together to provide a holistic support experience."
       },
       "different": {
-        "question": "What makes Global Digitalbit different from other IT companies?",
-        "answer": "We combine innovation, reliability, integrity, and teamwork to deliver exceptional value. Our flagship platforms (DigiGate, TrustMe, and DigiTrack) provide enterprise-grade solutions, and we're committed to improving lives through technology while maintaining the highest ethical standards."
+        "question": "What makes WCI different from other women's organisations?",
+        "answer": "WCI is unique in our holistic, four-pillar approach that integrates emotional wellbeing, economic empowerment, leadership development, and humanitarian impact into one connected ecosystem. We are founded by diaspora women for diaspora women, we leverage AI technology to scale personalised support, and we maintain radical transparency in all our humanitarian initiatives through our real-time dashboard."
       },
       "gettingStarted": {
-        "question": "How do I get started with your services?",
-        "answer": "Getting started is easy! Simply contact us through our website or give us a call. We'll schedule a consultation to understand your unique business needs and challenges, then develop a tailored solution that aligns with your long-term goals."
+        "question": "How do I get started with WCI?",
+        "answer": "Getting started is simple. You can join our community by registering on our platform, attending one of our open healing circles or workshops, or reaching out to us through the contact page. We will help you identify the programs and resources that best match your needs and goals. There is no cost to join our community, and many of our foundational programs are offered free of charge."
       },
       "international": {
-        "question": "Do you work with international clients?",
-        "answer": "Absolutely! Global Digitalbit is positioned to serve both local and international clients with excellence and innovation. We have offices in Nigeria and Qatar, and we work with clients worldwide to deliver transformative technology solutions."
+        "question": "I live outside Qatar. Can I still participate?",
+        "answer": "Absolutely! While WCI is headquartered in Doha, Qatar, our programs are designed to serve diaspora women wherever they are. Most of our workshops, healing circles, and training programs are available online. Our AI platform is accessible from anywhere in the world. We also facilitate cross-border exchange programs and have a growing network of community ambassadors across multiple countries."
       }
     },
     "helpful": "Was this helpful?",
@@ -705,269 +705,269 @@
     "thankYou": "Thank you for your feedback!",
     "cta": {
       "title": "Still have questions?",
-      "subtitle": "Can't find the answer you're looking for? Please seek support.",
-      "button": "Contact Support"
+      "subtitle": "Cannot find the answer you are looking for? Reach out to our team.",
+      "button": "Contact Us"
     }
   },
   "testimonials": {
-    "title": "Client Testimonials",
-    "subtitle": "What Our Clients Say",
-    "clientSince": "Client since",
+    "title": "Community Voices",
+    "subtitle": "What Our Community Says",
+    "clientSince": "Member since",
     "items": {
       "testimonial1": {
-        "quote": "Global Digibit's custom software solutions have transformed our operations. Their team understood our complex requirements and delivered a system that exceeded expectations.",
-        "author": "David M.",
-        "role": "Valued Customer",
-        "company": "FinTech Solutions"
+        "quote": "The healing circles gave me a space to breathe and process what I had been carrying alone for years. For the first time since leaving home, I felt truly seen and understood by women who share my experience.",
+        "author": "Amina K.",
+        "role": "Program Participant",
+        "company": "Doha, Qatar"
       },
       "testimonial2": {
-        "quote": "Their cybersecurity solutions have given us peace of mind. The team's expertise in protecting our digital assets has been invaluable to our organization.",
-        "author": "Sarah K.",
-        "role": "IT Director",
-        "company": "SecureNet Systems"
+        "quote": "The digital skills training transformed my outlook completely. I went from feeling lost in a new country to launching my own online business. WCI did not just teach me skills, they gave me confidence.",
+        "author": "Grace O.",
+        "role": "Entrepreneur",
+        "company": "London, UK"
       },
       "testimonial3": {
-        "quote": "The AI integration services provided by Global Digibit have revolutionized our data analytics capabilities. We're now making smarter, faster decisions.",
-        "author": "Michael O.",
-        "role": "Operations Manager",
-        "company": "Retail Giants"
+        "quote": "Being matched with my mentor through the platform changed everything. She understood my background and helped me navigate governance and advocacy in ways I never thought possible. I am now leading community initiatives.",
+        "author": "Fatou D.",
+        "role": "Community Leader",
+        "company": "Paris, France"
       },
       "testimonial4": {
-        "quote": "Working with Global Digibit on our blockchain implementation was seamless. Their technical knowledge and professional approach made all the difference.",
-        "author": "Amina B.",
-        "role": "Finance Director",
-        "company": "Global Bank"
+        "quote": "What I love most about WCI is the transparency. I can see exactly where my contributions go and the real impact they make in communities back home. It restored my trust in giving back.",
+        "author": "Zainab M.",
+        "role": "Community Contributor",
+        "company": "Toronto, Canada"
       },
       "testimonial5": {
-        "quote": "The training programs offered by Global Digibit have upskilled our entire team. The practical, hands-on approach ensured immediate applicability.",
-        "author": "James T.",
-        "role": "HR Manager",
-        "company": "EduTech Inc"
+        "quote": "The emotional support companion on the platform became my daily anchor. The guided check-ins helped me recognise burnout before it consumed me. Every diaspora woman needs this kind of support.",
+        "author": "Chioma A.",
+        "role": "Healthcare Worker",
+        "company": "Dubai, UAE"
       },
       "testimonial6": {
-        "quote": "Global Digibit's CBDC consulting services helped us navigate complex regulatory requirements. Their expertise in this emerging field is unmatched.",
-        "author": "Fatima A.",
-        "role": "Banking Executive",
-        "company": "National Bank"
+        "quote": "WCI's entrepreneurship bootcamp gave me the financial literacy and business planning skills I needed to turn my idea into a real business. The community of women cheering me on made all the difference.",
+        "author": "Halima B.",
+        "role": "Small Business Owner",
+        "company": "Doha, Qatar"
       }
     }
   },
   "process": {
-    "label": "Our Process",
-    "title": "How We Work",
-    "heading1": "We ensure your systems are secure",
-    "heading2": "and optimized for growth",
-    "subtitle": "Our proven four-step methodology ensures exceptional results for every project",
+    "label": "Our Approach",
+    "title": "The WCI Journey",
+    "heading1": "From healing to empowerment,",
+    "heading2": "from leadership to lasting impact",
+    "subtitle": "Our proven four-step journey guides women from emotional stabilisation through skill-building, leadership development, and community impact",
     "steps": {
       "step1": {
-        "title": "Client Consultation and Needs Assessment",
-        "description": "We begin every project by thoroughly understanding your unique business needs, challenges, and goals through comprehensive consultations."
+        "title": "Stabilise",
+        "description": "Begin with psychosocial support, healing circles, and emotional resilience building. Create a foundation of emotional wellbeing and community belonging that enables growth in all other areas."
       },
       "step2": {
-        "title": "Data-Driven Solution Development",
-        "description": "Our experts develop tailored solutions using data-driven approaches and industry best practices to address your specific requirements."
+        "title": "Strengthen",
+        "description": "Build digital literacy, economic skills, and financial independence through structured training programs. Develop the practical capabilities needed to thrive in the diaspora and contribute to your community."
       },
       "step3": {
-        "title": "Implementation and Integration",
-        "description": "We seamlessly implement solutions into your existing infrastructure, ensuring minimal disruption and maximum efficiency."
+        "title": "Lead",
+        "description": "Step into leadership through mentorship, governance training, and advocacy development. Connect with mentors, join the ambassador program, and develop the confidence to lead change at every level."
       },
       "step4": {
-        "title": "Continuous Support and Optimization",
-        "description": "Post-implementation, we provide ongoing support, monitoring, and optimization to ensure sustained success and growth."
+        "title": "Impact",
+        "description": "Channel your growth into transparent humanitarian action. Contribute to community projects, participate in impact measurement, and help transform vulnerable communities across Africa with full accountability."
       }
     }
   },
   "websummit": {
     "event": {
-      "name": "Web Summit Qatar 2026",
-      "dates": "Feb 1-4",
-      "fullDates": "February 1-4, 2026",
+      "name": "WCI Community Event 2026",
+      "dates": "Coming Soon",
+      "fullDates": "Dates to be announced",
       "location": "Doha, Qatar"
     },
     "hero": {
-      "tagline": "Transforming Ideas into Digital Reality",
-      "subtitle": "Pioneering IT solutions in Artificial Intelligence, Blockchain, Cybersecurity, and Digital Transformation for enterprises worldwide.",
+      "tagline": "Empowering Diaspora Women Through Connection and Action",
+      "subtitle": "Join us for our upcoming community events featuring workshops, healing circles, leadership panels, and networking opportunities for African diaspora women.",
       "stats": {
-        "years": "Years of Excellence",
-        "countries": "Countries Served",
-        "projects": "Projects Delivered",
-        "satisfaction": "Client Satisfaction"
+        "years": "Years of Impact",
+        "countries": "Countries Reached",
+        "projects": "Women Empowered",
+        "satisfaction": "Program Satisfaction"
       },
       "expertise": {
-        "ai": "Artificial Intelligence",
-        "blockchain": "Blockchain",
-        "cybersecurity": "Cybersecurity",
-        "digitalTransform": "Digital Transformation"
+        "ai": "Psychosocial Resilience",
+        "blockchain": "Economic Empowerment",
+        "cybersecurity": "Leadership Development",
+        "digitalTransform": "Humanitarian Impact"
       },
       "buttons": {
-        "explore": "Explore Our Solutions",
-        "schedule": "Schedule a Meeting"
+        "explore": "Explore Our Programs",
+        "schedule": "Register Interest"
       }
     },
     "pillars": {
       "ai": {
-        "title": "Artificial Intelligence",
-        "description": "Building intelligent systems that learn, adapt, and drive business transformation."
+        "title": "Psychosocial Resilience",
+        "description": "Healing circles, emotional intelligence, and evidence-based wellbeing programs for diaspora women."
       },
       "blockchain": {
-        "title": "Blockchain Solutions",
-        "description": "Implementing secure, transparent, and immutable solutions for the modern digital economy."
+        "title": "Economic Empowerment",
+        "description": "Digital literacy, entrepreneurship, and financial independence for sustainable livelihoods."
       },
       "cybersecurity": {
-        "title": "Cybersecurity",
-        "description": "Protecting your digital assets with enterprise-grade security solutions."
+        "title": "Leadership Development",
+        "description": "Mentoring, governance literacy, and advocacy skills for the next generation of women leaders."
       },
       "governance": {
-        "title": "IT Governance",
-        "description": "Ensuring technology initiatives support business strategy and compliance."
+        "title": "Humanitarian Impact",
+        "description": "Transparent, accountable community initiatives that create measurable change in Africa."
       }
     },
     "whyPartner": {
-      "label": "Why Digibit?",
-      "title": "The Right Partner for Every Stakeholder",
-      "subtitle": "We bring together expertise, innovation, and commitment to deliver exceptional results.",
+      "label": "Why WCI?",
+      "title": "A Place for Every Woman",
+      "subtitle": "Whether you are seeking support, looking to grow, or ready to give back, WCI has a pathway for you.",
       "audiences": {
         "investors": {
-          "label": "FOR INVESTORS",
+          "label": "FOR PARTNERS & DONORS",
           "bullets": {
-            "1": "Portfolio companies need our solutions",
-            "2": "Proven track record (500+ projects)",
-            "3": "Regional expertise (GCC & Africa)",
-            "4": "Emerging tech focus (AI, Blockchain)",
-            "5": "Co-investment opportunities"
+            "1": "Full transparency on fund allocation and impact",
+            "2": "Real-time humanitarian dashboard",
+            "3": "Evidence-based program design",
+            "4": "Measurable outcomes and reporting",
+            "5": "Co-creation opportunities"
           }
         },
         "enterprises": {
-          "label": "FOR ENTERPRISES",
+          "label": "FOR PARTICIPANTS",
           "bullets": {
-            "1": "End-to-end digital transformation",
-            "2": "22 service towers under one roof",
-            "3": "Local compliance expertise (QCB, NIA, Qatar Data Protection)",
-            "4": "Enterprise-grade products",
-            "5": "99% client satisfaction"
+            "1": "Free access to foundational programs",
+            "2": "AI-powered emotional support tools",
+            "3": "Structured skills training pathways",
+            "4": "Personalised mentor matching",
+            "5": "Supportive community of diaspora women"
           }
         },
         "governments": {
-          "label": "FOR GOVERNMENTS",
+          "label": "FOR MENTORS & VOLUNTEERS",
           "bullets": {
-            "1": "National-scale digital infrastructure",
-            "2": "CBDC and digital currency expertise",
-            "3": "Credential verification systems",
-            "4": "Smart city solutions",
-            "5": "Regulatory compliance frameworks"
+            "1": "AI-matched mentoring relationships",
+            "2": "Structured mentoring frameworks",
+            "3": "Cross-border exchange opportunities",
+            "4": "Ambassador program leadership",
+            "5": "Skills-based volunteering pathways"
           }
         },
         "startups": {
-          "label": "FOR STARTUPS",
+          "label": "FOR ORGANISATIONS",
           "bullets": {
-            "1": "Technical partnership opportunities",
-            "2": "API and integration solutions",
-            "3": "Security & compliance guidance",
-            "4": "Regional market access",
-            "5": "Enterprise customer introductions"
+            "1": "Partnership and collaboration opportunities",
+            "2": "Co-hosted workshops and events",
+            "3": "Research and impact data sharing",
+            "4": "Community access and engagement",
+            "5": "Joint humanitarian initiatives"
           }
         }
       }
     },
     "compliance": {
-      "label": "Compliance & Trust",
-      "title": "Certified. Compliant. Trusted.",
-      "subtitle": "We meet the highest standards so our clients can operate with confidence across every jurisdiction we serve.",
+      "label": "Trust & Accountability",
+      "title": "Transparent. Accountable. Trusted.",
+      "subtitle": "We uphold the highest standards of governance, transparency, and accountability in everything we do.",
       "certifications": {
-        "iso27001": "ISO 27001 Lead Implementer",
-        "nist": "NIST Cybersecurity Framework",
-        "qcb": "Qatar Central Bank (QCB) Standards",
-        "nia": "Qatar National Information Assurance (NIA)",
-        "qdpl": "Qatar Data Protection Law",
-        "gdpr": "GDPR Compliant",
-        "ndpr": "NDPR/NDPA (Nigeria)",
-        "pci": "PCI-DSS"
+        "iso27001": "Registered NGO (C.R. No: 237930)",
+        "nist": "Evidence-Based Program Design",
+        "qcb": "Real-Time Impact Reporting",
+        "nia": "Community-Led Governance",
+        "qdpl": "Data Privacy Compliant",
+        "gdpr": "Financial Transparency",
+        "ndpr": "Independent Impact Measurement",
+        "pci": "Ethical AI Practices"
       }
     },
     "successStories": {
-      "label": "Success Stories",
-      "title": "Proven Impact Across Industries",
+      "label": "Impact Stories",
+      "title": "Real Women, Real Transformation",
       "readMore": "Read more"
     },
     "products": {
-      "badge": "OUR FLAGSHIP PRODUCTS",
-      "title": "Solutions Powering the Future",
-      "subtitle": "Five enterprise-grade platforms built to transform trust, connectivity, and operations across industries worldwide.",
-      "cta": "Explore All Products",
+      "badge": "OUR PLATFORM",
+      "title": "Technology Powering Empowerment",
+      "subtitle": "Four AI-powered modules designed to support diaspora women on their journey from resilience to leadership to impact.",
+      "cta": "Explore the Platform",
       "learnMore": "Learn more"
     },
     "services": {
-      "label": "Consulting Services",
-      "title1": "22 Service Towers.",
-      "title2": "One Integrated Partner.",
-      "subtitle": "From strategy to execution, our consulting practice spans 22 service towers designed to address every dimension of digital transformation.",
-      "engagementModels": "Engagement Models"
+      "label": "Our Programs",
+      "title1": "4 Program Pillars.",
+      "title2": "One Holistic Approach.",
+      "subtitle": "From psychosocial resilience to transparent humanitarian impact, our programs address every dimension of empowerment for diaspora women.",
+      "engagementModels": "Program Formats"
     },
     "industries": {
-      "label": "Industry Expertise",
-      "title1": "Deep Domain Knowledge",
-      "title2": "Across Key Sectors",
-      "subtitle": "Our consultants bring years of hands-on experience within the industries they serve, ensuring solutions that are compliant, practical, and impactful."
+      "label": "Focus Areas",
+      "title1": "Deep Understanding of",
+      "title2": "the Diaspora Experience",
+      "subtitle": "Our programs are designed by women who have lived the diaspora experience, ensuring culturally competent, relevant, and impactful support."
     },
     "meetUs": {
-      "label": "Meet Us",
-      "title1": "Find Us at",
-      "title2": "Web Summit Qatar",
-      "venue": "Doha Exhibition & Convention Center, West Bay, Doha",
-      "booth": "Booth A5-35",
+      "label": "Join Us",
+      "title1": "Attend Our",
+      "title2": "Upcoming Events",
+      "venue": "Doha, Qatar & Online",
+      "booth": "Virtual & In-Person",
       "whatToExpect": "What to Expect",
       "expectations": {
-        "1": "Live product demonstrations",
-        "2": "Solution architecture consultations",
-        "3": "Partnership discussions",
-        "4": "Executive briefings",
-        "5": "Technical deep-dives"
+        "1": "Healing circles and peer support sessions",
+        "2": "Digital skills and entrepreneurship workshops",
+        "3": "Leadership and advocacy panels",
+        "4": "Mentor matching and networking",
+        "5": "Humanitarian impact showcases"
       }
     },
     "training": {
-      "label": "Training Programs",
+      "label": "Skills Training",
       "title1": "Build Capabilities That",
-      "title2": "Matter"
+      "title2": "Transform Lives"
     },
     "contactSection": {
       "label": "Let's Connect",
-      "title1": "Start a",
-      "title2": "Conversation",
+      "title1": "Start Your",
+      "title2": "Journey",
       "form": {
         "name": "Your Name",
-        "company": "Company",
+        "company": "Organisation (Optional)",
         "email": "Email Address",
-        "selectRole": "Select Role",
+        "selectRole": "I am interested in...",
         "message": "Your Message",
         "submit": "Send Message",
         "successTitle": "Message Sent!",
-        "successMessage": "We'll get back to you before the summit."
+        "successMessage": "Thank you for reaching out. We will be in touch soon."
       },
       "scheduleMeeting": {
-        "title": "Schedule a Meeting",
-        "subtitle": "Book a slot during the summit",
-        "button": "Book a Time Slot"
+        "title": "Book a Conversation",
+        "subtitle": "Schedule a time to learn more about WCI",
+        "button": "Book a Time"
       },
       "footer": {
-        "company": "Digibit Global Solutions",
-        "copyright": "\u00A9 2026 Global Digitalbit Limited. All rights reserved.",
-        "eventInfo": "Web Summit Qatar 2026 | February 1-4, Doha",
-        "tagline": "Built with love for Web Summit Qatar"
+        "company": "Women Connect International Training",
+        "copyright": "Women Connect International Training. All rights reserved.",
+        "eventInfo": "Based in Doha, Qatar | Serving Diaspora Women Globally",
+        "tagline": "Built with purpose for diaspora women everywhere"
       }
     },
     "contact": {
-      "title": "Let's Connect at Web Summit",
-      "subtitle": "Schedule a meeting to discuss how we can help transform your business",
-      "cta": "Schedule a Meeting"
+      "title": "Let's Connect",
+      "subtitle": "Reach out to learn more about our programs and how to get involved",
+      "cta": "Contact Us"
     },
     "section": {
       "whoweare": "Who We Are",
-      "heading1": "Pioneering Technology",
+      "heading1": "Empowering Diaspora Women",
       "heading2": "For a Better Tomorrow"
     }
   },
   "search": {
-    "placeholder": "Search services, products, insights...",
+    "placeholder": "Search programs, platform, resources...",
     "recentSearches": "Recent Searches",
     "trending": "Trending",
     "quickLinks": "Quick Links",
@@ -977,10 +977,10 @@
   },
   "cookieConsent": {
     "title": "Cookie Preferences",
-    "description": "We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking 'Accept All', you consent to our use of cookies.",
+    "description": "We use cookies to enhance your browsing experience, serve personalised content, and analyse our traffic. By clicking 'Accept All', you consent to our use of cookies.",
     "acceptAll": "Accept All",
     "rejectAll": "Reject All",
-    "customize": "Customize",
+    "customize": "Customise",
     "savePreferences": "Save Preferences",
     "categories": {
       "essential": {
@@ -993,110 +993,110 @@
       },
       "marketing": {
         "title": "Marketing Cookies",
-        "description": "Used to deliver personalized advertisements and track marketing campaigns."
+        "description": "Used to deliver relevant content and track outreach campaigns."
       }
     }
   },
   "newsletter": {
-    "success": "Successfully subscribed!",
+    "success": "Successfully subscribed! Welcome to the WCI community.",
     "error": "Please enter a valid email address.",
     "placeholder": "Enter your email"
   },
   "language": "Language",
   "careers": {
     "hero": {
-      "kicker": "Join Our Team",
+      "kicker": "Get Involved",
       "title": {
-        "line1": "Build the Future of",
-        "highlight": "Technology"
+        "line1": "Join the Movement for",
+        "highlight": "Women's Empowerment"
       },
-      "subtitle": "Join a global team of innovators shaping the future of data analytics, AI, cybersecurity, and digital finance. We're looking for passionate people ready to make an impact.",
+      "subtitle": "Join a growing community of diaspora women, mentors, volunteers, and partners working together to build resilience, develop leadership, and create lasting impact across Africa.",
       "scroll": "Explore opportunities",
       "stats": {
-        "employees": "Team Members",
-        "countries": "Countries Served",
-        "openings": "Open Positions"
+        "employees": "Community Members",
+        "countries": "Countries Reached",
+        "openings": "Open Opportunities"
       }
     },
     "benefits": {
-      "overline": "Why Join Us",
-      "title": "Benefits & Perks",
-      "description": "We believe in taking care of our team. Here's what you can expect when you join Global Digitalbit.",
+      "overline": "Why Get Involved",
+      "title": "What You Gain",
+      "description": "When you join WCI, you become part of a supportive ecosystem designed to help you grow, lead, and make a difference.",
       "items": {
         "remote-work": {
-          "title": "Remote-First Culture",
-          "description": "Work from anywhere in the world. We believe great work happens everywhere."
+          "title": "Global Community",
+          "description": "Connect with diaspora women worldwide. Our programs are accessible from anywhere, bringing women together across borders."
         },
         "health": {
-          "title": "Health & Wellness",
-          "description": "Comprehensive health insurance and wellness programs for you and your family."
+          "title": "Emotional Support",
+          "description": "Access healing circles, emotional check-ins, and peer support to strengthen your resilience and wellbeing."
         },
         "learning": {
-          "title": "Learning & Development",
-          "description": "Annual learning budget, certification sponsorship, and conference attendance."
+          "title": "Skills Development",
+          "description": "Build digital literacy, entrepreneurship skills, financial literacy, and leadership capabilities through structured programs."
         },
         "equity": {
-          "title": "Equity & Growth",
-          "description": "Competitive compensation with equity options and clear career progression."
+          "title": "Mentorship Access",
+          "description": "Get matched with experienced mentors who understand your background and can guide your personal and professional growth."
         },
         "time-off": {
-          "title": "Flexible Time Off",
-          "description": "Generous PTO policy plus public holidays and personal days."
+          "title": "Leadership Pathways",
+          "description": "Develop governance literacy, advocacy skills, and join our ambassador program to lead change in your community."
         },
         "team": {
-          "title": "Team Events",
-          "description": "Annual retreats, team-building activities, and celebration of milestones."
+          "title": "Humanitarian Impact",
+          "description": "Contribute to transparent community projects and see the real impact of your involvement in vulnerable communities across Africa."
         }
       }
     },
     "positions": {
-      "overline": "Open Positions",
-      "title": "Find Your Role",
-      "description": "Explore our current openings and find the perfect opportunity to grow your career.",
-      "allDepartments": "All Departments",
+      "overline": "Opportunities",
+      "title": "Ways to Get Involved",
+      "description": "Explore the different ways you can participate in and contribute to the WCI community.",
+      "allDepartments": "All Opportunities",
       "remote": "Remote",
       "apply": "Apply Now",
-      "noPositions": "No positions available in this department at the moment.",
-      "dontSee": "Don't see a role that fits?",
-      "generalApplication": "Send us a general application"
+      "noPositions": "No opportunities available in this area at the moment.",
+      "dontSee": "Have another way to contribute?",
+      "generalApplication": "Send us a message"
     },
     "culture": {
-      "overline": "Our Culture",
-      "title": "Where Innovation Meets Purpose",
-      "description": "At Global Digitalbit, we're building more than products – we're building a culture where every voice matters, every idea is valued, and every team member can thrive.",
+      "overline": "Our Community",
+      "title": "Where Connection Meets Purpose",
+      "description": "At WCI, we are building more than programs. We are building a community where every woman's voice matters, every experience is valued, and every member can thrive and lead.",
       "satisfaction": {
-        "value": "Employee Satisfaction",
-        "label": "Based on internal surveys"
+        "value": "Member Satisfaction",
+        "label": "Based on participant feedback"
       },
       "values": {
         "innovation": {
-          "title": "Innovation First",
-          "description": "We push boundaries and embrace new technologies to solve complex problems."
+          "title": "Dignity First",
+          "description": "We honour every woman's story and create safe spaces for vulnerability and growth."
         },
         "excellence": {
-          "title": "Excellence Always",
-          "description": "We hold ourselves to the highest standards in everything we do."
+          "title": "Radical Transparency",
+          "description": "We hold ourselves accountable and ensure every contribution creates visible impact."
         },
         "collaboration": {
           "title": "Collaborative Spirit",
-          "description": "We believe diverse perspectives lead to better solutions."
+          "description": "We believe diverse perspectives and shared experiences lead to stronger solutions."
         },
         "impact": {
-          "title": "Meaningful Impact",
-          "description": "We focus on work that makes a real difference for our clients and communities."
+          "title": "Lasting Impact",
+          "description": "We focus on creating sustainable change that transforms lives and communities."
         }
       }
     },
     "cta": {
-      "title": "Ready to Make an Impact?",
-      "description": "Join our team of innovators and help us shape the future of technology. We're excited to hear from you.",
-      "primary": "View Open Positions",
+      "title": "Ready to Be Part of the Change?",
+      "description": "Join our community of empowered diaspora women building resilience, developing leadership, and creating lasting impact. We are excited to welcome you.",
+      "primary": "Join Our Community",
       "secondary": "Email Us",
-      "trustedBy": "Trusted by leading organizations worldwide"
+      "trustedBy": "Trusted by diaspora women across the globe"
     },
     "apply": {
-      "title": "Apply for this Position",
-      "subtitle": "Fill out the form below to submit your application.",
+      "title": "Join Our Community",
+      "subtitle": "Fill out the form below to express your interest in getting involved with WCI.",
       "firstNameLabel": "First Name",
       "firstNamePlaceholder": "Enter your first name",
       "lastNameLabel": "Last Name",
@@ -1104,23 +1104,23 @@
       "emailLabel": "Email Address",
       "emailPlaceholder": "you@example.com",
       "phoneLabel": "Phone Number (Optional)",
-      "phonePlaceholder": "+1 (555) 000-0000",
-      "resumeLabel": "Resume / CV",
-      "dragDropResume": "Drag and drop your resume here, or click to browse",
+      "phonePlaceholder": "+974 XXXX XXXX",
+      "resumeLabel": "CV / Resume (Optional)",
+      "dragDropResume": "Drag and drop your CV here, or click to browse",
       "resumeFormats": "PDF, DOC, or DOCX (max 5MB)",
-      "coverLetterLabel": "Cover Letter (Optional)",
-      "coverLetterPlaceholder": "Tell us why you're interested in this role and what makes you a great fit...",
+      "coverLetterLabel": "Tell Us About Yourself",
+      "coverLetterPlaceholder": "Share your background, interests, and how you would like to be involved with WCI...",
       "linkedinLabel": "LinkedIn Profile (Optional)",
       "linkedinPlaceholder": "https://linkedin.com/in/yourprofile",
-      "portfolioLabel": "Portfolio / Website (Optional)",
-      "portfolioPlaceholder": "https://yourportfolio.com",
-      "submitButton": "Submit Application",
+      "portfolioLabel": "Website or Portfolio (Optional)",
+      "portfolioPlaceholder": "https://yourwebsite.com",
+      "submitButton": "Submit Interest",
       "submitting": "Submitting...",
-      "successTitle": "Application Submitted!",
-      "successMessage": "Thank you for your application! We'll review your submission and get back to you soon.",
-      "applyAgain": "Submit Another Application",
+      "successTitle": "Thank You for Your Interest!",
+      "successMessage": "We have received your submission and will be in touch soon. Welcome to the WCI community!",
+      "applyAgain": "Submit Another Interest Form",
       "errorMessage": "Something went wrong. Please try again later.",
-      "networkError": "Unable to submit application. Please check your connection and try again.",
+      "networkError": "Unable to submit. Please check your connection and try again.",
       "rateLimitError": "Too many requests. Please wait a moment and try again.",
       "privacyNote": "By submitting this form, you agree to our",
       "privacyLink": "Privacy Policy",
@@ -1131,7 +1131,7 @@
         "lastNameMinLength": "Last name must be at least 2 characters",
         "emailRequired": "Email address is required",
         "emailInvalid": "Please enter a valid email address",
-        "resumeRequired": "Please upload your resume",
+        "resumeRequired": "Please upload your CV",
         "invalidFileType": "Please upload a PDF, DOC, or DOCX file",
         "fileTooLarge": "File size must be less than 5MB",
         "linkedinInvalid": "Please enter a valid LinkedIn URL",

@@ -107,17 +107,17 @@ export function BackToTop({
         isRtl ? "left-6" : "right-6",
         // Size: 48px circle
         "h-12 w-12 rounded-full",
-        // Default state: #1E4DB7 background, white icon
-        "bg-[#1E4DB7] text-white",
+        // Default state: #0D7377 background, white icon
+        "bg-[#0D7377] text-white",
         // Shadow
         "shadow-lg",
         // Flex center for icon
         "flex items-center justify-center",
-        // Hover state: #FFE63B background, dark icon
-        "hover:bg-[#FFE63B] hover:text-neutral-900",
+        // Hover state: #E8A317 background, dark icon
+        "hover:bg-[#E8A317] hover:text-neutral-900",
         "hover:shadow-xl",
         // Focus state
-        "focus:outline-none focus:ring-2 focus:ring-[#1E4DB7] focus:ring-offset-2",
+        "focus:outline-none focus:ring-2 focus:ring-[#0D7377] focus:ring-offset-2",
         // Active state
         "active:scale-95",
         // Transition for hover effects

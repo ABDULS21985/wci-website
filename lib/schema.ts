@@ -1,32 +1,25 @@
 // JSON-LD Schema Generators for SEO
 // All schemas follow https://schema.org specifications
 
-const BASE_URL = "https://globaldigibit.com";
-const ORG_NAME = "Global Digitalbit Limited";
-const LOGO_URL = `${BASE_URL}/logo/digibit.png`;
+const BASE_URL = "https://womenconnectintl.org";
+const ORG_NAME = "Women Connect International";
+const LOGO_URL = `${BASE_URL}/logo/wci-logo.jpeg`;
 
 // --- Organization Schema (site-wide) ---
 export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "NGO",
     name: ORG_NAME,
     url: BASE_URL,
     logo: LOGO_URL,
     description:
-      "Global Digitalbit Limited is a pioneering IT company dedicated to improving lives through technology. Specializing in consultancy, implementation, and training in data analytics, artificial intelligence, cybersecurity, and central bank digital currency (CBDC).",
+      "Women Connect International is a diaspora-led empowerment initiative strengthening the emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora. Based in Doha, Qatar.",
     contactPoint: [
       {
         "@type": "ContactPoint",
-        telephone: "+234-816-177-8448",
-        contactType: "customer service",
-        areaServed: "NG",
-        availableLanguage: ["English"],
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: "+974-3147-5305",
-        contactType: "customer service",
+        telephone: "+974-XXXX-XXXX",
+        contactType: "general inquiry",
         areaServed: "QA",
         availableLanguage: ["English", "Arabic"],
       },
@@ -34,21 +27,14 @@ export function generateOrganizationSchema() {
     address: [
       {
         "@type": "PostalAddress",
-        streetAddress: "15 D Yalinga Crescent Off Adedokumbo Ademola Crescent, Wuse 2",
-        addressLocality: "Abuja",
-        addressCountry: "NG",
-      },
-      {
-        "@type": "PostalAddress",
-        streetAddress: "Level 14, Commercial Bank Plaza, West Bay",
         addressLocality: "Doha",
         addressCountry: "QA",
       },
     ],
     sameAs: [
-      "https://www.facebook.com/globaldigibit",
-      "https://x.com/globaldigibit",
-      "https://www.linkedin.com/company/globaldigibit",
+      "https://www.facebook.com/womenconnectintl",
+      "https://x.com/womenconnectintl",
+      "https://www.linkedin.com/company/women-connect-international",
     ],
   };
 }
@@ -177,9 +163,9 @@ export function generateLocalBusinessSchema() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "Global Digitalbit Limited - Nigeria",
+      name: "Women Connect International - Nigeria",
       telephone: "+234-816-177-8448",
-      email: "connect@globaldigibit.com",
+      email: "connect@womenconnectintl.org",
       url: BASE_URL,
       address: {
         "@type": "PostalAddress",
@@ -197,9 +183,9 @@ export function generateLocalBusinessSchema() {
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      name: "Global Digitalbit Limited - Qatar",
+      name: "Women Connect International - Qatar",
       telephone: "+974-3147-5305",
-      email: "connect@globaldigibit.com",
+      email: "connect@womenconnectintl.org",
       url: BASE_URL,
       address: {
         "@type": "PostalAddress",

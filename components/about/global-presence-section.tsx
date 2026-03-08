@@ -20,24 +20,24 @@ interface Office {
 
 const offices: Office[] = [
     {
-        key: "abuja",
-        flag: "\u{1F1F3}\u{1F1EC}",
-        phone: "+234 (0) 816 177 8448",
-        email: "connect@globaldigibit.com",
-        timezone: "WAT (UTC+1)",
-        gradient: "from-primary to-secondary",
-        bgGradient: "from-primary/10 to-secondary/5",
-        mapPosition: { x: 48, y: 52 }, // Nigeria position
-    },
-    {
         key: "doha",
         flag: "\u{1F1F6}\u{1F1E6}",
         phone: "+974 3147 5305",
-        email: "connect@globaldigibit.com",
+        email: "info@womenconnectintl.org",
         timezone: "AST (UTC+3)",
+        gradient: "from-primary to-secondary",
+        bgGradient: "from-primary/10 to-secondary/5",
+        mapPosition: { x: 58, y: 42 }, // Qatar position
+    },
+    {
+        key: "outreach",
+        flag: "\u{1F30D}",
+        phone: "+974 3147 5305",
+        email: "programs@womenconnectintl.org",
+        timezone: "Multiple Timezones",
         gradient: "from-accent-orange to-accent-red",
         bgGradient: "from-accent-orange/10 to-accent-red/5",
-        mapPosition: { x: 58, y: 42 }, // Qatar position
+        mapPosition: { x: 48, y: 52 }, // Africa outreach
     },
 ];
 
@@ -259,8 +259,8 @@ function WorldMap({
                     />
                     <defs>
                         <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" stopColor="#1E4DB7" stopOpacity="0.5" />
-                            <stop offset="50%" stopColor="#FFE63B" stopOpacity="0.5" />
+                            <stop offset="0%" stopColor="#0D7377" stopOpacity="0.5" />
+                            <stop offset="50%" stopColor="#E8A317" stopOpacity="0.5" />
                             <stop offset="100%" stopColor="#F59A23" stopOpacity="0.5" />
                         </linearGradient>
                     </defs>
@@ -293,7 +293,7 @@ function WorldMap({
                 </div>
                 <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-accent-orange" />
-                    <span>Regional Office</span>
+                    <span>Outreach Region</span>
                 </div>
             </motion.div>
         </div>
@@ -444,7 +444,7 @@ export function GlobalPresenceSection() {
             <div
                 className="absolute inset-0 opacity-[0.03]"
                 style={{
-                    backgroundImage: `radial-gradient(circle, #1E4DB7 1px, transparent 1px)`,
+                    backgroundImage: `radial-gradient(circle, #0D7377 1px, transparent 1px)`,
                     backgroundSize: "24px 24px",
                 }}
             />

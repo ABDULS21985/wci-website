@@ -105,7 +105,7 @@ export function BlogCardPremium({
     setIsHovered(false);
   };
 
-  const categoryColor = post.category?.accentColor || "#1E4DB7";
+  const categoryColor = post.category?.accentColor || "#0D7377";
   const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-US", {
     month: "short",
     day: "numeric",
@@ -196,7 +196,7 @@ export function BlogCardPremium({
             {/* Content Section */}
             <div className="relative flex-1 p-6 md:py-8 flex flex-col justify-center">
               {/* Title */}
-              <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-white mb-3 line-clamp-2 group-hover:text-[#1E4DB7] dark:group-hover:text-[#F59A23] transition-colors duration-300">
+              <h3 className="text-xl md:text-2xl font-bold text-neutral-900 dark:text-white mb-3 line-clamp-2 group-hover:text-[#0D7377] dark:group-hover:text-[#F59A23] transition-colors duration-300">
                 {post.title}
               </h3>
 
@@ -253,7 +253,7 @@ export function BlogCardPremium({
 
             {/* Bottom accent line */}
             <motion.div
-              className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#1E4DB7] to-[#F59A23]"
+              className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#0D7377] to-[#F59A23]"
               initial={{ width: 0 }}
               animate={isHovered ? { width: "100%" } : { width: 0 }}
               transition={{ duration: 0.4 }}
@@ -304,7 +304,7 @@ export function BlogCardPremium({
 
             {/* Animated gradient on hover */}
             <motion.div
-              className="absolute inset-0 bg-gradient-to-br from-[#1E4DB7]/30 to-[#F59A23]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+              className="absolute inset-0 bg-gradient-to-br from-[#0D7377]/30 to-[#F59A23]/30 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
             />
 
             {/* Content */}
@@ -454,7 +454,7 @@ export function BlogCardPremium({
             >
               {post.category?.name}
             </span>
-            <h3 className="text-sm font-bold text-neutral-900 dark:text-white mt-1 line-clamp-2 group-hover:text-[#1E4DB7] dark:group-hover:text-[#F59A23] transition-colors">
+            <h3 className="text-sm font-bold text-neutral-900 dark:text-white mt-1 line-clamp-2 group-hover:text-[#0D7377] dark:group-hover:text-[#F59A23] transition-colors">
               {post.title}
             </h3>
             <div className="flex items-center gap-3 mt-2 text-xs text-neutral-500 dark:text-neutral-400">
@@ -571,7 +571,7 @@ export function BlogCardPremium({
             )}
 
             {/* Title */}
-            <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-3 line-clamp-2 group-hover:text-[#1E4DB7] dark:group-hover:text-[#F59A23] transition-colors duration-300">
+            <h3 className="text-lg font-bold text-neutral-900 dark:text-white mb-3 line-clamp-2 group-hover:text-[#0D7377] dark:group-hover:text-[#F59A23] transition-colors duration-300">
               {post.title}
             </h3>
 
@@ -625,7 +625,7 @@ export function BlogCardPremium({
 
           {/* Bottom accent line */}
           <motion.div
-            className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#1E4DB7] to-[#F59A23]"
+            className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-[#0D7377] to-[#F59A23]"
             initial={{ width: 0 }}
             animate={isHovered ? { width: "100%" } : { width: 0 }}
             transition={{ duration: 0.4 }}

@@ -8,36 +8,36 @@ import { ArrowRight, Calendar, Clock } from "lucide-react";
 
 const blogPosts = [
   {
-    title: "Consulting Project",
+    title: "Breaking the Silence: How Healing Circles Transform Diaspora Women's Lives",
     excerpt:
-      "Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competencies before process-centric...",
+      "When women are given a safe space to share their stories, something powerful happens. Our trauma-informed healing circles have become the foundation for lasting change...",
     image:
-      "https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2670&auto=format&fit=crop",
-    date: "4 APR",
-    category: "NEWS",
-    slug: "consulting-project",
+      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2670&auto=format&fit=crop",
+    date: "8 MAR",
+    category: "RESILIENCE",
+    slug: "healing-circles-transform-lives",
     readTime: 5,
   },
   {
-    title: "Prepare for a new job",
+    title: "From Survival to Enterprise: Digital Skills for Diaspora Women",
     excerpt:
-      "Compellingly embrace empowered e-business after user friendly intellectual capital. Interactively actualize front-end processes with effective...",
+      "Economic empowerment starts with digital confidence. How our structured training pathways are helping women move from underemployment to sustainable income...",
     image:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=2672&auto=format&fit=crop",
-    date: "2 APR",
-    category: "PROJECTS",
-    slug: "prepare-for-new-job",
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2672&auto=format&fit=crop",
+    date: "1 MAR",
+    category: "EMPOWERMENT",
+    slug: "digital-skills-diaspora-women",
     readTime: 4,
   },
   {
-    title: "Latest Client",
+    title: "Transparent Impact: How Technology Bridges Diaspora Giving",
     excerpt:
-      "Progressively maintain extensive infomediaries via extensible niches. Dramatically disseminate standardized metrics after resource-leveling...",
+      "Diaspora women contribute billions annually to their home communities, yet most of it goes untracked. Our transparency dashboard is changing that narrative...",
     image:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=2670&auto=format&fit=crop",
-    date: "19 MAR",
-    category: "ANNOUNCEMENTS",
-    slug: "latest-client",
+      "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop",
+    date: "22 FEB",
+    category: "IMPACT",
+    slug: "transparent-impact-technology",
     readTime: 6,
   },
 ];
@@ -117,7 +117,7 @@ export function BlogSection() {
               transition={{ duration: 0.5 }}
               className="inline-block text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-blue-600 mb-3"
             >
-              INSIGHTS
+              STORIES & INSIGHTS
             </motion.span>
 
             <motion.h2
@@ -126,7 +126,7 @@ export function BlogSection() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900"
             >
-              Latest from Our Experts
+              Voices of Empowerment
             </motion.h2>
           </div>
 

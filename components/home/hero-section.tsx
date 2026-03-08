@@ -20,25 +20,25 @@ const slideConfigs = [
     {
         id: 1,
         key: "slide1",
-        image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2670&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=2670&auto=format&fit=crop",
     },
     {
         id: 2,
         key: "slide2",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2670&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=2670&auto=format&fit=crop",
     },
     {
         id: 3,
         key: "slide3",
-        image: "https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?q=80&w=2669&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2669&auto=format&fit=crop",
     },
 ];
 
 const statConfigs = [
     { value: 500, suffix: "+", key: "projectsDelivered" },
-    { value: 50, suffix: "+", key: "globalClients" },
-    { value: 10, suffix: "+", key: "yearsExperience" },
-    { value: 99, suffix: "%", key: "clientSatisfaction" },
+    { value: 15, suffix: "+", key: "globalClients" },
+    { value: 4, suffix: "", key: "yearsExperience" },
+    { value: 98, suffix: "%", key: "clientSatisfaction" },
 ];
 
 // Ken Burns zoom duration constants
@@ -516,7 +516,7 @@ export function HeroSection() {
             ref={heroRef}
             role="region"
             aria-roledescription="carousel"
-            aria-label="Hero slideshow showcasing Global Digitalbit services"
+            aria-label="Hero slideshow showcasing Women Connect International programs"
             aria-labelledby={carouselLabelId}
             className="relative w-full min-h-screen overflow-hidden touch-pan-y"
             onKeyDown={handleKeyDown}
@@ -691,7 +691,7 @@ export function HeroSection() {
                                 size="lg"
                                 className="group relative bg-accent-orange hover:bg-accent-red text-white rounded-full px-8 sm:px-10 h-12 sm:h-14 text-base font-semibold shadow-lg shadow-accent-orange/25 transition-all duration-300 hover:scale-105 overflow-hidden"
                             >
-                                <Link href="/services">
+                                <Link href="/programs">
                                     <span className="relative z-10">{slide.primaryCTA}</span>
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                                 </Link>
@@ -859,9 +859,9 @@ export function HeroSection() {
                         aria-controls={carouselContentId}
                         aria-label={`Go to slide ${index + 1}: ${slideItem.title} ${slideItem.highlight}`}
                         tabIndex={currentSlide === index ? 0 : -1}
-                        className={`relative rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-[#FFE63B] focus:ring-offset-2 focus:ring-offset-primary
-                            h-2 ${currentSlide === index ? "w-12 sm:w-16 bg-[#FFE63B]" : "w-2 bg-white/30 hover:bg-white/50"}
-                            md:w-2 ${currentSlide === index ? "md:h-10" : "md:h-5"} ${currentSlide === index ? "md:bg-[#FFE63B]" : "md:bg-white/30 md:hover:bg-white/50"}`}
+                        className={`relative rounded-full transition-all duration-500 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-primary
+                            h-2 ${currentSlide === index ? "w-12 sm:w-16 bg-[#E8A317]" : "w-2 bg-white/30 hover:bg-white/50"}
+                            md:w-2 ${currentSlide === index ? "md:h-10" : "md:h-5"} ${currentSlide === index ? "md:bg-[#E8A317]" : "md:bg-white/30 md:hover:bg-white/50"}`}
                     >
                         {currentSlide === index && (
                             <span

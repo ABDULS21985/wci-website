@@ -23,10 +23,10 @@ export interface ScrollProgressProps {
  *
  * @example
  * <ScrollProgress />
- * <ScrollProgress color="#1E4DB7" height={3} />
+ * <ScrollProgress color="#0D7377" height={3} />
  */
 export function ScrollProgress({
-  color = "#1E4DB7",
+  color = "#0D7377",
   height = 2,
   className,
   zIndex = 9999,

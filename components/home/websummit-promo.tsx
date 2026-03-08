@@ -415,7 +415,7 @@ export function WebSummitPromoCard() {
             Web Summit Qatar 2026
           </h3>
           <p className="text-sm text-white/60 mb-4">
-            Meet Digibit Global Solutions at Booth A5-35. Discover our AI, Blockchain & Cybersecurity solutions.
+            Meet WCI Global Solutions at Booth A5-35. Discover our AI, Blockchain & Cybersecurity solutions.
           </p>
 
           {/* Event details */}

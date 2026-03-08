@@ -11,7 +11,7 @@ export function AboutUsSection() {
                     We believe in not just offering technology solutions
                 </h3>
                 <p className="text-lg text-neutral-600 mb-16 leading-relaxed">
-                    Digibit is a technology and cybersecurity company operating across Doha and Nigeria, delivering mission-critical digital systems for governments, regulators, and enterprises in emerging and advanced markets.
+                    WCI is a technology and cybersecurity company operating across Doha and Nigeria, delivering mission-critical digital systems for governments, regulators, and enterprises in emerging and advanced markets.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-8 text-left">

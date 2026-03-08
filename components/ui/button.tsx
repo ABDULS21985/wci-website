@@ -15,9 +15,6 @@ import { Loader2 } from "lucide-react";
    - ghost: Text only, subtle hover
    - destructive: Error/danger actions
    - link: Underlined link style
-   - trustmehub: TrustMeHub brand gradient
-   - boacrm: BoaCRM brand gradient
-
    Sizes:
    - sm: 32px height
    - md: 40px height (default)
@@ -89,26 +86,6 @@ const buttonVariants = cva(
           "border border-input",
           "bg-background",
           "hover:bg-accent hover:text-accent-foreground",
-        ].join(" "),
-
-        // TrustMeHub brand
-        trustmehub: [
-          "bg-gradient-to-r from-trustmehub to-trustmehub-dark",
-          "text-white",
-          "shadow-md shadow-trustmehub/20",
-          "hover:from-trustmehub-light hover:to-trustmehub",
-          "hover:shadow-lg hover:shadow-trustmehub/30",
-          "hover:-translate-y-0.5",
-        ].join(" "),
-
-        // BoaCRM brand
-        boacrm: [
-          "bg-gradient-to-r from-boacrm to-boacrm-dark",
-          "text-white",
-          "shadow-md shadow-boacrm/20",
-          "hover:from-boacrm-light hover:to-boacrm",
-          "hover:shadow-lg hover:shadow-boacrm/30",
-          "hover:-translate-y-0.5",
         ].join(" "),
 
         // Accent: Orange gradient

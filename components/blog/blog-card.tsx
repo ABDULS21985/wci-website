@@ -76,7 +76,7 @@ export function BlogCard({
     showTags = true,
     className = "",
 }: BlogCardProps) {
-    const categoryColor = post.category?.color || "#1E4DB7";
+    const categoryColor = post.category?.color || "#0D7377";
     const formattedDate = post.publishedAt
         ? new Date(post.publishedAt).toLocaleDateString("en-US", {
               month: "short",
@@ -125,7 +125,7 @@ export function BlogCard({
                     )}
 
                     {/* Title */}
-                    <h3 className="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2 transition-colors duration-300 group-hover:text-[#1E4DB7]">
+                    <h3 className="font-semibold text-neutral-900 text-sm sm:text-base line-clamp-2 mb-2 transition-colors duration-300 group-hover:text-[#0D7377]">
                         {post.title}
                     </h3>
 
@@ -368,7 +368,7 @@ export function BlogCard({
             {/* Content Section */}
             <div className="relative p-6">
                 {/* Title */}
-                <h3 className="text-lg font-bold text-neutral-900 mb-3 line-clamp-2 transition-colors duration-300 group-hover:text-[#1E4DB7] leading-tight">
+                <h3 className="text-lg font-bold text-neutral-900 mb-3 line-clamp-2 transition-colors duration-300 group-hover:text-[#0D7377] leading-tight">
                     {post.title}
                 </h3>
 

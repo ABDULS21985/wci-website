@@ -177,7 +177,7 @@ export function StickyShareBar({
                                     "border transition-all duration-300",
                                     isCopied
                                         ? "bg-green-500 border-green-500 text-white"
-                                        : "bg-neutral-100 border-neutral-200 text-neutral-600 hover:bg-[#1E4DB7] hover:border-[#1E4DB7] hover:text-white"
+                                        : "bg-neutral-100 border-neutral-200 text-neutral-600 hover:bg-[#0D7377] hover:border-[#0D7377] hover:text-white"
                                 )}
                                 title={isCopied ? "Copied!" : "Copy link"}
                             >
@@ -243,7 +243,7 @@ export function StickyShareBar({
                                                 "border transition-all duration-300",
                                                 isCopied
                                                     ? "bg-green-500 border-green-500 text-white"
-                                                    : "bg-neutral-100 border-neutral-200 text-neutral-600 hover:bg-[#1E4DB7] hover:border-[#1E4DB7] hover:text-white"
+                                                    : "bg-neutral-100 border-neutral-200 text-neutral-600 hover:bg-[#0D7377] hover:border-[#0D7377] hover:text-white"
                                             )}
                                         >
                                             {isCopied ? (

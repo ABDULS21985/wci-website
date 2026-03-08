@@ -61,7 +61,7 @@ export function BlogHero({
     };
 
     return (
-        <section className="relative w-full min-h-[70vh] bg-gradient-to-br from-[#1E4DB7] via-[#143A8F] to-[#1E4DB7] overflow-hidden flex items-center">
+        <section className="relative w-full min-h-[70vh] bg-gradient-to-br from-[#0D7377] via-[#095456] to-[#0D7377] overflow-hidden flex items-center">
             {/* Animated Background Pattern */}
             <div className="absolute inset-0 overflow-hidden">
                 {/* Dot Pattern */}
@@ -75,9 +75,9 @@ export function BlogHero({
 
                 {/* Animated Gradient Orbs */}
                 <div className="absolute -top-40 -right-40 w-96 h-96 bg-[#F59A23]/20 rounded-full blur-3xl animate-pulse" />
-                <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#143A8F]/40 rounded-full blur-3xl animate-pulse delay-1000" />
+                <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-[#095456]/40 rounded-full blur-3xl animate-pulse delay-1000" />
                 <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
-                <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-[#E86A1D]/10 rounded-full blur-3xl animate-pulse delay-500" />
+                <div className="absolute bottom-1/3 left-1/4 w-80 h-80 bg-[#C2185B]/10 rounded-full blur-3xl animate-pulse delay-500" />
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#F59A23]/5 rounded-full blur-3xl" />
 
                 {/* Geometric Lines */}
@@ -121,7 +121,7 @@ export function BlogHero({
                     >
                         <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4">
                             Insights &{" "}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#E86A1D]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#C2185B]">
                                 Innovation
                             </span>
                         </h1>
@@ -145,7 +145,7 @@ export function BlogHero({
                         style={{ animationDelay: "300ms" }}
                     >
                         <form onSubmit={handleSearch} className="relative group">
-                            <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#E86A1D]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#C2185B]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             <div className="relative flex items-center">
                                 <div className="absolute left-5 text-white/50 group-hover:text-white/70 transition-colors">
                                     <Search className="h-5 w-5" />
@@ -159,7 +159,7 @@ export function BlogHero({
                                 />
                                 <button
                                     type="submit"
-                                    className="absolute right-2 px-6 py-2 bg-gradient-to-r from-[#F59A23] to-[#E86A1D] hover:from-[#E86A1D] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25"
+                                    className="absolute right-2 px-6 py-2 bg-gradient-to-r from-[#F59A23] to-[#C2185B] hover:from-[#C2185B] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25"
                                 >
                                     Search
                                 </button>
@@ -180,7 +180,7 @@ export function BlogHero({
                                     group relative px-4 py-2 rounded-full text-sm font-medium transition-all duration-300
                                     ${
                                         activeCategory === category
-                                            ? "bg-gradient-to-r from-[#F59A23] to-[#E86A1D] text-white shadow-lg shadow-[#F59A23]/25"
+                                            ? "bg-gradient-to-r from-[#F59A23] to-[#C2185B] text-white shadow-lg shadow-[#F59A23]/25"
                                             : "bg-white/10 backdrop-blur-sm border border-white/20 text-white/80 hover:bg-white/20 hover:text-white hover:border-white/30"
                                     }
                                 `}

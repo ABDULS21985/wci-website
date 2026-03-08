@@ -18,14 +18,14 @@ export function generateStaticParams() {
 }
 
 export const metadata: Metadata = {
-    title: "Contact Us | Global Digitalbit Limited",
+    title: "Contact Us | Women Connect International",
     description:
-        "Get in touch with Global Digitalbit Limited. Reach our offices in Nigeria (Abuja) and Doha. Contact us for IT consultancy, AI solutions, cybersecurity, and CBDC implementation.",
+        "Get in touch with Women Connect International in Doha, Qatar. Reach out for partnerships, program inquiries, volunteer opportunities, or to learn how you can support diaspora women's empowerment.",
     openGraph: {
-        title: "Contact Global Digitalbit Limited",
+        title: "Contact Women Connect International",
         description:
-            "Reach our offices in Nigeria and Doha for world-class IT solutions and consultancy.",
-        url: "https://globaldigibit.com/contact",
+            "Connect with WCI in Doha, Qatar for partnerships, programs, and support opportunities.",
+        url: "https://womenconnectintl.org/contact",
     },
 };
 
@@ -123,28 +123,28 @@ export default async function ContactPage({ params }: Props) {
                     <div className="container mx-auto px-4 md:px-6 lg:px-8 relative z-10">
                         <div className="max-w-3xl mx-auto text-center">
                             <h2 className="text-display text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
-                                Ready to Transform Your{" "}
+                                Ready to Make a{" "}
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-orange via-secondary-yellow to-accent-yellow">
-                                    Digital Future?
+                                    Difference?
                                 </span>
                             </h2>
                             <p className="text-lead text-lg text-white/60 mb-10 max-w-2xl mx-auto">
-                                Join 50+ enterprises that trust us with their digital transformation.
-                                Schedule a consultation with our experts today.
+                                Join our growing community of partners and supporters empowering
+                                diaspora women through resilience, skills, and leadership.
                             </p>
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                                 <Link
-                                    href="/services"
+                                    href="/programs"
                                     className="inline-flex items-center gap-2 px-8 py-4 bg-white text-neutral-900 rounded-xl font-semibold hover:bg-neutral-100 transition-colors btn-press"
                                 >
-                                    Explore Our Services
+                                    Explore Our Programs
                                     <ArrowRight className="h-4 w-4" />
                                 </Link>
                                 <Link
-                                    href="/case-studies"
+                                    href="/get-involved"
                                     className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 text-white border border-white/20 rounded-xl font-semibold hover:bg-white/20 transition-colors"
                                 >
-                                    View Case Studies
+                                    Get Involved
                                 </Link>
                             </div>
                         </div>

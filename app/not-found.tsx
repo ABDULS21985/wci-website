@@ -16,7 +16,7 @@ export default function NotFound() {
             <div
               className="absolute w-96 h-96 rounded-full blur-3xl opacity-20"
               style={{
-                background: "linear-gradient(135deg, #1E4DB7 0%, #6366F1 100%)",
+                background: "linear-gradient(135deg, #0D7377 0%, #6366F1 100%)",
                 top: "10%",
                 left: "10%",
                 animation: "float1 12s ease-in-out infinite",
@@ -25,7 +25,7 @@ export default function NotFound() {
             <div
               className="absolute w-80 h-80 rounded-full blur-3xl opacity-15"
               style={{
-                background: "linear-gradient(135deg, #F59A23 0%, #E86A1D 100%)",
+                background: "linear-gradient(135deg, #F59A23 0%, #C2185B 100%)",
                 bottom: "10%",
                 right: "10%",
                 animation: "float2 15s ease-in-out infinite",
@@ -46,8 +46,8 @@ export default function NotFound() {
               className="absolute inset-0 opacity-[0.02]"
               style={{
                 backgroundImage: `
-                  linear-gradient(to right, #1E4DB7 1px, transparent 1px),
-                  linear-gradient(to bottom, #1E4DB7 1px, transparent 1px)
+                  linear-gradient(to right, #0D7377 1px, transparent 1px),
+                  linear-gradient(to bottom, #0D7377 1px, transparent 1px)
                 `,
                 backgroundSize: "40px 40px",
                 animation: "grid-move 20s linear infinite",
@@ -63,7 +63,7 @@ export default function NotFound() {
               <div
                 className="text-[12rem] md:text-[16rem] font-bold leading-none select-none"
                 style={{
-                  background: "linear-gradient(135deg, #1E4DB7 0%, #6366F1 50%, #8B5CF6 100%)",
+                  background: "linear-gradient(135deg, #0D7377 0%, #6366F1 50%, #8B5CF6 100%)",
                   WebkitBackgroundClip: "text",
                   WebkitTextFillColor: "transparent",
                   backgroundClip: "text",
@@ -85,7 +85,7 @@ export default function NotFound() {
                 <span
                   className="text-6xl md:text-8xl font-bold"
                   style={{
-                    background: "linear-gradient(135deg, #1E4DB7 0%, #143A8F 100%)",
+                    background: "linear-gradient(135deg, #0D7377 0%, #095456 100%)",
                     WebkitBackgroundClip: "text",
                     WebkitTextFillColor: "transparent",
                     backgroundClip: "text",
@@ -181,7 +181,7 @@ export default function NotFound() {
                 href="/"
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-white font-medium rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                 style={{
-                  background: "linear-gradient(135deg, #1E4DB7 0%, #143A8F 100%)",
+                  background: "linear-gradient(135deg, #0D7377 0%, #095456 100%)",
                   boxShadow: "0 4px 15px rgba(30, 77, 183, 0.3)",
                 }}
               >

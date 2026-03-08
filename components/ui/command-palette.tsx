@@ -7,32 +7,31 @@ import { useLocale } from "next-intl";
 import {
   Search,
   Home,
-  Box,
-  Wrench,
+  Heart,
+  Monitor,
+  HandHeart,
   FileText,
   Mail,
   Users,
-  GraduationCap,
-  ExternalLink,
+  Sparkles,
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const pages = [
   { name: "Home", href: "/", icon: Home, keywords: ["main", "landing"] },
-  { name: "Products", href: "/products", icon: Box, keywords: ["software", "solutions"] },
-  { name: "Services", href: "/services", icon: Wrench, keywords: ["consulting", "development"] },
-  { name: "Blog", href: "/blogs", icon: FileText, keywords: ["articles", "news"] },
-  { name: "Contact", href: "/contact", icon: Mail, keywords: ["reach", "support"] },
-  { name: "About", href: "/about", icon: Users, keywords: ["team", "company"] },
-  { name: "Training", href: "/training", icon: GraduationCap, keywords: ["courses", "learning"] },
+  { name: "Programs", href: "/programs", icon: Heart, keywords: ["resilience", "empowerment", "mentoring"] },
+  { name: "Platform", href: "/platform", icon: Monitor, keywords: ["technology", "impact", "transparency"] },
+  { name: "Get Involved", href: "/get-involved", icon: HandHeart, keywords: ["donate", "volunteer", "partner"] },
+  { name: "About", href: "/about", icon: Users, keywords: ["team", "mission", "story"] },
+  { name: "Blog", href: "/blogs", icon: FileText, keywords: ["articles", "stories", "insights"] },
+  { name: "Contact", href: "/contact", icon: Mail, keywords: ["reach", "support", "connect"] },
 ];
 
-const products = [
-  { name: "TrustMeHub", href: "/products/trustmehub", keywords: ["trust", "compliance"] },
-  { name: "BoaCRM", href: "/products/boacrm", keywords: ["crm", "sales"] },
-  { name: "DigiTrack", href: "/products/digitrack", keywords: ["tracking", "analytics"] },
-  { name: "DigiGate", href: "/products/digigate", keywords: ["security", "access"] },
-  { name: "DigiTrust", href: "/products/digitrust", keywords: ["verification", "identity"] },
+const programPages = [
+  { name: "Psychosocial Resilience", href: "/programs/psychosocial-resilience", keywords: ["healing", "circles", "wellness"] },
+  { name: "Economic Empowerment", href: "/programs/economic-empowerment", keywords: ["skills", "digital", "enterprise"] },
+  { name: "Leadership & Mentoring", href: "/programs/leadership-mentoring", keywords: ["mentoring", "leadership", "voice"] },
+  { name: "Humanitarian Impact", href: "/programs/humanitarian-impact", keywords: ["giving", "transparency", "diaspora"] },
 ];
 
 export function CommandPalette() {
@@ -83,7 +82,7 @@ export function CommandPalette() {
               <div className="flex items-center border-b border-zinc-200 dark:border-zinc-800 px-4">
                 <Search className="w-5 h-5 text-zinc-400" />
                 <Command.Input
-                  placeholder="Search pages, products, actions..."
+                  placeholder="Search pages, programs..."
                   className="w-full py-4 px-3 bg-transparent outline-none text-zinc-900 dark:text-white placeholder:text-zinc-400"
                 />
                 <kbd className="hidden sm:flex items-center gap-1 px-2 py-1 text-xs text-zinc-400 bg-zinc-100 dark:bg-zinc-800 rounded">
@@ -110,17 +109,16 @@ export function CommandPalette() {
                   ))}
                 </Command.Group>
 
-                <Command.Group heading="Products" className="text-xs text-zinc-500 px-2 py-1.5 mt-2">
-                  {products.map((product) => (
+                <Command.Group heading="Programs" className="text-xs text-zinc-500 px-2 py-1.5 mt-2">
+                  {programPages.map((program) => (
                     <Command.Item
-                      key={product.href}
-                      value={`${product.name} ${product.keywords.join(" ")}`}
-                      onSelect={() => runCommand(() => router.push(`/${locale}${product.href}`))}
+                      key={program.href}
+                      value={`${program.name} ${program.keywords.join(" ")}`}
+                      onSelect={() => runCommand(() => router.push(`/${locale}${program.href}`))}
                       className="flex items-center gap-3 px-3 py-2 rounded-lg cursor-pointer aria-selected:bg-primary/10 aria-selected:text-primary"
                     >
-                      <Box className="w-4 h-4" />
-                      {product.name}
-                      <ExternalLink className="w-3 h-3 ml-auto opacity-50" />
+                      <Sparkles className="w-4 h-4" />
+                      {program.name}
                     </Command.Item>
                   ))}
                 </Command.Group>

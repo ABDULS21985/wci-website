@@ -220,7 +220,7 @@ export function TableOfContents({
                           ${heading.level > minLevel ? `ml-${(heading.level - minLevel) * 3}` : ""}
                           ${
                             activeId === heading.id
-                              ? "bg-gradient-to-r from-[#1E4DB7]/10 to-[#F59A23]/10 text-[#1E4DB7] dark:text-[#F59A23] font-medium border-l-2 border-[#1E4DB7]"
+                              ? "bg-gradient-to-r from-[#0D7377]/10 to-[#F59A23]/10 text-[#0D7377] dark:text-[#F59A23] font-medium border-l-2 border-[#0D7377]"
                               : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800"
                           }
                         `}
@@ -241,7 +241,7 @@ export function TableOfContents({
           <div className="mt-4 pt-3 border-t border-neutral-200 dark:border-neutral-700">
             <div className="h-1 bg-neutral-200 dark:bg-neutral-700 rounded-full overflow-hidden">
               <motion.div
-                className="h-full bg-gradient-to-r from-[#1E4DB7] to-[#F59A23]"
+                className="h-full bg-gradient-to-r from-[#0D7377] to-[#F59A23]"
                 style={{
                   width: `${((headings.findIndex((h) => h.id === activeId) + 1) / headings.length) * 100}%`,
                 }}
@@ -264,7 +264,7 @@ export function TableOfContents({
         <div className="bg-neutral-50 dark:bg-neutral-900 rounded-xl p-5">
           {/* Header */}
           <div className="flex items-center gap-2 mb-4 text-sm font-semibold text-neutral-700 dark:text-neutral-300">
-            <List className="w-4 h-4 text-[#1E4DB7]" />
+            <List className="w-4 h-4 text-[#0D7377]" />
             <span>Table of Contents</span>
           </div>
 
@@ -279,7 +279,7 @@ export function TableOfContents({
                       w-full text-left text-sm py-2 transition-all duration-200
                       ${
                         activeId === heading.id
-                          ? "text-[#1E4DB7] dark:text-[#F59A23] font-medium -ml-[2px] border-l-2 border-[#1E4DB7] dark:border-[#F59A23]"
+                          ? "text-[#0D7377] dark:text-[#F59A23] font-medium -ml-[2px] border-l-2 border-[#0D7377] dark:border-[#F59A23]"
                           : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 border-l-2 border-transparent -ml-[2px]"
                       }
                     `}
@@ -311,9 +311,9 @@ export function TableOfContents({
         `}
       >
         <div className="flex items-center gap-2 text-sm font-semibold text-neutral-700 dark:text-neutral-300">
-          <List className="w-4 h-4 text-[#1E4DB7]" />
+          <List className="w-4 h-4 text-[#0D7377]" />
           <span>Table of Contents</span>
-          <span className="px-2 py-0.5 bg-[#1E4DB7]/10 text-[#1E4DB7] text-xs font-medium rounded-full">
+          <span className="px-2 py-0.5 bg-[#0D7377]/10 text-[#0D7377] text-xs font-medium rounded-full">
             {headings.length}
           </span>
         </div>
@@ -352,7 +352,7 @@ export function TableOfContents({
                         group w-full flex items-center gap-2 text-sm py-2 px-3 rounded-lg transition-all duration-200
                         ${
                           activeId === heading.id
-                            ? "bg-gradient-to-r from-[#1E4DB7]/10 to-[#F59A23]/10 text-[#1E4DB7] dark:text-[#F59A23] font-medium"
+                            ? "bg-gradient-to-r from-[#0D7377]/10 to-[#F59A23]/10 text-[#0D7377] dark:text-[#F59A23] font-medium"
                             : "text-neutral-600 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-200 hover:bg-neutral-100 dark:hover:bg-neutral-800"
                         }
                       `}
@@ -363,14 +363,14 @@ export function TableOfContents({
                       {activeId === heading.id && (
                         <motion.span
                           layoutId="active-indicator"
-                          className="w-1.5 h-1.5 rounded-full bg-[#1E4DB7] dark:bg-[#F59A23] flex-shrink-0"
+                          className="w-1.5 h-1.5 rounded-full bg-[#0D7377] dark:bg-[#F59A23] flex-shrink-0"
                         />
                       )}
                       <span className="line-clamp-1 text-left">{heading.text}</span>
                       <ChevronRight
                         className={`
                           w-3 h-3 ml-auto flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity
-                          ${activeId === heading.id ? "text-[#1E4DB7] dark:text-[#F59A23]" : "text-neutral-400"}
+                          ${activeId === heading.id ? "text-[#0D7377] dark:text-[#F59A23]" : "text-neutral-400"}
                         `}
                       />
                     </button>

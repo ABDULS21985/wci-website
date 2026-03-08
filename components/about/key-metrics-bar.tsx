@@ -13,11 +13,11 @@ interface MetricItem {
 
 // 5 key metrics as per the spec
 const metrics: MetricItem[] = [
-    { value: 500, suffix: "+", labelKey: "metrics.projects", description: "Across every major industry" },
-    { value: 50, suffix: "+", labelKey: "metrics.countries", description: "From Lagos to Doha and beyond" },
-    { value: 99, suffix: "%", labelKey: "metrics.satisfaction", description: "Measured. Verified. Maintained." },
-    { value: 15, suffix: "+", labelKey: "metrics.years", description: "Of digital excellence" },
-    { value: 200, suffix: "+", labelKey: "metrics.experts", description: "Certified professionals" },
+    { value: 500, suffix: "+", labelKey: "metrics.projects", description: "Women empowered across diaspora" },
+    { value: 15, suffix: "+", labelKey: "metrics.countries", description: "Countries reached across Africa & Gulf" },
+    { value: 98, suffix: "%", labelKey: "metrics.satisfaction", description: "Report positive life change" },
+    { value: 4, suffix: "", labelKey: "metrics.years", description: "Core empowerment pillars" },
+    { value: 50, suffix: "+", labelKey: "metrics.experts", description: "Mentors and facilitators" },
 ];
 
 /**
@@ -88,7 +88,7 @@ function MetricCounter({
             <motion.div
                 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white tabular-nums mb-2 transition-colors duration-300"
                 style={{
-                    color: isHovered ? "#FFE63B" : "white",
+                    color: isHovered ? "#E8A317" : "white",
                     transform: isHovered ? "scale(1.05)" : "scale(1)",
                     transition: "transform 0.3s ease-out, color 0.3s ease-out",
                 }}
@@ -124,7 +124,7 @@ export function KeyMetricsBar() {
             aria-label="Key metrics"
         >
             {/* Brand gradient background */}
-            <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#1E4DB7] to-secondary" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary via-[#0D7377] to-secondary" />
 
             {/* Subtle pattern overlay */}
             <div

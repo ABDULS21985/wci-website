@@ -19,7 +19,7 @@ import {
 // Constants
 // ============================================================================
 
-const STORAGE_KEY = "digibit-sound-enabled";
+const STORAGE_KEY = "wci-sound-enabled";
 
 // ============================================================================
 // Types

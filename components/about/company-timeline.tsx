@@ -3,7 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform, useSpring, useInView } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Rocket, Globe, Target, Award, Zap, LucideIcon } from "lucide-react";
+import { Heart, Users, Lightbulb, Award, Zap, LucideIcon } from "lucide-react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FadeUp } from "@/components/ui/animations/scroll-reveal";
@@ -24,35 +24,35 @@ interface TimelineMilestone {
 const milestones: TimelineMilestone[] = [
     {
         key: "foundation",
-        year: "2014",
-        icon: Rocket,
+        year: "2019",
+        icon: Heart,
         gradient: "from-primary to-secondary",
         side: "left",
     },
     {
         key: "expansion",
-        year: "2017",
-        icon: Globe,
+        year: "2021",
+        icon: Users,
         gradient: "from-accent-orange to-accent-red",
         side: "right",
     },
     {
         key: "global",
-        year: "2020",
-        icon: Target,
+        year: "2023",
+        icon: Lightbulb,
         gradient: "from-accent-yellow to-accent-orange",
         side: "left",
     },
     {
         key: "innovation",
-        year: "2023",
+        year: "2025",
         icon: Award,
         gradient: "from-primary to-accent-orange",
         side: "right",
     },
     {
         key: "future",
-        year: "2024+",
+        year: "2026+",
         icon: Zap,
         gradient: "from-accent-yellow to-primary",
         side: "left",
@@ -268,7 +268,7 @@ export function CompanyTimeline() {
             <div
                 className="absolute inset-0 opacity-[0.03]"
                 style={{
-                    backgroundImage: `radial-gradient(circle, #1E4DB7 1px, transparent 1px)`,
+                    backgroundImage: `radial-gradient(circle, #0D7377 1px, transparent 1px)`,
                     backgroundSize: "24px 24px",
                 }}
             />
@@ -314,7 +314,7 @@ export function CompanyTimeline() {
                         className="absolute left-1/2 top-0 w-1 -translate-x-1/2 hidden lg:block rounded-full overflow-hidden"
                         style={{
                             height: prefersReducedMotion ? "100%" : lineHeight,
-                            background: "linear-gradient(180deg, #1E4DB7 0%, #FFE63B 50%, #F59A23 100%)",
+                            background: "linear-gradient(180deg, #0D7377 0%, #E8A317 50%, #F59A23 100%)",
                         }}
                     >
                         {/* Glowing tip */}
@@ -332,7 +332,7 @@ export function CompanyTimeline() {
                         className="absolute left-7 top-0 w-1 rounded-full overflow-hidden lg:hidden"
                         style={{
                             height: prefersReducedMotion ? "100%" : lineHeight,
-                            background: "linear-gradient(180deg, #1E4DB7 0%, #FFE63B 50%, #F59A23 100%)",
+                            background: "linear-gradient(180deg, #0D7377 0%, #E8A317 50%, #F59A23 100%)",
                         }}
                     />
 

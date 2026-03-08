@@ -17,7 +17,7 @@ export function ServiceSchema({
   deliverables = [],
   url,
 }: ServiceSchemaProps) {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
   const serviceUrl = url || `${baseUrl}/services/${serviceId}`;
 
   const serviceData = {
@@ -30,7 +30,7 @@ export function ServiceSchema({
     provider: {
       "@type": "Organization",
       "@id": `${baseUrl}/#organization`,
-      name: "Global Digitalbit Limited",
+      name: "Women Connect International",
       url: baseUrl,
     },
     serviceType: categoryName || "IT Consulting",
@@ -87,7 +87,7 @@ export function ServiceCategorySchema({
   description,
   services,
 }: ServiceCategorySchemaProps) {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
   const categoryUrl = `${baseUrl}/services/${categoryId}`;
 
   const categoryData = {
@@ -100,7 +100,7 @@ export function ServiceCategorySchema({
     provider: {
       "@type": "Organization",
       "@id": `${baseUrl}/#organization`,
-      name: "Global Digitalbit Limited",
+      name: "Women Connect International",
       url: baseUrl,
     },
     hasOfferCatalog: {
@@ -306,13 +306,13 @@ export function ITGovernanceServiceSchema() {
 
 // All Services Schema for the main services page
 export function AllServicesSchema() {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
 
   const servicesData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
     "@id": `${baseUrl}/services#service-list`,
-    name: "Global Digitalbit Services",
+    name: "Women Connect International Services",
     description: "Comprehensive IT consultancy, cybersecurity, AI, blockchain, and governance services.",
     itemListElement: [
       {

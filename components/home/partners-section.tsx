@@ -1,19 +1,18 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import { Users, Heart, BookOpen, Globe, HandHeart } from "lucide-react";
 
-const partners = [
-    { name: "Lanasoft", logo: "/partners/Lanasoft.png" },
-    { name: "NITDA", logo: "/partners/NITDA.png" },
-    { name: "Google", logo: "/partners/google.webp" },
-    { name: "Microsoft", logo: "/partners/microsoft.webp" },
-    { name: "Qorebox", logo: "/partners/qorebox.png" },
+const partnerTypes = [
+    { name: "Diaspora Associations", icon: Globe },
+    { name: "Mental Health Professionals", icon: Heart },
+    { name: "Women's NGOs", icon: Users },
+    { name: "CSR Partners", icon: HandHeart },
+    { name: "Training Institutions", icon: BookOpen },
 ];
 
 export function PartnersSection() {
     const [isVisible, setIsVisible] = useState(false);
-    const [isPaused, setIsPaused] = useState(false);
     const sectionRef = useRef<HTMLElement>(null);
 
     useEffect(() => {
@@ -25,103 +24,41 @@ export function PartnersSection() {
             },
             { threshold: 0.2 }
         );
-
-        if (sectionRef.current) {
-            observer.observe(sectionRef.current);
-        }
-
+        if (sectionRef.current) observer.observe(sectionRef.current);
         return () => observer.disconnect();
     }, []);
-
-    // Duplicate partners array for seamless loop (4x for smooth infinite scroll)
-    const duplicatedPartners = [...partners, ...partners, ...partners, ...partners];
 
     return (
         <section
             ref={sectionRef}
-            className="relative w-full py-12 md:py-16 overflow-hidden bg-[#F8FAFC]"
+            className="w-full py-16 bg-[#F8FAFC] border-y border-gray-100"
         >
-            <div className="relative container mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Top decorative line */}
-                <div
-                    className={`absolute top-0 left-1/2 -translate-x-1/2 h-px bg-slate-200 transition-transform duration-800 ease-out ${
-                        isVisible ? "w-full scale-x-100" : "w-full scale-x-0"
-                    }`}
-                    style={{ transformOrigin: "center" }}
-                    aria-hidden="true"
-                />
-
-                {/* Section Header */}
-                <div
-                    className={`text-center mb-10 transition-all duration-500 ease-out ${
-                        isVisible
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-[15px]"
+            <div className="container mx-auto px-4 md:px-6 lg:px-8">
+                <p
+                    className={`text-center text-sm font-medium text-gray-500 mb-8 transition-all duration-700 ${
+                        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                     }`}
                 >
-                    <span
-                        className="block text-[14px] uppercase tracking-[0.08em] text-[#64748B] font-medium"
-                    >
-                        Trusted by industry leaders across 50+ countries
-                    </span>
-                </div>
+                    Working alongside trusted partners across the diaspora ecosystem
+                </p>
 
-                {/* Logo Marquee Container */}
-                <div
-                    className={`relative overflow-hidden transition-all duration-500 ease-out ${
-                        isVisible ? "opacity-100" : "opacity-0"
-                    }`}
-                    style={{ transitionDelay: isVisible ? "200ms" : "0ms" }}
-                    onMouseEnter={() => setIsPaused(true)}
-                    onMouseLeave={() => setIsPaused(false)}
-                >
-                    {/* Fade edges */}
-                    <div
-                        className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#F8FAFC] to-transparent z-10 pointer-events-none"
-                        aria-hidden="true"
-                    />
-                    <div
-                        className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#F8FAFC] to-transparent z-10 pointer-events-none"
-                        aria-hidden="true"
-                    />
-
-                    {/* Scrolling logos container */}
-                    <div
-                        className={`flex items-center gap-16 md:gap-20 ${
-                            isPaused ? "animate-marquee-paused" : "animate-marquee"
-                        }`}
-                        style={{
-                            width: "fit-content",
-                        }}
-                    >
-                        {duplicatedPartners.map((partner, index) => (
+                <div className="flex flex-wrap justify-center gap-6 md:gap-10">
+                    {partnerTypes.map((partner, index) => {
+                        const Icon = partner.icon;
+                        return (
                             <div
-                                key={`${partner.name}-${index}`}
-                                className="group flex-shrink-0 h-8 md:h-9 relative"
-                                style={{ minWidth: "100px" }}
+                                key={partner.name}
+                                className={`flex items-center gap-3 px-5 py-3 rounded-full bg-white border border-gray-200 shadow-sm transition-all duration-500 hover:shadow-md hover:border-[#0D7377]/30 ${
+                                    isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                                }`}
+                                style={{ transitionDelay: `${index * 80}ms` }}
                             >
-                                <div className="relative w-auto h-full grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-400 ease-out">
-                                    <Image
-                                        src={partner.logo}
-                                        alt={partner.name}
-                                        width={120}
-                                        height={36}
-                                        className="h-full w-auto object-contain"
-                                    />
-                                </div>
+                                <Icon className="w-5 h-5 text-[#0D7377]" strokeWidth={1.5} />
+                                <span className="text-sm font-medium text-gray-700">{partner.name}</span>
                             </div>
-                        ))}
-                    </div>
+                        );
+                    })}
                 </div>
-
-                {/* Bottom decorative line */}
-                <div
-                    className={`absolute bottom-0 left-1/2 -translate-x-1/2 h-px bg-slate-200 transition-transform duration-800 ease-out ${
-                        isVisible ? "w-full scale-x-100" : "w-full scale-x-0"
-                    }`}
-                    style={{ transformOrigin: "center" }}
-                    aria-hidden="true"
-                />
             </div>
         </section>
     );

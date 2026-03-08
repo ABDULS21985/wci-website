@@ -161,7 +161,7 @@ export function MissionVisionSection() {
             <div
                 className="absolute inset-0 opacity-[0.02]"
                 style={{
-                    backgroundImage: `radial-gradient(circle, #1E4DB7 1px, transparent 1px)`,
+                    backgroundImage: `radial-gradient(circle, #0D7377 1px, transparent 1px)`,
                     backgroundSize: "24px 24px",
                 }}
             />

@@ -157,15 +157,15 @@ export function ContactHero() {
 
                                 {/* Table items */}
                                 <rect x="150" y="255" width="60" height="40" rx="4" fill="#F59A23" fillOpacity="0.3" />
-                                <rect x="290" y="255" width="60" height="40" rx="4" fill="#1E4DB7" fillOpacity="0.3" />
+                                <rect x="290" y="255" width="60" height="40" rx="4" fill="#0D7377" fillOpacity="0.3" />
 
                                 {/* Person 1 - Left (Professional woman) */}
                                 <g className="animate-pulse" style={{ animationDuration: '3s' }}>
                                     {/* Body */}
-                                    <path d="M120 240 C120 180, 80 180, 80 140 C80 100, 120 80, 140 80 C160 80, 200 100, 200 140 C200 180, 160 180, 160 240" fill="#1E4DB7" />
+                                    <path d="M120 240 C120 180, 80 180, 80 140 C80 100, 120 80, 140 80 C160 80, 200 100, 200 140 C200 180, 160 180, 160 240" fill="#0D7377" />
                                     {/* Head with hijab */}
                                     <circle cx="140" cy="70" r="35" fill="#F5D0C5" />
-                                    <path d="M105 55 C105 30, 140 20, 175 55 C175 75, 175 90, 140 100 C105 90, 105 75, 105 55" fill="#1E4DB7" />
+                                    <path d="M105 55 C105 30, 140 20, 175 55 C175 75, 175 90, 140 100 C105 90, 105 75, 105 55" fill="#0D7377" />
                                     {/* Face */}
                                     <circle cx="130" cy="65" r="3" fill="#333" />
                                     <circle cx="150" cy="65" r="3" fill="#333" />
@@ -213,9 +213,9 @@ export function ContactHero() {
                                 >
                                     <rect x="180" y="30" width="80" height="35" rx="17" fill="white" fillOpacity="0.9" />
                                     <polygon points="200,65 210,65 195,80" fill="white" fillOpacity="0.9" />
-                                    <circle cx="200" cy="47" r="4" fill="#1E4DB7" />
-                                    <circle cx="215" cy="47" r="4" fill="#1E4DB7" />
-                                    <circle cx="230" cy="47" r="4" fill="#1E4DB7" />
+                                    <circle cx="200" cy="47" r="4" fill="#0D7377" />
+                                    <circle cx="215" cy="47" r="4" fill="#0D7377" />
+                                    <circle cx="230" cy="47" r="4" fill="#0D7377" />
                                 </motion.g>
 
                                 <motion.g
@@ -241,7 +241,7 @@ export function ContactHero() {
                                 <motion.circle
                                     cx="450" cy="180"
                                     r="6"
-                                    fill="#1E4DB7"
+                                    fill="#0D7377"
                                     fillOpacity="0.6"
                                     animate={{ y: [0, -10, 0], opacity: [0.4, 0.8, 0.4] }}
                                     transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
@@ -250,7 +250,7 @@ export function ContactHero() {
                                     x="460" y="100"
                                     width="12" height="12"
                                     rx="2"
-                                    fill="#FFE63B"
+                                    fill="#E8A317"
                                     fillOpacity="0.5"
                                     animate={{ rotate: [0, 180, 360], opacity: [0.3, 0.7, 0.3] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "linear" }}

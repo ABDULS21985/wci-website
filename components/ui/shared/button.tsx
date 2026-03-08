@@ -28,7 +28,7 @@ const buttonVariants = cva(
                 glow:
                     "bg-primary text-white shadow-[0_0_20px_rgba(30,77,183,0.5)] hover:shadow-[0_0_30px_rgba(30,77,183,0.7)] transition-shadow",
                 "outline-gradient":
-                    "relative bg-transparent border-2 border-transparent [background:linear-gradient(white,white),linear-gradient(135deg,#1E4DB7,#6366F1,#8B5CF6)] [background-clip:padding-box,border-box] [background-origin:padding-box,border-box] text-primary hover:text-white hover:[background:linear-gradient(135deg,#1E4DB7,#6366F1,#8B5CF6)]",
+                    "relative bg-transparent border-2 border-transparent [background:linear-gradient(white,white),linear-gradient(135deg,#0D7377,#6366F1,#8B5CF6)] [background-clip:padding-box,border-box] [background-origin:padding-box,border-box] text-primary hover:text-white hover:[background:linear-gradient(135deg,#0D7377,#6366F1,#8B5CF6)]",
             },
             size: {
                 default: "h-10 px-6 py-2",

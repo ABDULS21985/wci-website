@@ -97,7 +97,7 @@ export function FaqsSection() {
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-16">
                     {/* Kicker */}
-                    <span className="inline-block text-sm font-semibold tracking-wider uppercase text-[#1E4DB7] mb-4">
+                    <span className="inline-block text-sm font-semibold tracking-wider uppercase text-[#0D7377] mb-4">
                         FAQ
                     </span>
 
@@ -137,7 +137,7 @@ export function FaqsSection() {
                                     <div
                                         className={`relative transition-all duration-300 ${
                                             isOpen
-                                                ? "border-l-4 border-l-[#1E4DB7] bg-white"
+                                                ? "border-l-4 border-l-[#0D7377] bg-white"
                                                 : "border-l-4 border-l-transparent hover:bg-slate-50"
                                         }`}
                                     >
@@ -148,7 +148,7 @@ export function FaqsSection() {
                                             aria-controls={panelId}
                                             onClick={() => toggleFaq(index)}
                                             onKeyDown={(e) => handleKeyDown(e, index)}
-                                            className="w-full flex items-center justify-between gap-4 py-5 px-4 md:px-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1E4DB7] focus-visible:ring-offset-2 transition-colors"
+                                            className="w-full flex items-center justify-between gap-4 py-5 px-4 md:px-6 text-left focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0D7377] focus-visible:ring-offset-2 transition-colors"
                                         >
                                             {/* Question Text */}
                                             <span className="text-base md:text-lg font-semibold text-slate-900 pr-4">
@@ -164,7 +164,7 @@ export function FaqsSection() {
                                             >
                                                 <Plus
                                                     className={`w-5 h-5 transition-colors duration-300 ${
-                                                        isOpen ? "text-[#1E4DB7]" : "text-slate-400"
+                                                        isOpen ? "text-[#0D7377]" : "text-slate-400"
                                                     }`}
                                                 />
                                             </span>
@@ -206,8 +206,8 @@ export function FaqsSection() {
                         <div className="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm">
                             <div className="flex flex-col items-center gap-6">
                                 {/* Icon */}
-                                <div className="w-14 h-14 rounded-full bg-[#1E4DB7]/10 flex items-center justify-center">
-                                    <MessageCircle className="w-7 h-7 text-[#1E4DB7]" />
+                                <div className="w-14 h-14 rounded-full bg-[#0D7377]/10 flex items-center justify-center">
+                                    <MessageCircle className="w-7 h-7 text-[#0D7377]" />
                                 </div>
 
                                 {/* Text */}
@@ -223,7 +223,7 @@ export function FaqsSection() {
                                 {/* CTA Button */}
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#1E4DB7] hover:bg-[#1a44a3] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#1E4DB7]/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1E4DB7] focus-visible:ring-offset-2 group"
+                                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D7377] hover:bg-[#1a44a3] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#0D7377]/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0D7377] focus-visible:ring-offset-2 group"
                                 >
                                     <span>{t("cta.button")}</span>
                                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

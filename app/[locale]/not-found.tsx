@@ -27,7 +27,7 @@ export default function NotFound() {
         {/* Floating Orbs */}
         <div className="absolute w-96 h-96 rounded-full blur-3xl opacity-15 bg-gradient-to-r from-primary to-secondary animate-float1 top-[10%] left-[10%]" />
         <div className="absolute w-80 h-80 rounded-full blur-3xl opacity-10 bg-gradient-to-r from-accent-orange to-accent-red animate-float2 bottom-[10%] right-[10%]" />
-        <div className="absolute w-64 h-64 rounded-full blur-3xl opacity-10 bg-gradient-to-r from-trustmehub to-trustmehub-dark animate-float3 top-[50%] right-[30%]" />
+        <div className="absolute w-64 h-64 rounded-full blur-3xl opacity-10 bg-gradient-to-r from-primary to-primary-dark animate-float3 top-[50%] right-[30%]" />
 
         {/* Animated Grid Pattern */}
         <div

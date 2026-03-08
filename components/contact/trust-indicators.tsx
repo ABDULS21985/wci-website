@@ -6,7 +6,7 @@ import { Shield, Lock, Headphones, Award, Quote, Star, CheckCircle } from "lucid
 const testimonials = [
     {
         quote:
-            "Global Digibit's expertise in blockchain solutions transformed our credential verification process. Their response time and technical depth are exceptional.",
+            "Global WCI's expertise in blockchain solutions transformed our credential verification process. Their response time and technical depth are exceptional.",
         author: "Dr. Amina Ibrahim",
         role: "Chief Technology Officer",
         company: "West African Development Bank",

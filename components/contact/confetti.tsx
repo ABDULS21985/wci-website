@@ -14,11 +14,11 @@ interface ConfettiPiece {
 }
 
 const CONFETTI_COLORS = [
-    "#1E4DB7", // Primary blue
-    "#FFE63B", // Yellow
+    "#0D7377", // Primary blue
+    "#E8A317", // Yellow
     "#F59A23", // Orange
     "#22C55E", // Green
-    "#143A8F", // Secondary blue
+    "#095456", // Secondary blue
 ];
 
 interface ConfettiProps {

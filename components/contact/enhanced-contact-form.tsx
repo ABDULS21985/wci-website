@@ -769,7 +769,7 @@ export function EnhancedContactForm() {
         setSubmitMessage("");
 
         try {
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://api.globaldigibit.com/api/v1";
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL || "https://api.womenconnectintl.org/api/v1";
             const response = await fetch(`${apiUrl}/contact`, {
                 method: "POST",
                 headers: {

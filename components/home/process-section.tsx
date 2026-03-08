@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Search, Lightbulb, Hammer, Rocket, LucideIcon } from "lucide-react";
+import { Heart, TrendingUp, Crown, Target, LucideIcon } from "lucide-react";
 import { gsap, useGSAP } from "@/providers/gsap-provider";
 
 interface ProcessStepConfig {
@@ -12,10 +12,10 @@ interface ProcessStepConfig {
 }
 
 const processStepConfigs: ProcessStepConfig[] = [
-    { key: "step1", icon: Search, label: "Discover" },
-    { key: "step2", icon: Lightbulb, label: "Strategize" },
-    { key: "step3", icon: Hammer, label: "Build" },
-    { key: "step4", icon: Rocket, label: "Deploy & Optimize" },
+    { key: "step1", icon: Heart, label: "Stabilize" },
+    { key: "step2", icon: TrendingUp, label: "Strengthen" },
+    { key: "step3", icon: Crown, label: "Lead" },
+    { key: "step4", icon: Target, label: "Impact" },
 ];
 
 interface ProcessStep {
@@ -116,7 +116,7 @@ function TimelineNode({ index, icon: Icon, label }: TimelineNodeProps) {
                 node-glow
                 absolute w-16 h-16 md:w-20 md:h-20
                 rounded-full
-                bg-gradient-to-r from-[#1E4DB7] to-[#FFE63B]
+                bg-gradient-to-r from-[#0D7377] to-[#E8A317]
                 opacity-0
                 blur-xl
                 -z-10
@@ -267,7 +267,7 @@ export function ProcessSection() {
                 const nodeLabel = node.querySelector('.node-label');
 
                 gsap.to(nodeCircle, {
-                    backgroundColor: "#1E4DB7",
+                    backgroundColor: "#0D7377",
                     scale: 1.1,
                     duration: 0.4,
                     ease: "back.out(1.7)",
@@ -340,7 +340,7 @@ export function ProcessSection() {
         >
             {/* Subtle background pattern */}
             <div className="absolute inset-0 opacity-[0.02]" style={{
-                backgroundImage: `radial-gradient(circle at 1px 1px, #1E4DB7 1px, transparent 0)`,
+                backgroundImage: `radial-gradient(circle at 1px 1px, #0D7377 1px, transparent 0)`,
                 backgroundSize: '48px 48px'
             }} />
 
@@ -401,7 +401,7 @@ export function ProcessSection() {
                             ref={timelineProgressRef}
                             className="absolute inset-0 rounded-full origin-top scale-y-0"
                             style={{
-                                background: 'linear-gradient(180deg, #1E4DB7 0%, #FFE63B 100%)'
+                                background: 'linear-gradient(180deg, #0D7377 0%, #E8A317 100%)'
                             }}
                         />
 
@@ -460,7 +460,7 @@ export function ProcessSection() {
                         <div
                             className="timeline-progress-mobile absolute inset-0 rounded-full origin-top scale-y-0"
                             style={{
-                                background: 'linear-gradient(180deg, #1E4DB7 0%, #FFE63B 100%)'
+                                background: 'linear-gradient(180deg, #0D7377 0%, #E8A317 100%)'
                             }}
                         />
                     </div>

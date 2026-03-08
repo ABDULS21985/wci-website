@@ -11,7 +11,7 @@ interface FAQSchemaProps {
 }
 
 export function FAQSchema({ faqs, pageUrl }: FAQSchemaProps) {
-  const baseUrl = "https://globaldigibit.com";
+  const baseUrl = "https://womenconnectintl.org";
 
   const faqData = {
     "@context": "https://schema.org",
@@ -41,139 +41,38 @@ export function FAQSchema({ faqs, pageUrl }: FAQSchemaProps) {
 // Default FAQs for the homepage
 export const defaultFAQs: FAQItem[] = [
   {
-    question: "What services does Global Digitalbit offer?",
+    question: "What is Women Connect International?",
     answer:
-      "We specialize in IT consultancy, implementation, and training in key areas such as data analytics, artificial intelligence, cybersecurity, and central bank digital currency (CBDC). We also offer business process management, blockchain services, and comprehensive IT solutions tailored to your needs.",
+      "Women Connect International (WCI) is a Doha-based NGO dedicated to empowering African women in the diaspora. Through psychosocial resilience programs, economic empowerment initiatives, leadership development, and transparent humanitarian impact, WCI helps women build confidence, skills, and community far from home.",
   },
   {
-    question: "How can your solutions help my business grow?",
+    question: "Who can participate in WCI programs?",
     answer:
-      "Our solutions are designed to streamline operations, enhance security, and leverage cutting-edge technologies like AI and blockchain. We help businesses optimize their processes, make data-driven decisions, and stay ahead of the competition through digital transformation.",
+      "WCI programs are designed primarily for African diaspora women, including migrants, refugees, and women living abroad who seek support in building resilience, gaining new skills, and connecting with a supportive community. Programs are open to women of all backgrounds within the African diaspora.",
   },
   {
-    question: "Do you provide training for our team?",
+    question: "How does the mentoring program work?",
     answer:
-      "Yes! We offer comprehensive training programs for individuals and organizations to enhance their IT capabilities. Our training covers various topics including data analytics, cybersecurity, blockchain technology, and more, ensuring your team stays up-to-date with the latest technologies.",
+      "WCI's mentoring program pairs participants with experienced mentors who provide guidance on personal growth, career development, and leadership. Mentees attend regular one-on-one sessions, group workshops, and community events designed to build confidence and professional networks.",
   },
   {
-    question: "What makes Global Digitalbit different from other IT companies?",
+    question: "Is WCI a mental health service?",
     answer:
-      "We combine innovation, reliability, integrity, and teamwork to deliver exceptional value. Our flagship platforms (DigiGate, TrustMe, and DigiTrack) provide enterprise-grade solutions, and we're committed to improving lives through technology while maintaining the highest ethical standards.",
+      "No, WCI is not a licensed mental health provider. However, our psychosocial resilience programs offer supportive healing circles, peer support groups, and wellness workshops that help women process challenges and build emotional strength. We refer participants to professional mental health services when needed.",
   },
   {
-    question: "How do I get started with your services?",
+    question: "How can I support WCI?",
     answer:
-      "Getting started is easy! Simply contact us through our website or give us a call. We'll schedule a consultation to understand your unique business needs and challenges, then develop a tailored solution that aligns with your long-term goals.",
+      "There are several ways to support WCI: partner with us as an organization, make a donation to fund our programs, volunteer your time and expertise, or spread the word about our mission. Visit our Get Involved page to learn more about each opportunity.",
   },
   {
-    question: "Do you work with international clients?",
+    question: "Where does WCI operate?",
     answer:
-      "Absolutely! Global Digitalbit is positioned to serve both local and international clients with excellence and innovation. We have offices in Nigeria and Qatar, and we work with clients worldwide to deliver transformative technology solutions.",
+      "Women Connect International is based in Doha, Qatar, and serves African diaspora women across the Gulf region and beyond. Our programs are delivered both in person and online, making them accessible to women in various locations.",
   },
 ];
 
 // Pre-configured FAQ schema with default FAQs
 export function HomeFAQSchema() {
-  return <FAQSchema faqs={defaultFAQs} pageUrl="https://globaldigibit.com" />;
-}
-
-// Product-specific FAQs
-export const productFAQs: Record<string, FAQItem[]> = {
-  digigate: [
-    {
-      question: "What is DigiGate?",
-      answer:
-        "DigiGate is a comprehensive API gateway and lifecycle management solution that acts as the centralized control layer for an organization's entire digital infrastructure. It manages all inbound and outbound API traffic while enforcing security, routing policies, and governance at scale.",
-    },
-    {
-      question: "What security features does DigiGate offer?",
-      answer:
-        "DigiGate provides OAuth 2.0, JWT validation, rate limiting, and threat protection for all your APIs. It offers centralized security enforcement, intelligent traffic routing, and real-time monitoring with anomaly detection.",
-    },
-    {
-      question: "Who should use DigiGate?",
-      answer:
-        "DigiGate is ideal for financial institutions with complex integrations, government digital transformation projects, enterprises with microservices architectures, and any organization requiring PCI-DSS, GDPR, or local regulatory compliance.",
-    },
-  ],
-  digitrust: [
-    {
-      question: "What is DigiTrust?",
-      answer:
-        "DigiTrust is a blockchain-based solution for issuing, verifying, and managing tamper-proof digital credentials. From educational certificates to professional licenses, land titles to insurance policies, DigiTrust ensures document authenticity is never in question.",
-    },
-    {
-      question: "How does DigiTrust prevent document fraud?",
-      answer:
-        "DigiTrust uses blockchain technology to anchor credentials immutably, making them tamper-proof. Each credential can be instantly verified via QR code or document ID, with a full audit trail for regulatory compliance.",
-    },
-    {
-      question: "What types of credentials can DigiTrust manage?",
-      answer:
-        "DigiTrust can manage educational certificates, professional licenses, land titles, insurance policies, birth certificates, membership credentials, and any other document requiring verification of authenticity.",
-    },
-  ],
-  digitrack: [
-    {
-      question: "What is DigiTrack?",
-      answer:
-        "DigiTrack provides real-time tracking and traceability for physical assets, digital transactions, and service delivery workflows. It's built for industries requiring complete chain-of-custody documentation and operational transparency.",
-    },
-    {
-      question: "What tracking capabilities does DigiTrack offer?",
-      answer:
-        "DigiTrack offers GPS, RFID, and IoT sensor integration for real-time location tracking, transaction traceability with end-to-end audit trails, service delivery monitoring with SLA tracking, and ML-powered predictive analytics.",
-    },
-    {
-      question: "Which industries benefit from DigiTrack?",
-      answer:
-        "DigiTrack is valuable for supply chain management, financial services transaction monitoring, healthcare device and specimen tracking, and energy sector equipment maintenance and compliance.",
-    },
-  ],
-  trustmehub: [
-    {
-      question: "What is TrustMeHub?",
-      answer:
-        "TrustMeHub is a global digital trust infrastructure for instant, blockchain-anchored credential verification. It can verify any credential in milliseconds instead of weeks, ensuring authenticity at national scale.",
-    },
-    {
-      question: "How fast is TrustMeHub verification?",
-      answer:
-        "TrustMeHub delivers sub-10ms verification responses with 92%+ cache hit rates, capable of handling 100,000+ verifications per second. This transforms verification from a 4-6 week process to milliseconds.",
-    },
-    {
-      question: "What privacy features does TrustMeHub offer?",
-      answer:
-        "TrustMeHub uses Zero-Knowledge Proofs for selective disclosure, enabling privacy-preserving verification without exposing sensitive data. It's GDPR compliant and supports multi-language interfaces.",
-    },
-  ],
-  boacrm: [
-    {
-      question: "What is BoaCRM?",
-      answer:
-        "BoaCRM is a comprehensive enterprise-grade CRM platform purpose-built for African financial institutions. With 35 integrated modules and native compliance for NDPR/KYC/AML, it transforms how banks manage customer relationships at scale.",
-    },
-    {
-      question: "What makes BoaCRM suitable for African banks?",
-      answer:
-        "BoaCRM provides native African compliance (NDPR, KYC/AML, BVN/NIN verification), is 3-5x more affordable than Salesforce or Dynamics, and is specifically designed for the needs of commercial banks, microfinance banks, PSPs, and insurance companies in Africa.",
-    },
-    {
-      question: "What modules does BoaCRM include?",
-      answer:
-        "BoaCRM includes 35 modules covering Customer 360, omnichannel engagement (WhatsApp, SMS, email, voice), contact center suite with IVR and ACD, compliance governance, conversational AI chatbot builder, and ML-powered analytics.",
-    },
-  ],
-};
-
-export function ProductFAQSchema({ productId }: { productId: string }) {
-  const faqs = productFAQs[productId];
-  if (!faqs) return null;
-
-  return (
-    <FAQSchema
-      faqs={faqs}
-      pageUrl={`https://globaldigibit.com/products/${productId}`}
-    />
-  );
+  return <FAQSchema faqs={defaultFAQs} pageUrl="https://womenconnectintl.org" />;
 }

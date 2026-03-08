@@ -13,7 +13,7 @@ import {
 import {
     blogPosts,
     getPostBySlug,
-    getRelatedPosts,
+    getPostsByCategory,
     type BlogPostWithRelations,
 } from "@/data/blog";
 
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: `${post.title} | Global Digitalbit Limited`,
+        title: `${post.title} | Women Connect International`,
         description: post.excerpt,
         keywords: [
             post.category.name.toLowerCase(),
@@ -50,7 +50,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         openGraph: {
             title: post.title,
             description: post.excerpt,
-            url: `https://globaldigibit.com/blogs/${slug}`,
+            url: `https://womenconnectintl.org/blogs/${slug}`,
             images: post.featuredImage ? [{ url: post.featuredImage }] : undefined,
             type: "article",
             publishedTime: post.publishedAt,
@@ -75,8 +75,8 @@ export default async function BlogDetailPage({ params }: Props) {
         notFound();
     }
 
-    const relatedPosts = getRelatedPosts(post.slug, 3);
-    const shareUrl = `https://globaldigibit.com/blogs/${slug}`;
+    const relatedPosts = getPostsByCategory(post.categoryId).filter(p => p.slug !== post.slug).slice(0, 3);
+    const shareUrl = `https://womenconnectintl.org/blogs/${slug}`;
 
     return (
         <div className="min-h-screen bg-white">
@@ -101,7 +101,7 @@ export default async function BlogDetailPage({ params }: Props) {
             />
 
             {/* Newsletter CTA Section */}
-            <section className="w-full py-20 md:py-28 bg-gradient-to-br from-[#1E4DB7] via-[#143A8F] to-[#1E4DB7] relative overflow-hidden">
+            <section className="w-full py-20 md:py-28 bg-gradient-to-br from-[#0D7377] via-[#095456] to-[#0D7377] relative overflow-hidden">
                 {/* Background Pattern */}
                 <div className="absolute inset-0 overflow-hidden">
                     <div
@@ -127,7 +127,7 @@ export default async function BlogDetailPage({ params }: Props) {
                         {/* Title */}
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 animate-fade-in-up">
                             Stay Ahead with{" "}
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#E86A1D]">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#F59A23] to-[#C2185B]">
                                 Expert Insights
                             </span>
                         </h2>
@@ -141,7 +141,7 @@ export default async function BlogDetailPage({ params }: Props) {
                         {/* Newsletter Form */}
                         <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto animate-fade-in-up">
                             <div className="flex-1 relative group">
-                                <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#E86A1D]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-gradient-to-r from-[#F59A23]/20 to-[#C2185B]/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                 <input
                                     type="email"
                                     placeholder="Enter your email address"
@@ -151,7 +151,7 @@ export default async function BlogDetailPage({ params }: Props) {
                             </div>
                             <Button
                                 type="submit"
-                                className="px-8 py-4 bg-gradient-to-r from-[#F59A23] to-[#E86A1D] hover:from-[#E86A1D] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25"
+                                className="px-8 py-4 bg-gradient-to-r from-[#F59A23] to-[#C2185B] hover:from-[#C2185B] hover:to-[#F59A23] text-white font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-[#F59A23]/25"
                             >
                                 Subscribe
                             </Button>

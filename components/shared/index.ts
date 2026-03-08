@@ -4,8 +4,5 @@ export { CTASection } from "./cta-section";
 export { PartnersGrid } from "./partners-grid";
 export { FeatureGrid, type Feature } from "./feature-grid";
 export { StatsSection, type Stat } from "./stats-section";
-export { PricingTable } from "./pricing-table";
-export { ComparisonTable } from "./comparison-table";
 export { NewsletterSection } from "./newsletter-section";
 export { JsonLd } from "./json-ld";
-export { AnimateOnScroll, StaggerChildren, CountUp, FloatingOrbs, GradientDivider, PulsingDot } from "./product-animations";

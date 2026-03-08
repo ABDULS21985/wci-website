@@ -27,19 +27,19 @@ import { LanguageSwitcher } from "./language-switcher";
 const socialLinks = [
     {
         icon: Facebook,
-        href: "https://www.facebook.com/globaldigibit",
+        href: "https://www.facebook.com/womenconnectintl",
         label: "Facebook",
         hoverClass: "hover:bg-[#1877F2] hover:border-[#1877F2]",
     },
     {
         icon: Twitter,
-        href: "https://x.com/digibitsoltn",
+        href: "https://x.com/womenconnectintl",
         label: "Twitter",
         hoverClass: "hover:bg-[#1DA1F2] hover:border-[#1DA1F2]",
     },
     {
         icon: Linkedin,
-        href: "https://www.linkedin.com/company/digibit-solutions",
+        href: "https://www.linkedin.com/company/women-connect-international",
         label: "LinkedIn",
         hoverClass: "hover:bg-[#0A66C2] hover:border-[#0A66C2]",
     },
@@ -47,33 +47,29 @@ const socialLinks = [
 
 // Footer link data
 const servicesLinks = [
-    { name: "cybersecurity", href: "/services#cybersecurity" },
-    { name: "aiData", href: "/services#ai-data" },
-    { name: "blockchain", href: "/services#blockchain" },
-    { name: "itGovernance", href: "/services#it-governance" },
-    { name: "consulting", href: "/services" },
-    { name: "training", href: "/services/training" },
+    { name: "resilience", href: "/programs/psychosocial-resilience" },
+    { name: "economic", href: "/programs/economic-empowerment" },
+    { name: "leadership", href: "/programs/leadership-mentoring" },
+    { name: "impact", href: "/programs/humanitarian-impact" },
 ] as const;
 
 const productsLinks = [
-    { name: "digigate", href: "/products/digigate" },
-    { name: "digitrust", href: "/products/digitrust" },
-    { name: "digitrack", href: "/products/digitrack" },
-    { name: "trustmehub", href: "/products/trustmehub" },
-    { name: "boacrm", href: "/products/boacrm" },
+    { name: "companion", href: "/platform#companion" },
+    { name: "learning", href: "/platform#learning" },
+    { name: "mentoring", href: "/platform#mentoring" },
+    { name: "dashboard", href: "/platform#dashboard" },
 ] as const;
 
 const companyLinks = [
     { name: "about", href: "/about" },
-    { name: "caseStudies", href: "/case-studies" },
-    { name: "industries", href: "/industries" },
+    { name: "impactStories", href: "/blogs" },
     { name: "insights", href: "/blogs" },
-    { name: "careers", href: "/careers" },
+    { name: "getInvolved", href: "/get-involved" },
 ] as const;
 
 const contactLinks = [
     { name: "getInTouch", href: "/contact" },
-    { name: "scheduleCall", href: "/contact?booking=true" },
+    { name: "partner", href: "/get-involved" },
     { name: "support", href: "/contact#support" },
 ] as const;
 
@@ -195,7 +191,7 @@ function BackToTop() {
             {isVisible && (
                 <motion.button
                     onClick={scrollToTop}
-                    className="fixed bottom-6 right-4 md:bottom-8 md:right-8 w-12 h-12 min-w-[48px] min-h-[48px] rounded-full bg-[#FFE63B] text-[#0A1628] shadow-lg z-50 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-[#FFE63B] focus:ring-offset-2 focus:ring-offset-[#0A1628] touch-manipulation"
+                    className="fixed bottom-6 right-4 md:bottom-8 md:right-8 w-12 h-12 min-w-[48px] min-h-[48px] rounded-full bg-[#E8A317] text-[#0A1628] shadow-lg z-50 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0A1628] touch-manipulation"
                     initial={{ opacity: 0, scale: 0.8, y: 20 }}
                     animate={{
                         opacity: 1,
@@ -364,7 +360,7 @@ function PreFooterCTA() {
             {/* Decorative background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
-                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#FFE63B]/5 rounded-full blur-3xl" />
+                <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-[#E8A317]/5 rounded-full blur-3xl" />
             </div>
 
             <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -390,7 +386,7 @@ function PreFooterCTA() {
                             <Button
                                 asChild
                                 size="lg"
-                                className="bg-[#FFE63B] hover:bg-[#FFD700] text-[#0A1628] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 w-full sm:w-auto touch-manipulation"
+                                className="bg-[#E8A317] hover:bg-[#FFD700] text-[#0A1628] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 w-full sm:w-auto touch-manipulation"
                             >
                                 <Link href="/contact" className="flex items-center justify-center gap-2">
                                     {t("primaryCta")}
@@ -410,7 +406,7 @@ function PreFooterCTA() {
                                 size="lg"
                                 className="border-2 border-white text-white hover:bg-white hover:text-[#0A1628] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto touch-manipulation"
                             >
-                                <Link href="/case-studies" className="flex items-center justify-center gap-2">
+                                <Link href="/programs" className="flex items-center justify-center gap-2">
                                     <Eye className="h-5 w-5" />
                                     {t("secondaryCta")}
                                 </Link>
@@ -482,8 +478,8 @@ export function Footer() {
                         <motion.div className="lg:col-span-1 space-y-6" variants={itemVariants}>
                             <Link href="/" className="inline-block">
                                 <Image
-                                    src="/logo/digibit.png"
-                                    alt="Digibit Logo"
+                                    src="/logo/wci-logo.jpeg"
+                                    alt="Women Connect International Logo"
                                     width={150}
                                     height={50}
                                     className="h-10 w-auto object-contain brightness-0 invert"
@@ -497,15 +493,15 @@ export function Footer() {
                             <div className="space-y-3 text-sm">
                                 <div className="flex items-center text-neutral-400 hover:text-white transition-colors">
                                     <Phone className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
-                                    <span>+234 (0) 816 177 8448</span>
+                                    <span>+974 XXXX XXXX</span>
                                 </div>
                                 <div className="flex items-center text-neutral-400 hover:text-white transition-colors">
                                     <Mail className="h-4 w-4 mr-3 text-primary flex-shrink-0" />
-                                    <span>connect@globaldigibit.com</span>
+                                    <span>info@womenconnectintl.org</span>
                                 </div>
                                 <div className="flex items-start text-neutral-400">
                                     <MapPin className="h-4 w-4 mr-3 text-primary flex-shrink-0 mt-0.5" />
-                                    <span className="text-xs">Abuja, Nigeria | Doha, Qatar</span>
+                                    <span className="text-xs">Doha, Qatar</span>
                                 </div>
                             </div>
 
