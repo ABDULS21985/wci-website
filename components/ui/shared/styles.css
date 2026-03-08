@@ -1,0 +1,14 @@
+/* Shared styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Button shine/shimmer animation */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}

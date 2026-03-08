@@ -1,0 +1,10 @@
+export { AboutHero } from "./about-hero";
+export { KeyMetricsBar } from "./key-metrics-bar";
+export { OurStorySection } from "./our-story-section";
+export { MissionVisionSection } from "./mission-vision-section";
+export { CoreValuesSection } from "./core-values-section";
+export { CompanyTimeline } from "./company-timeline";
+export { TeamSection } from "./team-section";
+export { GlobalPresenceSection } from "./global-presence-section";
+export { StatsSection } from "./stats-section";
+export { AboutCtaSection } from "./about-cta-section";

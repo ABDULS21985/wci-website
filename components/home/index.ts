@@ -1,0 +1,10 @@
+export { HeroSection } from "./hero-section";
+export { WhoWeAreSection } from "./who-we-are-section";
+export { ProcessSection } from "./process-section";
+export { PlatformSection } from "./platform-section";
+export { ProgramsSection } from "./programs-section";
+export { WhyChooseUsSection } from "./why-choose-us-section";
+export { PartnersSection } from "./partners-section";
+export { BlogSection } from "./blog-section";
+export { FaqsSection } from "./faqs-section";
+export { TestimonialsSection } from "./testimonials-section";
