@@ -326,6 +326,16 @@ export function TestimonialsSection() {
                 aria-hidden="true"
             />
 
+            {/* Dot pattern */}
+            <div
+                className="absolute inset-0 opacity-[0.015]"
+                style={{
+                    backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)",
+                    backgroundSize: "48px 48px",
+                }}
+                aria-hidden="true"
+            />
+
             {/* Subtle top gradient line */}
             <div
                 className="absolute top-0 left-0 right-0 h-px"
@@ -466,7 +476,7 @@ export function TestimonialsSection() {
                             {/* Previous Button */}
                             <button
                                 onClick={goToPrevious}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -474,7 +484,7 @@ export function TestimonialsSection() {
                                 aria-label="Previous testimonial"
                             >
                                 <ChevronLeft
-                                    className="h-5 w-5 md:h-6 md:w-6 text-white/60 group-hover:text-white transition-colors"
+                                    className="h-5 w-5 md:h-6 md:w-6 text-white/60 group-hover:text-[#E8A317] transition-colors duration-300"
                                     aria-hidden="true"
                                 />
                             </button>
@@ -506,7 +516,7 @@ export function TestimonialsSection() {
                             {/* Next Button */}
                             <button
                                 onClick={goToNext}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -514,7 +524,7 @@ export function TestimonialsSection() {
                                 aria-label="Next testimonial"
                             >
                                 <ChevronRight
-                                    className="h-5 w-5 md:h-6 md:w-6 text-white/60 group-hover:text-white transition-colors"
+                                    className="h-5 w-5 md:h-6 md:w-6 text-white/60 group-hover:text-[#E8A317] transition-colors duration-300"
                                     aria-hidden="true"
                                 />
                             </button>

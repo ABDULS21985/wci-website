@@ -59,7 +59,7 @@ export function AboutCtaSection() {
                             <motion.div
                                 className="absolute inset-0 pointer-events-none"
                                 style={{
-                                    background: `radial-gradient(600px circle at var(--cursor-x, 50%) var(--cursor-y, 50%), rgba(30, 77, 183, 0.06), transparent 40%)`,
+                                    background: `radial-gradient(600px circle at var(--cursor-x, 50%) var(--cursor-y, 50%), rgba(13, 115, 119, 0.06), transparent 40%)`,
                                     // @ts-expect-error CSS custom properties
                                     "--cursor-x": springCursorX,
                                     "--cursor-y": springCursorY,

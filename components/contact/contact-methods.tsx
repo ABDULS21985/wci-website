@@ -115,7 +115,7 @@ function ContactMethodCard({ method, index }: ContactMethodCardProps) {
             {/* Badge */}
             {method.badge && (
                 <div className="absolute top-4 right-4">
-                    <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-secondary-yellow/20 text-secondary-yellow-dark">
+                    <span className="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-semibold bg-[#E8A317]/15 text-[#B8860B]">
                         {method.badge}
                     </span>
                 </div>
@@ -160,7 +160,7 @@ function ContactMethodCard({ method, index }: ContactMethodCardProps) {
             <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
                 style={{
-                    background: "radial-gradient(circle at 80% 20%, rgba(30, 77, 183, 0.05), transparent 50%)",
+                    background: "radial-gradient(circle at 80% 20%, rgba(13, 115, 119, 0.05), transparent 50%)",
                 }}
             />
         </motion.a>

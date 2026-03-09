@@ -97,13 +97,18 @@ export function FaqsSection() {
                 {/* Section Header */}
                 <div className="text-center mb-12 md:mb-16">
                     {/* Kicker */}
-                    <span className="inline-block text-sm font-semibold tracking-wider uppercase text-[#0D7377] mb-4">
+                    <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-[#0D7377] mb-4">
+                        <span className="w-8 h-0.5 bg-[#0D7377] rounded-full" />
                         FAQ
+                        <span className="w-8 h-0.5 bg-[#0D7377] rounded-full" />
                     </span>
 
                     {/* Headline */}
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-slate-900 mb-4">
-                        Common Questions, Clear Answers
+                        Common Questions,{" "}
+                        <span className="bg-gradient-to-r from-[#0D7377] to-[#C2185B] bg-clip-text text-transparent">
+                            Clear Answers
+                        </span>
                     </h2>
 
                     {/* Subtext */}
@@ -203,7 +208,7 @@ export function FaqsSection() {
                                 : "opacity-0 translate-y-5"
                         }`}
                     >
-                        <div className="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm">
+                        <div className="bg-white rounded-2xl border border-slate-200 p-8 md:p-10 shadow-sm hover:shadow-md transition-shadow duration-300">
                             <div className="flex flex-col items-center gap-6">
                                 {/* Icon */}
                                 <div className="w-14 h-14 rounded-full bg-[#0D7377]/10 flex items-center justify-center">

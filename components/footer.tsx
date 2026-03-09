@@ -191,7 +191,7 @@ function BackToTop() {
             {isVisible && (
                 <motion.button
                     onClick={scrollToTop}
-                    className="fixed bottom-6 right-4 md:bottom-8 md:right-8 w-12 h-12 min-w-[48px] min-h-[48px] rounded-full bg-[#E8A317] text-[#0A1628] shadow-lg z-50 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0A1628] touch-manipulation"
+                    className="fixed bottom-6 right-4 md:bottom-8 md:right-8 w-12 h-12 min-w-[48px] min-h-[48px] rounded-full bg-[#E8A317] text-[#062C2E] shadow-lg z-50 flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E] touch-manipulation"
                     initial={{ opacity: 0, scale: 0.8, y: 20 }}
                     animate={{
                         opacity: 1,
@@ -355,7 +355,7 @@ function PreFooterCTA() {
     return (
         <section
             ref={ref}
-            className="w-full py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#0F172A] to-[#0A1628] relative overflow-hidden"
+            className="w-full py-16 md:py-20 lg:py-24 bg-gradient-to-br from-[#073436] to-[#062C2E] relative overflow-hidden"
         >
             {/* Decorative background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -386,7 +386,7 @@ function PreFooterCTA() {
                             <Button
                                 asChild
                                 size="lg"
-                                className="bg-[#E8A317] hover:bg-[#FFD700] text-[#0A1628] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 w-full sm:w-auto touch-manipulation"
+                                className="bg-[#E8A317] hover:bg-[#FFD700] text-[#062C2E] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 w-full sm:w-auto touch-manipulation"
                             >
                                 <Link href="/contact" className="flex items-center justify-center gap-2">
                                     {t("primaryCta")}
@@ -404,7 +404,7 @@ function PreFooterCTA() {
                                 asChild
                                 variant="outline"
                                 size="lg"
-                                className="border-2 border-white text-white hover:bg-white hover:text-[#0A1628] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto touch-manipulation"
+                                className="border-2 border-white text-white hover:bg-white hover:text-[#062C2E] font-semibold px-8 h-12 min-h-[48px] rounded-lg transition-all duration-300 bg-transparent w-full sm:w-auto touch-manipulation"
                             >
                                 <Link href="/programs" className="flex items-center justify-center gap-2">
                                     <Eye className="h-5 w-5" />
@@ -465,7 +465,7 @@ export function Footer() {
             {/* Main Footer */}
             <motion.footer
                 ref={footerRef}
-                className="w-full bg-[#0A1628] pt-12 md:pt-16 pb-8 text-neutral-400"
+                className="w-full bg-[#062C2E] pt-12 md:pt-16 pb-8 text-neutral-400"
                 initial="hidden"
                 animate={isInView ? "visible" : "hidden"}
                 variants={containerVariants}

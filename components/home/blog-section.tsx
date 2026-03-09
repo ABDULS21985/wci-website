@@ -4,7 +4,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowRight, Calendar, Clock, ArrowUpRight } from "lucide-react";
 
 const blogPosts = [
   {
@@ -17,6 +17,7 @@ const blogPosts = [
     category: "RESILIENCE",
     slug: "healing-circles-transform-lives",
     readTime: 5,
+    categoryColor: "#C2185B",
   },
   {
     title: "From Survival to Enterprise: Digital Skills for Diaspora Women",
@@ -28,6 +29,7 @@ const blogPosts = [
     category: "EMPOWERMENT",
     slug: "digital-skills-diaspora-women",
     readTime: 4,
+    categoryColor: "#0D7377",
   },
   {
     title: "Transparent Impact: How Technology Bridges Diaspora Giving",
@@ -39,10 +41,10 @@ const blogPosts = [
     category: "IMPACT",
     slug: "transparent-impact-technology",
     readTime: 6,
+    categoryColor: "#E8A317",
   },
 ];
 
-// Animation variants
 const featuredVariants = {
   hidden: { opacity: 0, x: -40 },
   visible: {
@@ -78,18 +80,6 @@ const secondaryItemVariants = {
   },
 };
 
-const headerVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.6,
-      ease: "easeOut" as const,
-    },
-  },
-};
-
 export function BlogSection() {
   const sectionRef = useRef<HTMLElement>(null);
   const isInView = useInView(sectionRef, { once: true, margin: "-100px" });
@@ -105,9 +95,9 @@ export function BlogSection() {
       <div className="container relative z-10 mx-auto px-4 md:px-6 lg:px-8">
         {/* Header */}
         <motion.div
-          variants={headerVariants}
-          initial="hidden"
-          animate={isInView ? "visible" : "hidden"}
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col md:flex-row md:items-end md:justify-between mb-12 md:mb-16"
         >
           <div>
@@ -115,8 +105,9 @@ export function BlogSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.5 }}
-              className="inline-block text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3"
+              className="inline-flex items-center gap-2 text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3"
             >
+              <span className="w-8 h-0.5 bg-primary rounded-full" />
               STORIES & INSIGHTS
             </motion.span>
 
@@ -177,28 +168,38 @@ export function BlogSection() {
   );
 }
 
-// Featured Blog Card Component - Large card with image overlay
 function FeaturedBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
   return (
     <Link href={`/blogs/${post.slug}`} className="group block h-full">
-      <div className="relative h-full min-h-[400px] md:min-h-[500px] lg:min-h-[540px] rounded-2xl overflow-hidden border border-slate-200 bg-white shadow-sm transition-shadow duration-300 ease-out hover:shadow-xl">
+      <div className="relative h-full min-h-[400px] md:min-h-[500px] lg:min-h-[540px] rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-400 ease-out hover:shadow-2xl hover:shadow-black/10">
         {/* Image with zoom effect */}
         <div className="absolute inset-0 overflow-hidden">
           <Image
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.03]"
+            className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
-          {/* Gradient overlay - darker on hover */}
-          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/40 to-transparent transition-opacity duration-300 ease-out group-hover:from-slate-900/95 group-hover:via-slate-900/50" />
+          {/* Multi-layer gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
 
         {/* Category Badge */}
         <div className="absolute top-6 left-6 z-10">
-          <span className="inline-block px-4 py-1.5 bg-primary text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow-lg">
+          <span
+            className="inline-block px-4 py-1.5 text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow-lg backdrop-blur-sm"
+            style={{ backgroundColor: `${post.categoryColor}dd` }}
+          >
             {post.category}
           </span>
+        </div>
+
+        {/* Read indicator */}
+        <div className="absolute top-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+          <div className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center">
+            <ArrowUpRight className="w-5 h-5 text-white" />
+          </div>
         </div>
 
         {/* Content overlaid at bottom */}
@@ -230,13 +231,15 @@ function FeaturedBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
   );
 }
 
-// Secondary Blog Card Component - Horizontal layout with accent line hover
 function SecondaryBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
   return (
-    <Link href={`/blogs/${post.slug}`} className="group block">
-      <div className="relative flex gap-4 md:gap-5 p-4 rounded-xl border border-slate-200 bg-white overflow-hidden transition-all duration-300 ease-out hover:shadow-lg hover:border-slate-300">
+    <Link href={`/blogs/${post.slug}`} className="group block h-full">
+      <div className="relative flex gap-4 md:gap-5 p-4 rounded-xl border border-slate-200 bg-white overflow-hidden transition-all duration-300 ease-out hover:shadow-lg hover:border-slate-300 h-full">
         {/* Accent line on hover - left edge */}
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary origin-top transition-transform duration-300 ease-out scale-y-0 group-hover:scale-y-100" />
+        <div
+          className="absolute left-0 top-0 bottom-0 w-1 origin-top transition-transform duration-300 ease-out scale-y-0 group-hover:scale-y-100"
+          style={{ backgroundColor: post.categoryColor }}
+        />
 
         {/* Thumbnail Image */}
         <div className="relative flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden">
@@ -244,14 +247,20 @@ function SecondaryBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
             src={post.image}
             alt={post.title}
             fill
-            className="object-cover transition-transform duration-300 ease-out group-hover:scale-[1.05]"
+            className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.08]"
           />
         </div>
 
         {/* Content */}
         <div className="flex flex-col justify-center min-w-0 flex-1 py-1">
           {/* Category Badge */}
-          <span className="inline-block self-start px-2.5 py-1 mb-2 bg-slate-100 text-slate-600 text-[10px] font-semibold uppercase tracking-wider rounded-full transition-colors duration-300 group-hover:bg-primary/10 group-hover:text-primary">
+          <span
+            className="inline-block self-start px-2.5 py-1 mb-2 text-[10px] font-semibold uppercase tracking-wider rounded-full transition-colors duration-300"
+            style={{
+              backgroundColor: `${post.categoryColor}10`,
+              color: post.categoryColor,
+            }}
+          >
             {post.category}
           </span>
 

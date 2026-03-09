@@ -158,7 +158,7 @@ function OfficeMarker({
                 whileTap={{ scale: 0.9 }}
                 style={{
                     boxShadow: isSelected
-                        ? `0 0 20px rgba(30, 77, 183, 0.5)`
+                        ? `0 0 20px rgba(13, 115, 119, 0.5)`
                         : `0 0 10px rgba(0, 0, 0, 0.2)`,
                 }}
             >

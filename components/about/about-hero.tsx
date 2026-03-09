@@ -212,12 +212,12 @@ export function AboutHero() {
             onMouseLeave={handleMouseLeave}
         >
             {/* Background gradient base - Layer 0 */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#0A1628] via-[#0D2137] to-[#0A1628]" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#062C2E] via-[#073436] to-[#062C2E]" />
 
             {/* Split layout container */}
             <div className="absolute inset-0 grid lg:grid-cols-2">
                 {/* Left side - dark gradient for text readability */}
-                <div className="relative bg-gradient-to-r from-[#0A1628] via-[#0A1628]/95 to-[#0A1628]/80 lg:to-transparent" />
+                <div className="relative bg-gradient-to-r from-[#062C2E] via-[#062C2E]/95 to-[#062C2E]/80 lg:to-transparent" />
 
                 {/* Right side - overlapping images with parallax */}
                 <div className="relative hidden lg:block overflow-hidden">
@@ -238,7 +238,7 @@ export function AboutHero() {
                             zIndex={1}
                             priority
                         />
-                        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#0A1628]/40 to-[#0A1628]/90" />
+                        <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#062C2E]/40 to-[#062C2E]/90" />
                     </motion.div>
 
                     {/* Image Layer 2 - Middle depth */}
@@ -278,8 +278,8 @@ export function AboutHero() {
                     </motion.div>
 
                     {/* Gradient overlays for depth */}
-                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#0A1628]/30 to-[#0A1628]/90 z-10" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/70 via-transparent to-transparent z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#062C2E]/30 to-[#062C2E]/90 z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#062C2E]/70 via-transparent to-transparent z-10" />
                 </div>
             </div>
 
@@ -293,7 +293,7 @@ export function AboutHero() {
                     priority
                     sizes="100vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628]/80 via-primary/60 to-[#0A1628]/90" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[#062C2E]/80 via-primary/60 to-[#062C2E]/90" />
             </div>
 
             {/* Vignette overlay */}
@@ -346,7 +346,7 @@ export function AboutHero() {
                     >
                         <a
                             href="/contact"
-                            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-accent-yellow text-[#0A1628] font-bold rounded-xl overflow-hidden transition-all duration-300 hover:bg-accent-orange hover:shadow-lg hover:shadow-accent-yellow/30"
+                            className="group relative inline-flex items-center gap-3 px-8 py-4 bg-accent-yellow text-[#062C2E] font-bold rounded-xl overflow-hidden transition-all duration-300 hover:bg-accent-orange hover:shadow-lg hover:shadow-accent-yellow/30"
                         >
                             <span className="relative z-10">{t("hero.cta.primary") || "Get in Touch"}</span>
                             <svg

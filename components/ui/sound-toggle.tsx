@@ -165,7 +165,7 @@ export function SoundToggle({
         className={cn(
           "relative rounded-full flex items-center justify-center",
           "transition-colors duration-200",
-          "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#0A1628]",
+          "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-[#062C2E]",
           sizeConfig.button,
           variants[variant],
           className

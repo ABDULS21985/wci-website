@@ -48,51 +48,63 @@ function TeamMemberCard({
             whileHover={{ y: -8 }}
             transition={{ duration: 0.3 }}
         >
-            <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100">
+            <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100 hover:shadow-2xl hover:shadow-primary/10 transition-shadow duration-400">
                 {/* Photo */}
                 <div className="relative aspect-[3/4] overflow-hidden">
                     <Image
                         src={member.photo}
                         alt={t(`members.${member.key}.name`)}
                         fill
-                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     {/* Gradient overlay at bottom */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+                    {/* Social Links - floating on image */}
+                    <div className="absolute top-4 right-4 flex flex-col gap-2 opacity-0 translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                        {member.socialLinks.linkedin && (
+                            <a
+                                href={member.socialLinks.linkedin}
+                                className="p-2.5 rounded-xl bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white transition-all duration-300"
+                                onClick={(e) => e.stopPropagation()}
+                                aria-label="LinkedIn"
+                            >
+                                <Linkedin className="w-4 h-4" />
+                            </a>
+                        )}
+                        {member.socialLinks.email && (
+                            <a
+                                href={`mailto:${member.socialLinks.email}`}
+                                className="p-2.5 rounded-xl bg-white/20 backdrop-blur-sm hover:bg-white/40 text-white transition-all duration-300"
+                                onClick={(e) => e.stopPropagation()}
+                                aria-label="Email"
+                            >
+                                <Mail className="w-4 h-4" />
+                            </a>
+                        )}
+                    </div>
 
                     {/* Name overlay at bottom */}
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                        <h3 className="text-xl font-bold text-white">
-                            {t(`members.${member.key}.name`)}
-                        </h3>
-                        <p className="text-white/80 text-sm mt-1">
-                            {t(`members.${member.key}.role`)}
-                        </p>
+                        <div className="flex items-center gap-3 mb-2">
+                            <div className={`w-1 h-8 rounded-full bg-gradient-to-b ${member.gradient}`} />
+                            <div>
+                                <h3 className="text-xl font-bold text-white">
+                                    {t(`members.${member.key}.name`)}
+                                </h3>
+                                <p className="text-white/80 text-sm mt-0.5">
+                                    {t(`members.${member.key}.role`)}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                {/* Social Links */}
-                <div className="p-4 flex gap-3">
-                    {member.socialLinks.linkedin && (
-                        <a
-                            href={member.socialLinks.linkedin}
-                            className="p-2 rounded-lg bg-gray-100 hover:bg-[#0D7377] hover:text-white transition-colors"
-                            onClick={(e) => e.stopPropagation()}
-                            aria-label="LinkedIn"
-                        >
-                            <Linkedin className="w-4 h-4" />
-                        </a>
-                    )}
-                    {member.socialLinks.email && (
-                        <a
-                            href={`mailto:${member.socialLinks.email}`}
-                            className="p-2 rounded-lg bg-gray-100 hover:bg-[#0D7377] hover:text-white transition-colors"
-                            onClick={(e) => e.stopPropagation()}
-                            aria-label="Email"
-                        >
-                            <Mail className="w-4 h-4" />
-                        </a>
-                    )}
+                {/* Click to read bio hint */}
+                <div className="p-4 text-center">
+                    <span className="text-sm text-gray-500 group-hover:text-primary transition-colors duration-300">
+                        Click to read full bio
+                    </span>
                 </div>
             </div>
         </motion.div>
@@ -176,8 +188,10 @@ export function TeamSection() {
                 {/* Section header */}
                 <FadeUp>
                     <div className="text-center max-w-3xl mx-auto mb-16">
-                        <span className="text-sm font-semibold tracking-widest uppercase text-[#0D7377] mb-4 block">
+                        <span className="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-[#0D7377] mb-4">
+                            <span className="w-8 h-0.5 bg-[#0D7377] rounded-full" />
                             {t("overline")}
+                            <span className="w-8 h-0.5 bg-[#0D7377] rounded-full" />
                         </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mt-4">
                             {t("heading")}

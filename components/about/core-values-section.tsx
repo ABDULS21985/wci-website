@@ -96,16 +96,19 @@ export function CoreValuesSection() {
                                 className="group relative"
                                 variants={cardVariants}
                             >
-                                <div className="card-interactive relative h-full p-8 md:p-10 rounded-2xl bg-white border border-neutral-200 hover:border-primary/30">
-                                    {/* Icon - simple solid circle background */}
+                                <div className="card-interactive relative h-full p-8 md:p-10 rounded-2xl bg-white border border-neutral-200 hover:border-primary/30 overflow-hidden">
+                                    {/* Top accent on hover */}
+                                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-accent-red origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500" />
+
+                                    {/* Icon with hover transition */}
                                     <div className="relative mb-6">
-                                        <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10">
-                                            <Icon className="h-7 w-7 text-primary" />
+                                        <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 group-hover:bg-primary transition-colors duration-400">
+                                            <Icon className="h-7 w-7 text-primary group-hover:text-white transition-colors duration-400" />
                                         </div>
                                     </div>
 
                                     {/* Content */}
-                                    <h3 className="text-neutral-900 mb-3">
+                                    <h3 className="text-neutral-900 mb-3 group-hover:text-primary transition-colors duration-300">
                                         {t(`values.${value.key}.title`)}
                                     </h3>
                                     <p className="text-neutral-gray text-sm md:text-base leading-relaxed">

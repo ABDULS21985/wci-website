@@ -88,7 +88,7 @@ export function BlogCardPremium({
   // Gradient mask position
   const gradientX = useTransform(springX, [-0.5, 0.5], [0, 100]);
   const gradientY = useTransform(springY, [-0.5, 0.5], [0, 100]);
-  const gradientBackground = useMotionTemplate`radial-gradient(300px circle at ${gradientX}% ${gradientY}%, rgba(30, 77, 183, 0.15), transparent 80%)`;
+  const gradientBackground = useMotionTemplate`radial-gradient(300px circle at ${gradientX}% ${gradientY}%, rgba(13, 115, 119, 0.15), transparent 80%)`;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!ref.current) return;

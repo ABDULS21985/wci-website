@@ -17,6 +17,7 @@ interface ProgramConfig {
     icon: LucideIcon;
     slug: string;
     color: string;
+    gradient: string;
 }
 
 const programConfigs: ProgramConfig[] = [
@@ -25,24 +26,28 @@ const programConfigs: ProgramConfig[] = [
         icon: Heart,
         slug: "psychosocial-resilience",
         color: "#C2185B",
+        gradient: "linear-gradient(135deg, #C2185B 0%, #E91E8C 100%)",
     },
     {
         key: "economic",
         icon: Laptop,
         slug: "economic-empowerment",
         color: "#0D7377",
+        gradient: "linear-gradient(135deg, #0D7377 0%, #14A3A8 100%)",
     },
     {
         key: "leadership",
         icon: Users,
         slug: "leadership-mentoring",
         color: "#E8A317",
+        gradient: "linear-gradient(135deg, #E8A317 0%, #F59A23 100%)",
     },
     {
         key: "impact",
         icon: BarChart3,
         slug: "humanitarian-impact",
         color: "#095456",
+        gradient: "linear-gradient(135deg, #095456 0%, #0D7377 100%)",
     }
 ];
 
@@ -52,6 +57,7 @@ interface Program {
     icon: LucideIcon;
     slug: string;
     color: string;
+    gradient: string;
 }
 
 function ProgramCard({ program, index, isVisible, learnMoreText }: {
@@ -79,11 +85,11 @@ function ProgramCard({ program, index, isVisible, learnMoreText }: {
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
                 style={{
-                    transition: 'all 0.35s ease-out',
+                    transition: 'all 0.35s cubic-bezier(0.22, 1, 0.36, 1)',
                     transform: isHovered ? 'translateY(-6px)' : 'translateY(0)',
-                    borderColor: isHovered ? program.color : '#E2E8F0',
+                    borderColor: isHovered ? `${program.color}40` : '#E2E8F0',
                     boxShadow: isHovered
-                        ? `0 20px 40px ${program.color}1a`
+                        ? `0 20px 40px ${program.color}15, 0 8px 16px rgba(0,0,0,0.04)`
                         : '0 1px 3px rgba(0, 0, 0, 0.05)'
                 }}
             >
@@ -91,24 +97,46 @@ function ProgramCard({ program, index, isVisible, learnMoreText }: {
                 <div
                     className="absolute top-0 left-0 right-0 h-1 origin-left"
                     style={{
-                        backgroundColor: program.color,
-                        transition: 'transform 0.35s ease-out',
+                        background: program.gradient,
+                        transition: 'transform 0.4s cubic-bezier(0.22, 1, 0.36, 1)',
                         transform: isHovered ? 'scaleX(1)' : 'scaleX(0)'
                     }}
                 />
 
+                {/* Step number watermark */}
+                <div
+                    className="absolute top-4 right-6 text-6xl font-black select-none transition-opacity duration-300"
+                    style={{ color: isHovered ? `${program.color}08` : '#f1f5f9' }}
+                >
+                    0{index + 1}
+                </div>
+
                 {/* Icon */}
-                <div className="mb-6">
+                <div className="mb-6 relative">
+                    {/* Icon glow on hover */}
                     <div
-                        className="rounded-full flex items-center justify-center"
+                        className="absolute inset-0 rounded-2xl blur-xl transition-opacity duration-400"
+                        style={{
+                            background: program.gradient,
+                            opacity: isHovered ? 0.15 : 0,
+                            transform: "scale(1.5)",
+                        }}
+                    />
+                    <div
+                        className="relative rounded-2xl flex items-center justify-center transition-all duration-400"
                         style={{
                             width: '64px',
                             height: '64px',
-                            backgroundColor: `${program.color}15`
+                            background: isHovered ? program.gradient : `${program.color}10`,
                         }}
                     >
                         <program.icon
-                            style={{ width: '28px', height: '28px', color: program.color }}
+                            style={{
+                                width: '28px',
+                                height: '28px',
+                                color: isHovered ? '#fff' : program.color,
+                                transition: 'color 0.3s ease',
+                            }}
                             strokeWidth={1.5}
                         />
                     </div>
@@ -127,7 +155,17 @@ function ProgramCard({ program, index, isVisible, learnMoreText }: {
                 </p>
 
                 {/* CTA */}
-                <span className="inline-flex items-center gap-2 text-sm font-medium" style={{ color: program.color }}>
+                <span
+                    className="inline-flex items-center gap-2 text-sm font-semibold transition-all duration-300"
+                    style={{ color: program.color }}
+                >
+                    <span
+                        className="h-0.5 rounded-full transition-all duration-300"
+                        style={{
+                            backgroundColor: program.color,
+                            width: isHovered ? "20px" : "12px",
+                        }}
+                    />
                     <span>{learnMoreText}</span>
                     <ArrowRight className="h-4 w-4 motion-safe:transition-transform motion-safe:duration-300 group-hover:translate-x-1" />
                 </span>
@@ -150,6 +188,7 @@ export function ProgramsSection() {
         icon: config.icon,
         slug: config.slug,
         color: config.color,
+        gradient: config.gradient,
     }));
 
     useEffect(() => {
@@ -221,13 +260,13 @@ export function ProgramsSection() {
                     </div>
                 </div>
 
-                <div className={`flex justify-center mt-12 motion-safe:transition-all motion-safe:duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '400ms' }}>
+                <div className={`flex justify-center mt-14 motion-safe:transition-all motion-safe:duration-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`} style={{ transitionDelay: '400ms' }}>
                     <Link
                         href="/programs"
-                        className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 motion-safe:transition-colors btn-press"
+                        className="group inline-flex items-center gap-2.5 px-7 py-3.5 rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 motion-safe:transition-all duration-300 btn-press hover:shadow-lg hover:shadow-primary/25"
                     >
                         <span>{t("viewAll")}</span>
-                        <ArrowRight className="h-4 w-4" />
+                        <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Link>
                 </div>
             </div>

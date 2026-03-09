@@ -82,9 +82,20 @@ export function StatsSection() {
 
     return (
         <section
-            className="w-full relative overflow-hidden bg-primary"
-            style={{ paddingBlock: "var(--section-padding-md)" }}
+            className="w-full relative overflow-hidden"
+            style={{
+                paddingBlock: "var(--section-padding-md)",
+                background: "linear-gradient(135deg, #0D7377 0%, #095456 50%, #062C2E 100%)",
+            }}
         >
+            {/* Dot pattern */}
+            <div
+                className="absolute inset-0 opacity-[0.04]"
+                style={{
+                    backgroundImage: "radial-gradient(circle, #fff 1px, transparent 1px)",
+                    backgroundSize: "40px 40px",
+                }}
+            />
             <div className="container mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
                 {/* Stats in single row with dividers */}
                 <div
