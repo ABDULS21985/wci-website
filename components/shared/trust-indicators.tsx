@@ -1,98 +1,51 @@
 "use client";
 
-import Image from "next/image";
 import {
     ShieldCheck,
-    Building2,
+    Heart,
     Users,
     CheckCircle,
-    Briefcase,
+    Globe,
     Star,
-    Clock,
+    Award,
 } from "lucide-react";
 
 const stats = [
     {
-        value: "50+",
-        label: "Enterprise Clients",
-        icon: Building2,
+        value: "500+",
+        label: "Women Empowered",
+        icon: Heart,
     },
     {
-        value: "99%",
-        label: "Client Satisfaction",
+        value: "98%",
+        label: "Positive Life Change",
         icon: Star,
     },
     {
-        value: "200+",
-        label: "Projects Delivered",
-        icon: CheckCircle,
+        value: "15+",
+        label: "Countries Reached",
+        icon: Globe,
     },
     {
-        value: "10+",
-        label: "Years Experience",
-        icon: Clock,
+        value: "50+",
+        label: "Mentors & Facilitators",
+        icon: Users,
     },
 ];
 
 const certifications = [
-    "ISO 27001",
-    "ISO 42001",
-    "QFC Licensed",
-    "QCB Compliant",
-    "NIST Framework",
+    "Registered NGO",
+    "C.R. No: 237930",
+    "Evidence-Based Programs",
+    "Ethical AI Practices",
+    "Data Privacy Compliant",
 ];
 
-interface ClientLogo {
-    name: string;
-    shortName: string;
-    logo?: string;
-    industry: string;
-}
-
-const clientLogos: ClientLogo[] = [
-    {
-        name: "Microsoft",
-        shortName: "Microsoft",
-        logo: "/partners/microsoft.webp",
-        industry: "Technology Partner",
-    },
-    {
-        name: "Google Cloud",
-        shortName: "Google",
-        logo: "/partners/google.webp",
-        industry: "Cloud Partner",
-    },
-    {
-        name: "NITDA Nigeria",
-        shortName: "NITDA",
-        logo: "/partners/NITDA.png",
-        industry: "Government Agency",
-    },
-    {
-        name: "NDIC Nigeria",
-        shortName: "NDIC",
-        logo: "/partners/ndic.png",
-        industry: "Financial Regulator",
-    },
-    {
-        name: "Lanasoft",
-        shortName: "Lanasoft",
-        logo: "/partners/Lanasoft.png",
-        industry: "Technology Partner",
-    },
-    {
-        name: "Qorebox",
-        shortName: "Qorebox",
-        logo: "/partners/qorebox.png",
-        industry: "Enterprise Solutions",
-    },
-];
-
-const clientTypes = [
-    "Central Banks",
-    "Financial Regulators",
-    "Government Entities",
-    "Enterprise Organizations",
+const communityTypes = [
+    "Diaspora Women",
+    "Mental Health Professionals",
+    "NGO Partners",
+    "Corporate Sponsors",
 ];
 
 export function TrustIndicators() {
@@ -104,45 +57,10 @@ export function TrustIndicators() {
                     <div className="flex items-center justify-center gap-3 mb-6 animate-fade-in-up">
                         <div className="w-12 h-0.5 bg-accent-orange"></div>
                         <h2 className="text-xs md:text-sm font-bold tracking-wider text-gray-600 uppercase">
-                            TRUSTED BY INDUSTRY LEADERS
+                            TRUSTED BY OUR COMMUNITY
                         </h2>
                         <div className="w-12 h-0.5 bg-accent-orange"></div>
                     </div>
-                </div>
-
-                {/* Client Logo Grid */}
-                <div className="mb-16 animate-fade-in-up delay-100">
-                    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
-                        {clientLogos.map((client, index) => (
-                            <div
-                                key={index}
-                                className="group flex flex-col items-center justify-center p-6 bg-white rounded-xl border border-neutral-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-                                style={{ animationDelay: `${index * 50}ms` }}
-                            >
-                                <div className="relative w-full h-12 flex items-center justify-center grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
-                                    {client.logo ? (
-                                        <Image
-                                            src={client.logo}
-                                            alt={client.name}
-                                            width={100}
-                                            height={48}
-                                            className="h-10 w-auto object-contain"
-                                        />
-                                    ) : (
-                                        <span className="text-lg font-bold text-neutral-700">
-                                            {client.shortName}
-                                        </span>
-                                    )}
-                                </div>
-                                <span className="mt-3 text-[10px] font-medium text-neutral-500 tracking-wide text-center">
-                                    {client.industry}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                    <p className="text-center text-sm text-neutral-500 mt-6">
-                        Trusted by government agencies, financial institutions, and enterprises worldwide
-                    </p>
                 </div>
 
                 {/* Stats Grid */}
@@ -169,7 +87,7 @@ export function TrustIndicators() {
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <ShieldCheck className="h-6 w-6 text-primary" />
                         <h4 className="text-lg font-semibold text-neutral-900">
-                            Certifications & Compliance
+                            Credentials & Standards
                         </h4>
                     </div>
                     <div className="flex flex-wrap justify-center gap-3">
@@ -178,28 +96,28 @@ export function TrustIndicators() {
                                 key={index}
                                 className="px-4 py-2 bg-white rounded-full text-sm font-medium text-neutral-700 border border-neutral-200 shadow-sm hover:border-primary/30 hover:shadow-md transition-all duration-300"
                             >
-                                <ShieldCheck className="inline-block h-4 w-4 text-primary mr-1.5 -mt-0.5" />
+                                <CheckCircle className="inline-block h-4 w-4 text-primary mr-1.5 -mt-0.5" />
                                 {cert}
                             </span>
                         ))}
                     </div>
                 </div>
 
-                {/* Client Types */}
+                {/* Community Types */}
                 <div className="text-center animate-fade-in-up delay-500">
                     <div className="flex items-center justify-center gap-3 mb-6">
                         <Users className="h-6 w-6 text-primary" />
                         <h4 className="text-lg font-semibold text-neutral-900">
-                            Industries We Serve
+                            Our Community
                         </h4>
                     </div>
                     <div className="flex flex-wrap justify-center gap-3">
-                        {clientTypes.map((type, index) => (
+                        {communityTypes.map((type, index) => (
                             <span
                                 key={index}
                                 className="flex items-center gap-2 px-4 py-2 bg-primary/5 rounded-full text-sm font-medium text-primary hover:bg-primary/10 transition-all duration-300"
                             >
-                                <Briefcase className="h-4 w-4" />
+                                <Award className="h-4 w-4" />
                                 {type}
                             </span>
                         ))}

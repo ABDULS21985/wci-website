@@ -19,7 +19,10 @@
     "contact": "Contact",
     "webSummit": "Events",
     "toggleMenu": "Toggle Menu",
-    "getStarted": "Join Us"
+    "getStarted": "Join Us",
+    "programs": "Programs",
+    "platform": "Platform",
+    "getInvolved": "Get Involved"
   },
   "common": {
     "learnMore": "Learn More",
@@ -235,6 +238,18 @@
           "bio": "Counselling psychologist with over 9 years of experience, specialising in emotional resilience and wellbeing programs for women and communities.",
           "extendedBio": "Fatima is a licensed counselling psychologist with over 9 years of clinical and community experience. She leads WCI's psychosocial resilience programming, designing evidence-based healing circles, emotional intelligence workshops, and peer support frameworks that form the foundation of WCI's trauma-informed approach."
         },
+        "cofounder1": {
+          "name": "Fatima Abubakar",
+          "role": "Co-Founder & Counselling Psychologist",
+          "bio": "Counselling psychologist with over 9 years of experience, specialising in emotional resilience and wellbeing programs for women and communities.",
+          "extendedBio": "Fatima is a licensed counselling psychologist with over 9 years of clinical and community experience. She leads WCI's psychosocial resilience programming, designing evidence-based healing circles, emotional intelligence workshops, and peer support frameworks that form the foundation of WCI's trauma-informed approach."
+        },
+        "cofounder2": {
+          "name": "Rakiya Shuaibu Mohammed",
+          "role": "Co-Founder & Systems Strategist",
+          "bio": "Expert in systems strategy, digital transformation, and governance with deep experience building scalable programs across Africa and the Middle East.",
+          "extendedBio": "Rakiya brings extensive expertise in systems strategy, digital innovation, and organisational governance. Her strategic vision drives WCI's platform development, partnership strategy, and operational excellence, ensuring every program is designed for scalability and measurable impact across diaspora communities."
+        },
         "headAnalytics": {
           "name": "Program Team",
           "role": "Facilitators & Mentors",
@@ -307,10 +322,16 @@
           "address": "Doha, Qatar"
         },
         "doha": {
-          "city": "Diaspora Network",
-          "country": "Pan-African",
-          "type": "Community Reach",
-          "address": "Across African diaspora communities worldwide"
+          "city": "Doha",
+          "country": "Qatar",
+          "type": "Headquarters",
+          "address": "Doha, Qatar"
+        },
+        "outreach": {
+          "city": "Africa",
+          "country": "Multi-Country",
+          "type": "Outreach Region",
+          "address": "Diaspora Communities across Africa"
         }
       }
     },
@@ -352,20 +373,20 @@
     "learnMore": "Learn More",
     "viewAll": "View All Programs",
     "items": {
-      "businessProcessManagement": {
+      "resilience": {
         "name": "Psychosocial Resilience",
         "description": "Healing circles, emotional intelligence training, burnout prevention workshops, peer support forums, and professional referral pathways to strengthen emotional wellbeing and community resilience."
       },
-      "cyberSecurity": {
-        "name": "Digital & Economic Empowerment",
+      "economic": {
+        "name": "Economic Empowerment",
         "description": "Digital literacy training, AI tools for productivity, entrepreneurship bootcamps, financial literacy workshops, and remote work readiness programs to build economic independence."
       },
-      "blockchain": {
-        "name": "Mentoring & Leadership",
+      "leadership": {
+        "name": "Leadership & Mentoring",
         "description": "AI-powered mentor matching, governance literacy training, advocacy skills development, ambassador programs, and cross-border exchange opportunities to develop the next generation of women leaders."
       },
-      "itConsultation": {
-        "name": "Transparent Humanitarian Impact",
+      "impact": {
+        "name": "Humanitarian Impact",
         "description": "Pooled community contributions, participatory project selection, real-time transparency dashboards, and rigorous impact measurement to ensure accountable, effective humanitarian action."
       }
     },
@@ -410,35 +431,29 @@
     "useCases": "Use Cases",
     "valuePropositions": "Key Benefits",
     "items": {
-      "trustMe": {
+      "companion": {
         "name": "Emotional Support Companion",
         "badge": "Wellbeing",
         "tagline": "Your Safe Space for Guided Self-Reflection",
         "description": "A non-diagnostic AI companion that provides guided emotional check-ins, mood tracking, resilience exercises, and personalised wellbeing resources. It helps women process their experiences in a safe, confidential environment and connects them with professional support when needed."
       },
-      "digiGate": {
+      "learning": {
         "name": "Learning Management Hub",
         "badge": "Skills & Growth",
         "tagline": "Structured Pathways to Resilience and Economic Power",
         "description": "A comprehensive learning platform offering structured curricula in psychosocial resilience, digital literacy, entrepreneurship, financial management, and leadership. Features self-paced courses, interactive workshops, progress tracking, and certification pathways."
       },
-      "digiTrack": {
+      "mentoring": {
         "name": "AI Mentor Matching Engine",
         "badge": "Mentorship",
         "tagline": "Connecting You with the Right Mentor at the Right Time",
         "description": "An intelligent matching system that pairs women with mentors based on skills, goals, availability, language, and cultural background. Facilitates structured mentoring relationships with goal-setting, progress tracking, and feedback loops."
       },
-      "trustMeHub": {
+      "dashboard": {
         "name": "Humanitarian Transparency Dashboard",
         "badge": "Impact & Trust",
         "tagline": "See Where Every Contribution Goes. Track Every Impact.",
         "description": "A real-time dashboard that tracks pooled community contributions, project selection processes, fund allocation, implementation progress, and measurable outcomes. Ensures radical transparency and accountability in all humanitarian initiatives."
-      },
-      "boaCRM": {
-        "name": "Community Hub",
-        "badge": "Connection",
-        "tagline": "Your Gateway to the WCI Ecosystem",
-        "description": "A centralised community platform connecting all WCI members, facilitating peer support, event coordination, resource sharing, and cross-border networking among diaspora women worldwide."
       }
     }
   },
@@ -534,32 +549,29 @@
     "description": "Women Connect International Training (WCI) strengthens emotional resilience, economic empowerment, and leadership capacity of African women in the diaspora. Based in Doha, Qatar. C.R. No: 237930.",
     "services": {
       "title": "Programs",
-      "cybersecurity": "Psychosocial Resilience",
-      "aiData": "Digital & Economic Empowerment",
-      "blockchain": "Mentoring & Leadership",
-      "itGovernance": "Humanitarian Impact",
-      "consulting": "Healing Circles",
-      "training": "Skills Training"
+      "resilience": "Psychosocial Resilience",
+      "economic": "Digital & Economic Empowerment",
+      "leadership": "Mentoring & Leadership",
+      "impact": "Humanitarian Impact"
     },
     "products": {
       "title": "Platform",
-      "digigate": "Learning Hub",
-      "digitrust": "Emotional Support",
-      "digitrack": "Mentor Matching",
-      "trustmehub": "Transparency Dashboard",
-      "boacrm": "Community Hub"
+      "companion": "Emotional Support",
+      "learning": "Learning Hub",
+      "mentoring": "Mentor Matching",
+      "dashboard": "Transparency Dashboard"
     },
     "company": {
       "title": "Organisation",
       "about": "About Us",
-      "caseStudies": "Impact Stories",
-      "industries": "Focus Areas",
+      "impactStories": "Impact Stories",
       "insights": "Blog",
-      "careers": "Get Involved"
+      "getInvolved": "Get Involved"
     },
     "contact": {
       "title": "Connect",
       "getInTouch": "Get in Touch",
+      "partner": "Become a Partner",
       "scheduleCall": "Book a Conversation",
       "support": "Support"
     },
@@ -710,6 +722,7 @@
     }
   },
   "testimonials": {
+    "label": "What Our Community Says",
     "title": "Community Voices",
     "subtitle": "What Our Community Says",
     "clientSince": "Member since",

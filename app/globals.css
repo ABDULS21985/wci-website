@@ -30,16 +30,6 @@
   --slate-950: #020617;
 
   /* ===========================================
-     PRODUCT BRAND COLORS (WCI Programs)
-     =========================================== */
-  --trustmehub-green: #0D7377;
-  --trustmehub-green-light: #14A3A8;
-  --trustmehub-green-dark: #095456;
-  --boacrm-indigo: #C2185B;
-  --boacrm-indigo-light: #E91E8C;
-  --boacrm-indigo-dark: #9C1349;
-
-  /* ===========================================
      SEMANTIC COLOR TOKENS
      =========================================== */
   --success: #10B981;
@@ -86,10 +76,6 @@
   --gradient-primary-hover: linear-gradient(135deg, #14A3A8 0%, #0D7377 100%);
   --gradient-accent: linear-gradient(135deg, #C2185B 0%, #9C1349 100%);
   --gradient-accent-hover: linear-gradient(135deg, #E91E8C 0%, #C2185B 100%);
-  --gradient-trustmehub: linear-gradient(135deg, #0D7377 0%, #095456 100%);
-  --gradient-trustmehub-hover: linear-gradient(135deg, #14A3A8 0%, #0D7377 100%);
-  --gradient-boacrm: linear-gradient(135deg, #C2185B 0%, #9C1349 100%);
-  --gradient-boacrm-hover: linear-gradient(135deg, #E91E8C 0%, #C2185B 100%);
   --gradient-hero: linear-gradient(180deg, #FFF8F0 0%, #FFFFFF 100%);
   --gradient-dark: linear-gradient(135deg, #1F2937 0%, #111827 100%);
 
@@ -301,14 +287,6 @@
   --color-neutral-white: var(--neutral-white);
   --color-neutral-light: var(--neutral-light);
   --color-neutral-gray: var(--neutral-gray);
-
-  /* Product Brand Colors */
-  --color-trustmehub: var(--trustmehub-green);
-  --color-trustmehub-light: var(--trustmehub-green-light);
-  --color-trustmehub-dark: var(--trustmehub-green-dark);
-  --color-boacrm: var(--boacrm-indigo);
-  --color-boacrm-light: var(--boacrm-indigo-light);
-  --color-boacrm-dark: var(--boacrm-indigo-dark);
 
   /* Semantic Colors */
   --color-success: var(--success);
@@ -775,22 +753,6 @@ select:focus-visible {
 
 .bg-gradient-accent-hover:hover {
   background: var(--gradient-accent-hover);
-}
-
-.bg-gradient-trustmehub {
-  background: var(--gradient-trustmehub);
-}
-
-.bg-gradient-trustmehub-hover:hover {
-  background: var(--gradient-trustmehub-hover);
-}
-
-.bg-gradient-boacrm {
-  background: var(--gradient-boacrm);
-}
-
-.bg-gradient-boacrm-hover:hover {
-  background: var(--gradient-boacrm-hover);
 }
 
 .bg-gradient-hero {

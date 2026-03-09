@@ -203,21 +203,3 @@ export function generateLocalBusinessSchema() {
   ];
 }
 
-// --- Service Schema ---
-export function generateServiceSchema(service: {
-  name: string;
-  description: string;
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    name: service.name,
-    description: service.description,
-    provider: {
-      "@type": "Organization",
-      name: ORG_NAME,
-      url: BASE_URL,
-    },
-    areaServed: ["NG", "QA", "GH", "AE"],
-  };
-}

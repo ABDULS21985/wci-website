@@ -1,11 +1,11 @@
 {
-    "name": "Global Digitalbit Limited",
-    "short_name": "Digitalbit",
-    "description": "Pioneering IT company dedicated to improving lives through technology. Specializing in consultancy, implementation, and training in data analytics, AI, cybersecurity, and CBDC.",
+    "name": "Women Connect International Training",
+    "short_name": "WCI",
+    "description": "Empowering African women in the diaspora through psychosocial resilience, economic empowerment, leadership development, and transparent humanitarian impact.",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme_color": "#1E4DB7",
+    "theme_color": "#0D7377",
     "icons": [
         {
             "src": "/icon-192.png",
