@@ -160,7 +160,7 @@ export default async function BlogDetailPage({ params }: Props) {
 
                         {/* Trust Message */}
                         <p className="text-sm text-white/60 mt-6 animate-fade-in-up">
-                            Join 5,000+ professionals. No spam, unsubscribe anytime.
+                            Join our growing community. No spam, unsubscribe anytime.
                         </p>
                     </div>
                 </div>
@@ -170,14 +170,14 @@ export default async function BlogDetailPage({ params }: Props) {
             <CTASection
                 title="Have Questions?"
                 accentTitle="Let's Talk"
-                description="Our team of experts is ready to help you navigate the complexities of digital transformation."
+                description="Our team is ready to support you on your journey toward resilience, empowerment, and leadership."
                 primaryCTA={{
                     label: "Contact Us",
                     href: "/contact",
                 }}
                 secondaryCTA={{
-                    label: "Our Services",
-                    href: "/services",
+                    label: "Our Programs",
+                    href: "/programs",
                 }}
                 showContactOptions={true}
             />

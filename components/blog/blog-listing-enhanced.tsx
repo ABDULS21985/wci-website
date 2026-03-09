@@ -37,12 +37,12 @@ const POSTS_PER_PAGE = 9;
 
 const CATEGORY_COLORS: Record<string, string> = {
     all: "#0D7377",
-    technology: "#0D7377",
-    "ai-data": "#7C3AED",
-    cybersecurity: "#DC2626",
-    "digital-transformation": "#F59A23",
-    "industry-insights": "#059669",
-    "case-studies": "#C2185B",
+    resilience: "#0D7377",
+    empowerment: "#7C3AED",
+    leadership: "#DC2626",
+    "impact-stories": "#F59A23",
+    community: "#059669",
+    programs: "#C2185B",
 };
 
 // =============================================================================
@@ -133,10 +133,10 @@ function CartoonAvatar({ name, size = "md" }: { name: string; size?: "sm" | "md"
   const initials = getInitials(name);
   const sizeClasses = { sm: "w-8 h-8 text-xs", md: "w-10 h-10 text-sm", lg: "w-12 h-12 text-base" };
   const gradients = [
-    "from-blue-500 via-blue-600 to-indigo-600",
+    "from-primary via-[#095456] to-secondary",
     "from-orange-400 via-orange-500 to-red-500",
     "from-emerald-400 via-emerald-500 to-teal-600",
-    "from-purple-500 via-purple-600 to-pink-500",
+    "from-accent-orange via-[#E8A317] to-[#C2185B]",
     "from-amber-400 via-orange-500 to-red-500",
   ];
   const gradient = gradients[name.length % gradients.length];

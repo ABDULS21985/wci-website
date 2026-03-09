@@ -223,7 +223,7 @@ export function FaqsSection() {
                                 {/* CTA Button */}
                                 <Link
                                     href="/contact"
-                                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D7377] hover:bg-[#1a44a3] text-white font-semibold rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-[#0D7377]/25 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0D7377] focus-visible:ring-offset-2 group"
+                                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#0D7377] hover:bg-[#095456] text-white font-semibold rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-[#0D7377]/25 hover:scale-[1.02] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0D7377] focus-visible:ring-offset-2 group"
                                 >
                                     <span>{t("cta.button")}</span>
                                     <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

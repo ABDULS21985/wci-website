@@ -39,12 +39,12 @@ function CartoonAvatar({
 
     // Generate a consistent gradient based on name
     const gradients = [
-        "from-blue-500 via-blue-600 to-indigo-600",
+        "from-primary via-[#095456] to-secondary",
         "from-orange-400 via-orange-500 to-red-500",
         "from-emerald-400 via-emerald-500 to-teal-600",
-        "from-purple-500 via-purple-600 to-pink-500",
+        "from-accent-orange via-[#E8A317] to-[#C2185B]",
         "from-amber-400 via-orange-500 to-red-500",
-        "from-cyan-400 via-blue-500 to-indigo-600",
+        "from-[#14A3A8] via-primary to-secondary",
     ];
     const gradientIndex = name.length % gradients.length;
     const gradient = gradients[gradientIndex];

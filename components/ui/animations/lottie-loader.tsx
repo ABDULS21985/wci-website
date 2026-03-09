@@ -5,9 +5,9 @@ import Lottie from "lottie-react";
 import { cn } from "@/components/ui/shared/lib/utils";
 
 // Brand colors for the loader animation
-const BRAND_PRIMARY = "#3B82F6"; // blue-500
-const BRAND_SECONDARY = "#60A5FA"; // blue-400
-const BRAND_ACCENT = "#93C5FD"; // blue-300
+const BRAND_PRIMARY = "#0D7377"; // WCI teal
+const BRAND_SECONDARY = "#14A3A8"; // WCI light teal
+const BRAND_ACCENT = "#E8A317"; // WCI gold
 
 export type LottieLoaderSize = "sm" | "md" | "lg" | "xl";
 

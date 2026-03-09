@@ -115,7 +115,7 @@ export function BlogSection() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
               transition={{ duration: 0.5 }}
-              className="inline-block text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-blue-600 mb-3"
+              className="inline-block text-xs md:text-sm font-semibold tracking-[0.2em] uppercase text-primary mb-3"
             >
               STORIES & INSIGHTS
             </motion.span>
@@ -138,7 +138,7 @@ export function BlogSection() {
           >
             <Link
               href="/blogs"
-              className="group inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-700 transition-colors duration-300"
+              className="group inline-flex items-center gap-2 text-primary font-semibold hover:text-secondary transition-colors duration-300"
             >
               View All Articles
               <ArrowRight className="w-4 h-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
@@ -196,7 +196,7 @@ function FeaturedBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
 
         {/* Category Badge */}
         <div className="absolute top-6 left-6 z-10">
-          <span className="inline-block px-4 py-1.5 bg-blue-600 text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow-lg">
+          <span className="inline-block px-4 py-1.5 bg-primary text-white text-xs font-semibold uppercase tracking-wider rounded-full shadow-lg">
             {post.category}
           </span>
         </div>
@@ -216,7 +216,7 @@ function FeaturedBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight transition-colors duration-300 group-hover:text-blue-200">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight transition-colors duration-300 group-hover:text-accent-orange">
             {post.title}
           </h3>
 
@@ -236,7 +236,7 @@ function SecondaryBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
     <Link href={`/blogs/${post.slug}`} className="group block">
       <div className="relative flex gap-4 md:gap-5 p-4 rounded-xl border border-slate-200 bg-white overflow-hidden transition-all duration-300 ease-out hover:shadow-lg hover:border-slate-300">
         {/* Accent line on hover - left edge */}
-        <div className="absolute left-0 top-0 bottom-0 w-1 bg-blue-600 origin-top transition-transform duration-300 ease-out scale-y-0 group-hover:scale-y-100" />
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-primary origin-top transition-transform duration-300 ease-out scale-y-0 group-hover:scale-y-100" />
 
         {/* Thumbnail Image */}
         <div className="relative flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-lg overflow-hidden">
@@ -251,12 +251,12 @@ function SecondaryBlogCard({ post }: { post: (typeof blogPosts)[0] }) {
         {/* Content */}
         <div className="flex flex-col justify-center min-w-0 flex-1 py-1">
           {/* Category Badge */}
-          <span className="inline-block self-start px-2.5 py-1 mb-2 bg-slate-100 text-slate-600 text-[10px] font-semibold uppercase tracking-wider rounded-full transition-colors duration-300 group-hover:bg-blue-50 group-hover:text-blue-600">
+          <span className="inline-block self-start px-2.5 py-1 mb-2 bg-slate-100 text-slate-600 text-[10px] font-semibold uppercase tracking-wider rounded-full transition-colors duration-300 group-hover:bg-primary/10 group-hover:text-primary">
             {post.category}
           </span>
 
           {/* Title */}
-          <h3 className="text-base md:text-lg font-bold text-slate-900 leading-snug line-clamp-2 transition-colors duration-300 group-hover:text-blue-600">
+          <h3 className="text-base md:text-lg font-bold text-slate-900 leading-snug line-clamp-2 transition-colors duration-300 group-hover:text-primary">
             {post.title}
           </h3>
 

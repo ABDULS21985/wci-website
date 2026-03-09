@@ -37,7 +37,7 @@ export function AboutCtaSection() {
             style={{ paddingBlock: "var(--section-padding-md)" }}
         >
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50/30" />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-primary/5" />
 
             {/* Decorative elements */}
             <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none" aria-hidden="true" />

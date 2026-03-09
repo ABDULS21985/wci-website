@@ -24,20 +24,20 @@ interface BlogHeroProps {
 }
 
 const defaultStats = {
-    totalArticles: 150,
-    categories: 8,
-    expertAuthors: 25,
+    totalArticles: 30,
+    categories: 6,
+    expertAuthors: 10,
 };
 
 const defaultCategories = [
     "All",
-    "Technology",
-    "AI & Data",
-    "Cybersecurity",
-    "Blockchain",
-    "Digital Transformation",
-    "Governance",
-    "Industry Insights",
+    "Resilience",
+    "Empowerment",
+    "Leadership",
+    "Impact Stories",
+    "Community",
+    "Programs",
+    "News & Updates",
 ];
 
 export function BlogHero({
@@ -110,7 +110,7 @@ export function BlogHero({
                     <div className="flex justify-center mb-8 animate-fade-in-up">
                         <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full text-white/90 text-sm font-medium">
                             <Sparkles className="h-4 w-4 text-[#F59A23]" />
-                            Thought Leadership & Expert Analysis
+                            Stories of Resilience & Empowerment
                         </div>
                     </div>
 
@@ -132,11 +132,11 @@ export function BlogHero({
                         className="text-lg md:text-xl text-white/80 text-center max-w-3xl mx-auto mb-10 animate-fade-in-up"
                         style={{ animationDelay: "200ms" }}
                     >
-                        Explore cutting-edge perspectives on{" "}
-                        <span className="text-white font-semibold">technology trends</span>,{" "}
-                        <span className="text-[#F59A23] font-semibold">industry insights</span>, and{" "}
-                        <span className="text-white font-semibold">digital transformation strategies</span>{" "}
-                        from our team of experts.
+                        Explore inspiring stories of{" "}
+                        <span className="text-white font-semibold">women&apos;s resilience</span>,{" "}
+                        <span className="text-[#F59A23] font-semibold">empowerment journeys</span>, and{" "}
+                        <span className="text-white font-semibold">community impact</span>{" "}
+                        from our programs and partners.
                     </p>
 
                     {/* Search Bar */}
@@ -188,7 +188,7 @@ export function BlogHero({
                             >
                                 <span className="flex items-center gap-2">
                                     {category === "All" && <Tag className="h-3.5 w-3.5" />}
-                                    {category === "Technology" && <TrendingUp className="h-3.5 w-3.5" />}
+                                    {category === "Resilience" && <TrendingUp className="h-3.5 w-3.5" />}
                                     {category}
                                 </span>
                             </button>
@@ -227,7 +227,7 @@ export function BlogHero({
                             <div className="text-2xl md:text-3xl font-bold text-white mb-1">
                                 {stats.expertAuthors}+
                             </div>
-                            <div className="text-sm text-white/60">Expert Authors</div>
+                            <div className="text-sm text-white/60">Contributors</div>
                         </div>
                     </div>
                 </div>

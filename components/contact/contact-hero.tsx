@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { ArrowDown } from "lucide-react";
 
 const stats = [
-    { value: "50+", label: "Enterprise Clients" },
-    { value: "2-4h", label: "Response Time" },
-    { value: "99.9%", label: "Client Satisfaction" },
+    { value: "500+", label: "Women Empowered" },
+    { value: "15+", label: "Countries Reached" },
+    { value: "98%", label: "Positive Impact" },
 ];
 
 export function ContactHero() {
@@ -48,7 +48,7 @@ export function ContactHero() {
                                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
                             </span>
                             <span className="text-sm font-medium text-white/80 tracking-wide">
-                                Available for new projects
+                                Ready to support you
                             </span>
                         </span>
                     </motion.div>
@@ -60,9 +60,9 @@ export function ContactHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] as const }}
                     >
-                        Let&apos;s Start a{" "}
+                        Let&apos;s Connect &{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent-orange via-secondary-yellow to-accent-yellow">
-                            Conversation
+                            Empower Together
                         </span>
                     </motion.h1>
 
@@ -73,8 +73,8 @@ export function ContactHero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] as const }}
                     >
-                        Whether you&apos;re exploring digital transformation or ready to launch,
-                        our team is here to guide your journey.
+                        Whether you&apos;re seeking support, exploring partnership, or ready to get involved,
+                        our team is here to walk with you on this journey.
                     </motion.p>
 
                     {/* Stats Row */}

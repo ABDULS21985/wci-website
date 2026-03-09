@@ -108,7 +108,7 @@ export default function NotFound() {
                 {/* Helmet */}
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-20 h-20 bg-gradient-to-b from-gray-200 to-gray-300 rounded-full border-4 border-gray-300">
                   {/* Visor */}
-                  <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-8 bg-gradient-to-br from-blue-900 to-blue-600 rounded-lg opacity-80">
+                  <div className="absolute top-3 left-1/2 -translate-x-1/2 w-12 h-8 bg-gradient-to-br from-[#095456] to-[#0D7377] rounded-lg opacity-80">
                     {/* Reflection */}
                     <div className="absolute top-1 left-1 w-3 h-2 bg-white/40 rounded-sm" />
                   </div>
@@ -182,7 +182,7 @@ export default function NotFound() {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 text-white font-medium rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg"
                 style={{
                   background: "linear-gradient(135deg, #0D7377 0%, #095456 100%)",
-                  boxShadow: "0 4px 15px rgba(30, 77, 183, 0.3)",
+                  boxShadow: "0 4px 15px rgba(13, 115, 119, 0.3)",
                 }}
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -192,7 +192,7 @@ export default function NotFound() {
               </Link>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-blue-700 font-medium rounded-lg border-2 border-blue-700 transition-all duration-300 hover:bg-blue-700 hover:text-white"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 text-[#0D7377] font-medium rounded-lg border-2 border-[#0D7377] transition-all duration-300 hover:bg-[#0D7377] hover:text-white"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
@@ -213,15 +213,15 @@ export default function NotFound() {
               </p>
               <div className="flex flex-wrap gap-3 justify-center">
                 {[
-                  { href: "/services", label: "Services" },
-                  { href: "/products", label: "Products" },
+                  { href: "/programs", label: "Programs" },
+                  { href: "/platform", label: "Platform" },
                   { href: "/about", label: "About Us" },
                   { href: "/blogs", label: "Blog" },
                 ].map((link) => (
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="px-4 py-2 text-sm text-gray-600 bg-gray-100 rounded-full hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                    className="px-4 py-2 text-sm text-gray-600 bg-gray-100 rounded-full hover:bg-[#0D7377]/10 hover:text-[#0D7377] transition-colors"
                   >
                     {link.label}
                   </Link>

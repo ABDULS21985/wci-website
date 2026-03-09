@@ -22,7 +22,7 @@ const buttonVariants = cva(
                 link: "text-primary underline-offset-4 hover:underline",
                 // Premium variants
                 gradient:
-                    "bg-gradient-to-r from-primary via-indigo-500 to-purple-500 text-white hover:opacity-90 shadow-lg hover:shadow-xl transition-all",
+                    "bg-gradient-to-r from-primary via-secondary to-[#095456] text-white hover:opacity-90 shadow-lg hover:shadow-xl transition-all",
                 glass:
                     "bg-white/70 dark:bg-black/50 backdrop-blur-xl border border-white/20 dark:border-white/10 shadow-lg hover:bg-white/80 dark:hover:bg-black/60",
                 glow:

@@ -163,7 +163,7 @@ function FloatingElements() {
             {/* Bottom left decorative circle */}
             <div
                 className="absolute bottom-20 left-[5%] w-96 h-96 rounded-full opacity-[0.02] blur-3xl"
-                style={{ background: "linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)" }}
+                style={{ background: "linear-gradient(135deg, #0D7377 0%, #095456 100%)" }}
                 aria-hidden="true"
             />
             {/* Small accent dots */}
@@ -312,7 +312,7 @@ export function TestimonialsSection() {
         <section
             ref={sectionRef}
             className="relative w-full py-24 md:py-32 lg:py-40 overflow-hidden"
-            style={{ backgroundColor: "#0F172A" }}
+            style={{ backgroundColor: "#062C2E" }}
             role="region"
             aria-label="Client testimonials"
             onKeyDown={handleKeyDown}
@@ -321,7 +321,7 @@ export function TestimonialsSection() {
             <div
                 className="absolute inset-0"
                 style={{
-                    background: "linear-gradient(135deg, rgba(15, 23, 42, 1) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(15, 23, 42, 1) 100%)",
+                    background: "linear-gradient(135deg, rgba(6, 44, 46, 1) 0%, rgba(9, 84, 86, 0.3) 50%, rgba(6, 44, 46, 1) 100%)",
                 }}
                 aria-hidden="true"
             />
@@ -440,7 +440,7 @@ export function TestimonialsSection() {
                                                 background: "linear-gradient(135deg, #E8A317 0%, #FFD700 100%)",
                                             }}
                                         >
-                                            <span className="text-lg md:text-xl font-bold text-[#0F172A]">
+                                            <span className="text-lg md:text-xl font-bold text-[#062C2E]">
                                                 {getInitials(currentTestimonial.author)}
                                             </span>
                                         </div>
@@ -466,7 +466,7 @@ export function TestimonialsSection() {
                             {/* Previous Button */}
                             <button
                                 onClick={goToPrevious}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -492,7 +492,7 @@ export function TestimonialsSection() {
                                         role="tab"
                                         aria-selected={index === currentIndex}
                                         aria-label={`Go to testimonial ${index + 1}`}
-                                        className="relative h-2 md:h-2.5 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                        className="relative h-2 md:h-2.5 rounded-full transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
                                         style={{
                                             width: index === currentIndex ? "2rem" : "0.5rem",
                                             background: index === currentIndex
@@ -506,7 +506,7 @@ export function TestimonialsSection() {
                             {/* Next Button */}
                             <button
                                 onClick={goToNext}
-                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#0F172A]"
+                                className="group w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-[#E8A317] focus:ring-offset-2 focus:ring-offset-[#062C2E]"
                                 style={{
                                     background: "rgba(255, 255, 255, 0.05)",
                                     border: "1px solid rgba(255, 255, 255, 0.1)",

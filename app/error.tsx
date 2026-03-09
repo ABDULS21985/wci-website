@@ -139,7 +139,7 @@ export default function Error({
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 text-gray-500 hover:text-blue-600 transition-colors"
+                className="inline-flex items-center gap-2 text-gray-500 hover:text-[#0D7377] transition-colors"
               >
                 <MessageCircle className="w-4 h-4" />
                 Contact Support

@@ -19,7 +19,7 @@ const cards: CardData[] = [
         key: "mission",
         icon: Target,
         gradient: "from-primary to-secondary",
-        glowColor: "rgba(30, 77, 183, 0.4)",
+        glowColor: "rgba(13, 115, 119, 0.4)",
         accentColor: "primary",
     },
     {
@@ -139,11 +139,10 @@ function GlowCard({ card, children }: { card: CardData; children: React.ReactNod
 export function MissionVisionSection() {
     const t = useTranslations("about");
 
-    // Values declarations per mega-prompt spec
     const valuesDeclarations = [
-        { key: "build", text: t("values.declarations.build") || "We Build What We Recommend" },
-        { key: "complexity", text: t("values.declarations.complexity") || "Complexity Is Our Comfort Zone" },
-        { key: "security", text: t("values.declarations.security") || "Security Is Non-Negotiable" },
+        { key: "dignity", text: t("values.declarations.dignity") || "Every Woman Deserves Dignity" },
+        { key: "accountability", text: t("values.declarations.accountability") || "Transparency in Everything We Do" },
+        { key: "equity", text: t("values.declarations.equity") || "Equity Is Our Foundation" },
     ];
 
     return (

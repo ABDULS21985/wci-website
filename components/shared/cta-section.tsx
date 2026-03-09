@@ -50,14 +50,14 @@ const resources = [
 export function CTASection({
     title = "Ready to Transform",
     accentTitle = "Your Business?",
-    description = "Schedule a consultation with our experts to discuss how our products and services can accelerate your digital transformation journey.",
+    description = "Connect with our team to learn how WCI's programs can support your journey toward resilience, empowerment, and leadership.",
     primaryCTA = {
         label: "Schedule Consultation",
         href: "/contact",
     },
     secondaryCTA = {
-        label: "View All Services",
-        href: "/services",
+        label: "View All Programs",
+        href: "/programs",
     },
     showContactOptions = true,
     showThreeColumnLayout = false,
@@ -172,7 +172,7 @@ export function CTASection({
                                     href="tel:+97477953122"
                                     className="flex items-center gap-3 text-white/80 hover:text-white transition-colors text-sm"
                                 >
-                                    <Phone className="h-4 w-4 text-blue-400" />
+                                    <Phone className="h-4 w-4 text-accent-orange" />
                                     <span>Call Us Directly</span>
                                 </a>
                             </div>

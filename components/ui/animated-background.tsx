@@ -122,7 +122,7 @@ function GradientBackground({ intensity }: { intensity: Intensity }) {
   return (
     <>
       <div
-        className="absolute inset-0 bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 animate-gradient-shift"
+        className="absolute inset-0 bg-gradient-to-br from-[#062C2E] via-[#095456] to-[#0D7377] animate-gradient-shift"
         style={{
           opacity: config.opacity,
           backgroundSize: "200% 200%",

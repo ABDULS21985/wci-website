@@ -159,18 +159,18 @@ export function TrustIndicators() {
                         <Headphones className="h-5 w-5" />
                     </div>
                     <div>
-                        <p className="font-semibold">Priority Support</p>
-                        <p className="text-xs text-white/70">For enterprise clients</p>
+                        <p className="font-semibold">We&apos;re Here for You</p>
+                        <p className="text-xs text-white/70">Caring, responsive support</p>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-4 pt-4 border-t border-white/20">
                     <div>
-                        <div className="text-2xl font-bold">24/7</div>
-                        <div className="text-xs text-white/70">Availability</div>
+                        <div className="text-2xl font-bold">15+</div>
+                        <div className="text-xs text-white/70">Countries</div>
                     </div>
                     <div>
-                        <div className="text-2xl font-bold">&lt;2h</div>
-                        <div className="text-xs text-white/70">Response Time</div>
+                        <div className="text-2xl font-bold">500+</div>
+                        <div className="text-xs text-white/70">Women Supported</div>
                     </div>
                 </div>
             </motion.div>

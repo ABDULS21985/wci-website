@@ -319,7 +319,7 @@ export function AboutHero() {
                         transition={{ duration: 0.6, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                     >
                         <span className="w-10 h-0.5 bg-gradient-to-r from-accent-yellow to-accent-orange" />
-                        {t("hero.kicker") || "Enterprise Technology Partners"}
+                        {t("hero.kicker") || "Empowering Diaspora Women"}
                     </motion.span>
 
                     {/* Main heading - Large with gradient text */}

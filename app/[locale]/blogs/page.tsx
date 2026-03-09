@@ -275,7 +275,7 @@ export default async function BlogsPage({ params }: Props) {
 
                             {/* Trust Message */}
                             <p className="text-sm text-white/60 mt-6 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
-                                Join 5,000+ professionals. No spam, unsubscribe anytime.
+                                Join our growing community. No spam, unsubscribe anytime.
                             </p>
                         </div>
                     </div>

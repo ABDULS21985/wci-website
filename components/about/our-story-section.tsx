@@ -60,7 +60,7 @@ export function OurStorySection() {
             style={{ paddingBlock: "var(--section-padding-md)" }}
         >
             {/* Background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-blue-50/30" />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-primary/5" />
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent" />
 
             {/* Floating decorative elements */}

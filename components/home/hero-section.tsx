@@ -818,12 +818,12 @@ export function HeroSection() {
                     setIsAutoPlaying(false);
                     prevSlide();
                 }}
-                className="flex absolute left-2 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full bg-white/10 md:bg-white/5 hover:bg-white/20 md:hover:bg-white/10 backdrop-blur-sm border border-white/20 md:border-white/10 items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white/30 md:hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group active:scale-95"
+                className="flex absolute left-2 sm:left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group active:scale-95"
                 aria-label="Previous slide"
                 aria-controls={carouselContentId}
             >
                 <ChevronLeft
-                    className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white md:text-primary group-hover:text-white md:group-hover:text-primary transition-colors"
+                    className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white/80 group-hover:text-white transition-colors"
                     aria-hidden="true"
                 />
             </button>
@@ -832,12 +832,12 @@ export function HeroSection() {
                     setIsAutoPlaying(false);
                     nextSlide();
                 }}
-                className="flex absolute right-2 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full bg-white/10 md:bg-white/5 hover:bg-white/20 md:hover:bg-white/10 backdrop-blur-sm border border-white/20 md:border-white/10 items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white/30 md:hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group active:scale-95"
+                className="flex absolute right-2 sm:right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 h-10 w-10 sm:h-12 sm:w-12 lg:h-14 lg:w-14 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 items-center justify-center transition-all duration-300 hover:scale-110 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group active:scale-95"
                 aria-label="Next slide"
                 aria-controls={carouselContentId}
             >
                 <ChevronRight
-                    className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white md:text-primary group-hover:text-white md:group-hover:text-primary transition-colors"
+                    className="h-4 w-4 sm:h-5 sm:w-5 lg:h-6 lg:w-6 text-white/80 group-hover:text-white transition-colors"
                     aria-hidden="true"
                 />
             </button>
@@ -888,14 +888,14 @@ export function HeroSection() {
             <button
                 onClick={() => setIsAutoPlaying(!isAutoPlaying)}
 
-                className="absolute bottom-24 sm:bottom-28 right-4 sm:right-8 z-20 p-3 rounded-full bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10 transition-all duration-300 hover:scale-110 hover:border-white/20 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group"
+                className="absolute bottom-24 sm:bottom-28 right-4 sm:right-8 z-20 p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-sm border border-white/20 transition-all duration-300 hover:scale-110 hover:border-white/30 focus:outline-none focus:ring-2 focus:ring-accent-orange focus:ring-offset-2 focus:ring-offset-primary group"
                 aria-label={isAutoPlaying ? "Pause slideshow" : "Play slideshow"}
                 aria-pressed={!isAutoPlaying}
             >
                 {isAutoPlaying ? (
-                    <Pause className="h-4 w-4 text-primary group-hover:text-primary transition-colors" aria-hidden="true" />
+                    <Pause className="h-4 w-4 text-white/80 group-hover:text-white transition-colors" aria-hidden="true" />
                 ) : (
-                    <Play className="h-4 w-4 text-primary group-hover:text-primary transition-colors" aria-hidden="true" />
+                    <Play className="h-4 w-4 text-white/80 group-hover:text-white transition-colors" aria-hidden="true" />
                 )}
                 <SrOnly>{isAutoPlaying ? "Pause slideshow" : "Play slideshow"}</SrOnly>
             </button>
@@ -909,14 +909,14 @@ export function HeroSection() {
                 <span className="text-xs text-white/40 uppercase tracking-widest font-medium">{t("scroll")}</span>
                 <div className="relative w-6 h-10 rounded-full border-2 border-white/20 flex justify-center">
                     <div
-                        className="w-1 h-2 bg-primary/60 rounded-full mt-2"
+                        className="w-1 h-2 bg-white/60 rounded-full mt-2"
                         style={{
                             animation: entranceComplete ? "scrollIndicator 2s ease-in-out infinite" : "none",
                         }}
                     />
                 </div>
                 <ChevronDown
-                    className="w-5 h-5 text-primary/60"
+                    className="w-5 h-5 text-white/60"
                     style={{
                         animation: entranceComplete ? "bounceDown 2s ease-in-out infinite" : "none",
                     }}

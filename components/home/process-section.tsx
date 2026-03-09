@@ -48,8 +48,8 @@ function StepCard({ step, index, isLeft }: StepCardProps) {
                 relative overflow-hidden rounded-2xl p-6 md:p-8
                 bg-white
                 border border-neutral-100
-                shadow-[0_4px_24px_rgba(30,77,183,0.08)]
-                hover:shadow-[0_8px_40px_rgba(30,77,183,0.15)]
+                shadow-[0_4px_24px_rgba(13,115,119,0.08)]
+                hover:shadow-[0_8px_40px_rgba(13,115,119,0.15)]
                 transition-shadow duration-500
                 group
             ">
@@ -493,7 +493,7 @@ export function ProcessSection() {
                                     relative overflow-hidden rounded-xl p-5
                                     bg-white
                                     border border-neutral-100
-                                    shadow-[0_2px_16px_rgba(30,77,183,0.06)]
+                                    shadow-[0_2px_16px_rgba(13,115,119,0.06)]
                                 " data-direction="right">
                                     <div className="flex items-center gap-2 mb-3">
                                         <span className="text-xs font-bold text-primary/60">
